@@ -1,11 +1,773 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>Initial Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LooseLeaf Style Guide</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<!-- code from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	
+	<header>
+		<a href="#">
+			<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
+		</a>
+		<nav>
+			<ul>
+				<li><a href="#">Style Guide</a></li>
+				<li><a href="wireframes.html">Structure</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1>Style Guide & Pattern Library</h1>
+
+	<section id="typography">
+		<h2 class="section-heading">Typography</h2>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 1</h3>
+			<div class="pattern-preview">
+				<h1>The leaves are our core.</h1>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h1&gt;The leaves are our core.&lt;/h1&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 2</h3>
+			<div class="pattern-preview">
+				<h2>The leaves are our core.</h2>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h2&gt;The leaves are our core.&lt;/h2&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 3</h3>
+			<div class="pattern-preview">
+				<h3>The leaves are our core.</h3>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h3&gt;The leaves are our core.&lt;/h3&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 4</h3>
+			<div class="pattern-preview">
+				<h4>The leaves are our core.</h4>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h4&gt;The leaves are our core.&lt;/h4&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 5</h3>
+			<div class="pattern-preview">
+				<h5>The leaves are our core.</h5>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h5&gt;The leaves are our core.&lt;/h5&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">heading 6</h3>
+			<div class="pattern-preview">
+				<h6>The leaves are our core.</h6>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;h6&gt;The leaves are our core.&lt;/h6&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>h6{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">paragraph</h3>
+			<div class="pattern-preview">
+				<p>LooseLeaf use the most natural and organic ingredients to make the purest cup of tea that helps you relax and recharge through every sip.<p>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;p&gt;LooseLeaf use the most natural and organic ingredients to make the purest cup of tea that helps you relax and recharge through every sip.&lt;/p&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>p{
+	font-size: 1rem;
+	margin: 0;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">bulleted list</h3>
+			<div class="pattern-preview">
+				<ul class="bullet">
+					<li>caffine level</li>
+					<li>tea type</li>
+					<li>flavour</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;ul class="bullet"&gt;
+	&lt;li&gt;caffine level&lt;/li&gt;
+	&lt;li&gt;tea type&lt;/li&gt;
+	&lt;li&gt;flavour&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>ul{
+	font-size: 1rem;
+	margin: 0;
+}
+.bullet{
+	list-style-type: circle;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">numbered list</h3>
+			<div class="pattern-preview">
+				<ol>
+					<li>caffine level</li>
+					<li>tea type</li>
+					<li>flavour</li>
+				</ol>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;ol&gt;
+	&lt;li class="bullet"&gt;caffine level&lt;/li&gt;
+	&lt;li class="bullet"&gt;tea type&lt;/li&gt;
+	&lt;li class="bullet"&gt;flavour&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>ol{
+	font-size: 1rem;
+	margin: 0;
+}
+ol li{
+	margin-left: -0.5em;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="colour">
+		<h2 class="section-heading">Colours</h2>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">Primary Colours</h3>
+			<div class="container">
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview primary-dark"></div>
+						<ul class="swatch-detail">
+							<li><strong>Dark Brown</strong></li>
+							<li>R97 G56 B28</li>
+							<li>#61381C</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview primary-mid"></div>
+						<ul class="swatch-detail">
+							<li><strong>Primary Brown</strong></li>
+							<li>R143 G107 B83</li>
+							<li>#8F6B53</li>
+						</ul>
+					</li>
+				</ul>			
+
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview primary-light"></div>
+						<ul class="swatch-detail">
+							<li><strong>Light Brown</strong></li>
+							<li>R199 G168 B134</li>
+							<li>#C7A886</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<h3 class="pattern-heading">Secondary Colours</h3>
+			<div class="container">
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview grey-dark"></div>
+						<ul class="swatch-detail">
+							<li><strong>Dark Grey</strong></li>
+							<li>R61 G61 B61</li>
+							<li>#3D3D3D</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview grey-mid"></div>
+						<ul class="swatch-detail">
+							<li><strong>Mid Grey</strong></li>
+							<li>R114 G114 B114</li>
+							<li>#727272</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="list-swatch swatch-block">
+					<li class="swatch">
+						<div class="swatch-preview grey-light"></div>
+						<ul class="swatch-detail">
+							<li><strong>Light Grey</strong></li>
+							<li>R169 G169 B169</li>
+							<li>#A9A9A9</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="elements">
+		<h2 class="section-heading">Interactive Elements</h2>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">in-text link</h3>
+			<div class="pattern-preview">
+				<p>This is an <a href="#elements">in-text link</a>.</p>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;p&gt;This an &lt;a href="#"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>a{
+	color: rgb(143, 107, 83);
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+a:hover, a:active, a:focus{
+	color: rgb(199, 168, 134);
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">call to action button</h3>
+			<div class="container button-preview">
+				<a href="#elements" class="button-cta">shop now</a>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;a href="# class="button-cta"&gt;shop now&lt;/a&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>.button-cta{
+	background-color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem 0;
+	width: 50%;
+	border: 0.5px solid rgb(143, 107, 83);
+}
+.button-cta:hover, .button-cta:active, .button-cta:focus{
+	border: 0.5px solid rgb(199, 168, 134);
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">submit button</h3>
+			<div class="container button-preview">
+				<button type="submit" class="button-submit">Submit</button>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;button type="submit" class="button-submit"&gt;Submit&lt;/button&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>button{
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+.button-submit{
+	background-color: rgb(143, 107, 83);
+	color: white;
+	padding: 1rem 0;
+	width: 50%;
+}
+.button-submit:hover, .button-submit:focus, .button-submit:active{
+	background-color: rgb(199, 168, 134);
+	outline: none;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">reset button</h3>
+			<div class="container button-preview">
+				<button type="reset" class="button-reset">Reset</button>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;button type="reset" class="button-reset"&gt;Reset&lt;/button&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>button{
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+.button-reset{
+	background-color: transparent;
+	color: rgb(114, 114, 114);
+}
+.button-reset:hover, .button-reset:focus, .button-reset:active{
+	color: rgb(169, 169, 169);
+	outline: none;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">input field</h3>
+			<div class="container field-preview">
+				<form action="#">
+					<label for="form-name">Name</label>
+					<input type="text" id="form-name" placeholder="Jane Doe">
+				</form>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;label for="form-name"&gt;Name&lt;/label&gt;
+&lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>label{
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgb(114, 114, 114);
+	margin: 0 0 0.1rem 0.1rem;
+}
+input[type=text]{
+	width: 100%;
+	padding: 0.8rem 1rem;
+	border: 2px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+input[type=text]:focus{
+	border: 2px solid rgb(199, 168, 134);
+	outline: none;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="grid">
+		<h2 class="section-heading">Grids</h2>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">full</h3>
+			<div class="container">
+		      <div class="layout-full grid-preview">
+		      	<code>.layout-full</code>
+		      </div>
+		    </div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>USE</p>
+					<ul>
+						<li>About Us Page</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">product grid</h3>
+			<div class="container">
+		      <div class="layout-product-grid grid-preview">
+		      	<code>.layout-product-grid</code>
+		      </div>
+		      <div class="layout-product-grid grid-preview">
+		      	<code>.layout-product-grid</code>
+		      </div>
+		      <div class="layout-product-grid grid-preview">
+		      	<code>.layout-product-grid</code>
+		      </div>
+		      <div class="layout-product-grid grid-preview">
+		      	<code>.layout-product-grid</code>
+		      </div>
+		    </div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>USE</p>
+					<ul>
+						<li>Landing Page</li>
+						<li>Products Page</li>
+						<li>Search Results Page</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">mixed grid</h3>
+			<div class="container">
+		      <div class="layout-major grid-preview">
+		      	<code>.layout-major</code>
+		      </div>
+		      <div class="layout-minor grid-preview">
+		      	<code>.layout-minor</code>
+		      </div>
+		    </div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>USE</p>
+					<ul>
+						<li>Product Detail Page</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">sidebar grid</h3>
+			<div class="container">
+		      <div class="layout-sidebar-major grid-preview">
+		      	<code>.layout-sidebar-major</code>
+		      </div>
+		      <div class="layout-sidebar-minor grid-preview">
+		      	<code>.layout-sidebar-minor</code>
+		      </div>
+		    </div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>USE</p>
+					<ul>
+						<li>Products Page</li>
+						<li>Contact Us Page</li>
+						<li>Shoppting Cart</li>
+						<li>Check Out Page</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="module">
+		<h2 class="section-heading">Modular Pattern Elements</h2>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">main navigation bar</h3>
+			<div class="nav-container nav-preview">
+				<img class="nav-component-mobile nav-icon" src="img/ic-menu.svg" alt="menu">
+				<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
+				<nav class="nav-page nav-component-web">
+					<ul>
+						<li><a href="#">Tea</a></li>
+						<li><a href="#">Teaware</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</nav>
+				<img class="nav-icon nav-component-web" src="img/ic-account.svg" alt="account">
+				<img class="nav-icon" src="img/ic-cart.svg" alt="cart">
+				<img class="nav-icon nav-component-web" src="img/ic-search.svg" alt="search">
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div class="nav-container"&gt;
+	&lt;img class="nav-component-mobile nav-icon" src="img/ic-menu.svg" alt="menu"&gt;
+	&lt;img class="nav-logo" src="img/logo.svg" alt="logo"&gt;
+	&lt;nav class="nav-page nav-component-web"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Tea&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Teaware&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	&lt;img class="nav-icon nav-component-web" src="img/ic-account.svg" alt="account"&gt;
+	&lt;img class="nav-icon" src="img/ic-cart.svg" alt="cart"&gt;
+	&lt;img class="nav-icon nav-component-web" src="img/ic-search.svg" alt="search"&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">product listing</h3>
+			<div class="container">
+				<a href="#" class="product-post">
+					<img src="img/product1.png" alt="Tea leaves of chocolate darjeeling">
+					<h3 class="product-type">Black Tea</h3>
+					<h2 class="product-name">Chocolate Darjeeling</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (20)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>	
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/product2.png" alt="Tea leaves of flowery earl grey">
+					<h3 class="product-type">Black Tea</h3>
+					<h2 class="product-name">Flowery Earl Grey</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (18)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>	
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/product3.png" alt="Tea leaves of strawberry oolong">
+					<h3 class="product-type">Oolong Tea</h3>
+					<h2 class="product-name">Strawberry Oolong</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (13)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>	
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/product4.png" alt="Tea leaves of peppermint tea">
+					<h3 class="product-type">Herbal Tea</h3>
+					<h2 class="product-name">Peppermint</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (16)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>	
+				</a>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;a href="#" class="product-post"&gt;
+	&lt;img src="img/product2.png" alt="Tea leaves of chocolate darjeeling"&gt;
+	&lt;h3 class="product-type"&gt;Black Tea&lt;/h3&gt;
+	&lt;h2 class="product-name"&gt;Chocolate Darjeeling&lt;/h2&gt;
+	&lt;div class="product-rating"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;p&gt;5 (20)&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;p class="product-price"&gt;$8.00 / 20g&lt;/p&gt;
+&lt;/a&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="pattern">
+			<h3 class="pattern-heading">customer review</h3>
+			<div class="container">
+				<div class="review-post">
+					<div class="container review-post-top">
+						<h3 class="review-name">Jane Doe</h3>
+						<p class='review-purchase'>verified purchase</p>
+						<p class="review-time">5 days ago</p>
+					</div>
+					<div class="review-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<h2 class="review-title">Review Title</h2>
+					</div>
+					<p class="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio. Sed amet, sodales aliquam feugiat consectetur adipiscing.</p>
+				</div>
+
+				<div class="review-post">
+					<div class="container review-post-top">
+						<h3 class="review-name">Jane Doe</h3>
+						<p class='review-purchase'>verified purchase</p>
+						<p class="review-time">5 days ago</p>
+					</div>
+					<div class="review-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<h2 class="review-title">Review Title</h2>
+					</div>
+					<p class="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio. Sed amet, sodales aliquam feugiat consectetur adipiscing.</p>
+				</div>
+
+				<div class="review-post">
+					<div class="container review-post-top">
+						<h3 class="review-name">Jane Doe</h3>
+						<p class='review-purchase'>verified purchase</p>
+						<p class="review-time">5 days ago</p>
+					</div>
+					<div class="review-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<h2 class="review-title">Review Title</h2>
+					</div>
+					<p class="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique penatibus sollicitudin lacus, quam elit quam nisl. Accumsan donec id ullamcorper arcu odio. Sed amet, sodales aliquam feugiat consectetur adipiscing.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div class="review-post"&gt;
+	&lt;div class="container"&gt;
+		&lt;h3 class="review-name"&gt;Jane Doe&lt;/h3&gt;
+		&lt;p class="review-purchase"&gt;verified purchase&lt;/p&gt;
+		&lt;p class="review-time"&gt;5 days ago&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="review-rating"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;img src="img/ic-star.svg" alt="a filled star"&gt;
+		&lt;h2 class="review-title"&gt;Review Title&lt;/h2&gt;
+	&lt;/div&gt;
+	&lt;p class="review-content"&gt;paragraph content&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
