@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>Initial Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LooseLeaf Style Guide</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<!-- code from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	
+	<div id="side-nav">
+		<a href="#">
+			<img class="close-btn" src="img/ic-clear.svg" alt="close menu">
+		</a>
+		<ul class="collapsible-menu">
+			<li class="collapsible-top">
+				<input class="collapsible-input" type="checkbox" name="tea" id="tea">
+				<label class="collapsible-label collapsible-lv1" for="tea">
+					<span>Tea</span>
+					<img src="img/ic-menu-expand.svg" width="16" height="16" alt="expand menu" class="collapsible-icon">
+				</label>
+
+				<ul class="collapsible-sub">
+					<li>
+						<input class="collapsible-input" type="checkbox" name="tea-collection" id="tea-collection">
+						<label class="collapsible-label collapsible-lv2" for="tea-collection">
+							<span>Collection</span>
+							<img src="img/ic-menu-expand.svg" width="16" height="16" alt="expand menu" class="collapsible-icon">
+						</label>
+
+						<ul class="collapsible-sub">
+							<li><a href="#" class="collapsible-lv3">Morning Ritual</a></li>
+							<li><a href="#" class="collapsible-lv3">Bedtime Story</a></li>
+							<li><a href="#" class="collapsible-lv3">Refreshing Mind</a></li>
+							<li><a href="#" class="collapsible-lv3">Decaf</a></li>
+							<li><a href="#" class="collapsible-lv3">Best Sellers</a></li>
+						</ul>
+					</li>
+						
+					<li>
+						<input class="collapsible-input" type="checkbox" name="tea-type" id="tea-type">
+						<label class="collapsible-label collapsible-lv2" for="tea-type">
+							<span>Type</span>
+							<img src="img/ic-menu-expand.svg" width="16" height="16" alt="expand menu" class="collapsible-icon">
+						</label>
+
+						<ul class="collapsible-sub">
+							<li><a href="#" class="collapsible-lv3">Black</a></li>
+							<li><a href="#" class="collapsible-lv3">Green</a></li>
+							<li><a href="#" class="collapsible-lv3">Herbal</a></li>
+							<li><a href="#" class="collapsible-lv3">Rooibos</a></li>
+							<li><a href="#" class="collapsible-lv3">White</a></li>
+							<li><a href="#" class="collapsible-lv3">Matcha</a></li>
+							<li><a href="#" class="collapsible-lv3">Chai</a></li>
+							<li><a href="#" class="collapsible-lv3">Oolong</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li class="collapsible-top">
+				<input class="collapsible-input" type="checkbox" name="teaware" id="teaware">
+				<label class="collapsible-label collapsible-lv1" for="teaware">
+					<span>Teaware</span>
+					<img src="img/ic-menu-expand.svg" width="16" height="16" alt="expand menu" class="collapsible-icon">
+				</label>
+
+				<ul class="collapsible-sub">
+					<li><a href="#" class="collapsible-lv3">Pot</a></li>
+					<li><a href="#" class="collapsible-lv3">Mug</a></li>
+				</ul>
+			</li>
+
+			<li class="collapsible-top">
+				<input class="collapsible-input" type="checkbox" name="about" id="about">
+				<label class="collapsible-label collapsible-lv1" for="about">
+					<span>About</span>
+					<img src="img/ic-menu-expand.svg" width="16" height="16" alt="expand menu" class="collapsible-icon">
+				</label>
+
+				<ul class="collapsible-sub">
+					<li><a href="#" class="collapsible-lv3">About Us</a></li>
+					<li><a href="#" class="collapsible-lv3">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="main-nav">
+		<a href="#side-nav">
+			<img class="nav-component-mobile" src="img/ic-menu.svg" width="24" height="24" alt="open menu">
+		</a>
+		<a href="index.html">
+			<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
+		</a>
+		<nav class="nav-page nav-component-web">
+			<ul class="menu">
+				<li class="main-nav-section">
+					<input class="main-nav-input" type="checkbox" name="tea-main" id="tea-main">
+					<label class="main-nav-label main-nav-lv1" for="tea-main"><span>Tea</span></label>
+
+					<ul class="main-nav-sub">
+						<li class="main-nav-sub-row">
+							<ul>
+								<li class="sub-category">collection</li>
+								<li><a href="#" class="main-nav-lv2">Morning Ritual</a></li>
+								<li><a href="#" class="main-nav-lv2">Bedtime Story</a></li>
+								<li><a href="#" class="main-nav-lv2">Refreshing Mind</a></li>
+								<li><a href="#" class="main-nav-lv2">Decaf</a></li>
+								<li><a href="#" class="main-nav-lv2">Best Sellers</a></li>
+							</ul>
+						</li>
+
+						<li class="main-nav-sub-row">
+							<ul>
+								<li class="sub-category">type</li>
+								<li><a href="#" class="main-nav-lv2">Black</a></li>
+								<li><a href="#" class="main-nav-lv2">Green</a></li>
+								<li><a href="#" class="main-nav-lv2">Herbal</a></li>
+								<li><a href="#" class="main-nav-lv2">Rooibos</a></li>
+								<li><a href="#" class="main-nav-lv2">White</a></li>
+								<li><a href="#" class="main-nav-lv2">Matcha</a></li>
+								<li><a href="#" class="main-nav-lv2">Chai</a></li>
+								<li><a href="#" class="main-nav-lv2">Oolong</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="main-nav-section">
+					<input class="main-nav-input" type="checkbox" name="teaware-main" id="teaware-main">
+					<label class="main-nav-label main-nav-lv1" for="teaware-main"><span>Teaware</span></label>
+
+					<ul class="main-nav-sub">
+						<li class="sub-category">teaware</li>
+						<li><a href="#" class="main-nav-lv2">Pot</a></li>
+						<li><a href="#" class="main-nav-lv2">Mug</a></li>
+					</ul>
+				</li>
+
+				<li class="main-nav-section">
+					<input class="main-nav-input" type="checkbox" name="about-main" id="about-main">
+					<label class="main-nav-label main-nav-lv1" for="about-main"><span>About</span></label>
+
+					<ul class="main-nav-sub">
+						<li class="sub-category">our story</li>
+						<li><a href="#" class="main-nav-lv2">About Us</a></li>
+						<li><a href="#" class="main-nav-lv2">Contact Us</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="nav-icon-container">
+			<a href="#">
+				<img class="nav-icon" src="img/ic-cart.svg" alt="cart">
+			</a>
+			<a href="#">
+				<img class="nav-icon" src="img/ic-search.svg" alt="search">
+			</a>
+		</div>
+	</div>
+
+	
 </body>
-</html>

@@ -1,0 +1,410 @@
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	margin: 0 0 4rem 0;
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+}
+
+/*text*/
+h1, h2, h6{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+h3{
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h4{
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h5{
+	font-size: 1.5rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+
+p, ol, ul{
+	font-size: 1rem;
+	margin: 0;
+}
+
+/*link*/
+a{
+	color: rgb(143, 107, 83);
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+a:hover, a:active, a:focus{
+	color: rgb(199, 168, 134);
+}
+
+/*button using a*/
+.button-cta{
+	background-color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem 0;
+	width: 50%;
+	border: 0.5px solid rgb(143, 107, 83);
+}
+
+.button-cta:hover, .button-cta:active, .button-cta:focus{
+	border: 0.5px solid rgb(199, 168, 134);
+}
+
+/*button*/
+button{
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.button-submit{
+	background-color: rgb(143, 107, 83);
+	color: white;
+	padding: 1rem 0;
+	width: 50%;
+}
+
+.button-submit:hover, .button-submit:focus, .button-submit:active{
+	background-color: rgb(199, 168, 134);
+	outline-color: rgb(250, 185, 20);
+}
+
+.button-reset{
+	background-color: transparent;
+	color: rgb(114, 114, 114);
+}
+
+.button-reset:hover, .button-reset:focus, .button-reset:active{
+	color: rgb(169, 169, 169);
+	outline-color: rgb(250, 185, 20);
+}
+
+/*form*/
+label{
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgb(114, 114, 114);
+	margin: 0 0 0.1rem 0.1rem;
+}
+
+input[type=text]{
+	width: 100%;
+	padding: 0.8rem 1rem;
+	border: 2px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+
+input[type=text]:focus{
+	outline-color: rgb(199, 168, 134);
+}
+
+/*lists*/
+ul{
+	list-style: none;
+}
+
+.bullet{
+	list-style-type: circle;
+}
+
+ol li{
+	margin-left: -0.5em;
+}
+
+/*img*/
+img{
+	height: auto;
+	max-width: 100%;
+}
+
+/*navigation*/
+nav a{
+	color: rgb(61, 61, 61);
+}
+
+nav a:hover, nav a:focus, nav a:active{
+	color: rgb(143, 107, 83);
+}
+
+#main-nav{
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0rem 2rem;
+}
+
+.nav-logo, .nav-icon{
+	cursor: pointer;
+}
+
+.main-nav-lv1, .main-nav-lv2{
+	font-weight: 400;
+	text-transform: capitalize;
+	color: rgb(61, 61, 61);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.main-nav-lv1:hover, .main-nav-lv1:focus, .main-nav-lv1:active, .main-nav-lv2:hover, .main-nav-lv2:focus, .main-nav-lv2:active{
+	color: rgb(143, 107, 83);
+}
+
+.main-nav-input{
+	position: absolute;
+	opacity: 0;
+}
+
+.main-nav-label{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.main-nav-label span{
+	padding: 1.5rem 0;
+}
+
+.main-nav-sub{
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	right: 0;
+	background-color: rgb(222, 207, 184);
+	padding: 1rem;
+	display: none;
+}
+
+.main-nav-input:checked ~ .main-nav-sub{
+	display: block;
+}
+
+.main-nav-section:hover > .main-nav-sub{
+	display: block;
+}
+
+.sub-category{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: rgb(143, 107, 83);
+	border-right: 2px solid rgb(199, 168, 134);
+	margin: 0.5rem 0;
+}
+
+.main-nav-sub ul, .main-nav-sub-row{
+	padding: 0;
+}
+
+/*off-canvas nav*/
+#side-nav:target{
+	width: 250px;
+}
+
+#side-nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgb(222, 207, 184);
+	overflow-x: hidden;
+	white-space: nowrap;
+	transition: width 0.3s ease;
+	padding-top: 4rem;
+}
+
+#side-nav ul{
+	padding: 0 0 0 0;
+}
+
+.collapsible-menu{
+	margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.collapsible-label{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.collapsible-input{
+	position: absolute;
+	opacity: 0;
+}
+
+.collapsible-icon{
+	position: absolute;
+	right: 0;
+}
+
+.collapsible-sub{
+	display: none;
+}
+
+#side-nav .collapsible-sub li{
+	padding: 1rem 0 0 1rem;
+}
+
+.collapsible-input:checked ~ .collapsible-sub{
+	display: block;
+}
+
+.collapsible-top{
+	padding: 0.5rem;
+	border-bottom: 0.5px solid rgb(199, 168, 134);
+}
+
+.collapsible-lv1{
+	text-transform: capitalize;
+}
+
+.collapsible-lv1, .collapsible-lv2{
+	color: rgb(143, 107, 83);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.collapsible-lv3{
+	color: rgb(61, 61, 61);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+#side-nav label:hover, #side-nav label:active, #side-nav label:focus{
+	color: rgb(199, 168, 134)
+}
+
+#side-nav a:hover, #side-nav a:focus, #side-nav a:active{
+	color: rgb(143, 107, 83);
+}
+
+#side-nav .close-btn{
+	position: absolute;
+	top: 1.5rem;
+	left: 2rem;
+	cursor: pointer;
+}
+
+/*product listing*/
+.product-post{
+	padding: 0.8rem;
+	margin-bottom: 5rem;
+}
+
+.product-post:hover, .product-post:focus, .product-post:active{
+	box-shadow: 0px 0px 1px rgb(169, 169, 169);
+	cursor: pointer;
+}
+
+.product-type{
+	color: rgb(143, 107, 83);
+	margin: 0.5rem 0 0 0;
+}
+
+.product-name{
+	color: rgb(61, 61, 61);
+	margin: 0.5rem 0 0 0;
+}
+
+.product-rating p{
+	display: inline-block;
+	color: rgb(143, 107, 83);
+}
+
+.product-rating{
+	margin: 0.5rem 0 0 0;
+}
+
+.product-price{
+	color: rgb(114, 114, 114);
+	margin: 1rem 0 0 0;
+}
+
+/*review*/
+.review-post{
+	padding: 2rem 1rem;
+	border-bottom: 0.5px solid rgb(169, 169, 169);
+}
+
+.review-post:last-of-type{
+	border-bottom: none;
+}
+
+.review-name{
+	color: rgb(114, 114, 114);
+}
+
+.review-purchase{
+	color: rgb(169, 169, 169);
+}
+
+.review-time{
+	color: rgb(169, 169, 169);
+}
+
+.review-title{
+	display: inline-block;
+	margin: 0.8rem 1rem;
+	color: rgb(143, 107, 83);
+	font-weight: 400;
+}
+
+.review-rating img{
+	width: 1.5rem;
+}
+
+.review-content{
+	color: rgb(61, 61, 61);
+}
+
+/*color*/
+.primary-dark{
+	background-color: rgb(97, 56, 28);
+}
+
+.primary-mid{
+	background-color: rgb(143, 107, 83);
+}
+
+.primary-light{
+	background-color: rgb(199, 168, 134);
+}
+
+.grey-dark{
+	background-color: rgb(61, 61, 61);
+}
+
+.grey-mid{
+	background-color: rgb(114, 114, 114);
+}
+
+.grey-light{
+	background-color: rgb(169, 169, 169);
+}

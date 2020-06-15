@@ -1,0 +1,128 @@
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+.container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+}
+
+/*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
+#main-nav{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-icon-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-end;
+}
+
+.nav-component-mobile{
+	display: none;
+}
+
+.nav-logo{
+	max-width: 10rem;
+	flex: 1 1 auto;
+}
+
+.nav-page{
+	flex: 10 1 auto;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.nav-icon{
+	margin-left: 2rem;
+	max-width: 1.5rem;
+}
+
+/*product listing*/
+.product-post{
+	flex: 1 1 auto;
+	max-width: 16rem;
+}
+
+/*review*/
+.review-post-top{
+	display: flex;
+	align-items: baseline;
+}
+
+.review-name{
+	flex: 1 1 auto;
+}
+
+.review-purchase{
+	flex: 20 1 auto;
+}
+
+.review-time{
+	flex: 1 1 auto;
+}
+
+/*grid*/
+.layout-full{
+	width: 100%;
+}
+
+.layout-product-grid{
+	flex: 0 0 auto;
+}
+
+.layout-major{
+	flex: 8 0 auto;
+}
+
+.layout-minor{
+	flex: 4 0 auto;
+}
+
+.layout-sidebar-major{
+	flex: 11 0 auto;
+}
+
+.layout-sidebar-minor{
+	flex: 1 0 auto;
+}
+
+@media (max-width: 40em){
+	.nav-container{
+		padding: 0.5rem 2rem;
+	}
+
+	.nav-logo{
+		flex: 10 1 auto;
+	}
+
+	.nav-component-mobile{
+		display: inline-block;
+		flex: 1 1 auto;
+	}
+
+	.nav-component-web{
+		display: none;
+	}
+}
