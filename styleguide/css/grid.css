@@ -15,7 +15,7 @@
 }
 
 /*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
-#main-nav{
+.nav-container{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -26,14 +26,7 @@
 
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav-icon-container{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-
-	justify-content: flex-end;
+	padding: 1rem 3%;
 }
 
 .nav-component-mobile{
@@ -108,13 +101,15 @@ nav li{
 	flex: 1 0 auto;
 }
 
-@media (max-width: 40em){
+
+@media (max-width: 58em){
+	/*navigation*/
 	.nav-container{
-		padding: 0.5rem 2rem;
+		padding: 1rem 5%;
 	}
 
-	.nav-logo{
-		flex: 10 1 auto;
+	.nav-icon{
+	margin: 0;
 	}
 
 	.nav-component-mobile{
@@ -125,4 +120,82 @@ nav li{
 	.nav-component-web{
 		display: none;
 	}
+
+	header{
+		flex-flow: column wrap;
+	}
+}
+
+@media (max-width: 45em) {
+	
+	h1{
+		font-size: 1.5rem;
+	}
+
+	h2{
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	h3, p, ul, ol, a, button, label, input{
+		font-size: 0.8rem;
+	}
+
+	.product-post, .layout-product-grid{
+		max-width: 10rem;
+		min-width: 0;
+		margin-bottom: 2rem;
+	}
+
+	.product-rating{
+		display: flex;
+		align-items: center;
+	}
+
+	.product-rating p{
+		padding: 0.1rem 0 0 0.2rem;
+	}
+
+	.review-name{
+		margin: 0.5rem 0;
+	}
+
+	.review-rating img{
+		width: 1rem;
+	}
+
+	.review-title{
+		margin: 0.5rem;
+	}
+}
+
+@media (max-width: 30em){
+	html{
+		margin: 0 5%;
+	}
+
+	header ul{
+		padding-left: 0;
+	}
+
+	.pattern{
+		margin: 0;
+	}
+}
+
+/*------------------styling for the guide-----------------*/
+/*top navigation*/
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2%;
+}
+
+.pattern-code{
+	flex: 1 1 15rem;
+}
+
+.swatch-block{
+	flex: 1 1 15rem;
 }
