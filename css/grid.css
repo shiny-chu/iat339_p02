@@ -2,19 +2,7 @@
 	box-sizing: border-box;
 }
 
-.container{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-
-	flex-wrap: -webkit-flex;
-	flex-wrap: -ms-flex;
-	flex-wrap: wrap;
-
-	justify-content: space-around;
-}
-
-/*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
+/*----navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk-----*/
 #main-nav{
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -59,18 +47,27 @@ nav li{
 	max-width: 1.5rem;
 }
 
-/*product listing*/
+/*----------------------------product listing-----------------------------*/
+.product-listing-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+
+	margin: 0 10%;
+}
+
 .product-post{
-	flex: 1 1 auto;
+	flex: 1 1 20%;
 	max-width: 16rem;
 }
 
-.product-section{
-	display: flex;
-	flex-direction: row;
-}
-
-/*review*/
+/*----------------------------review----------------------------*/
 .review-post-top{
 	display: flex;
 	align-items: baseline;
@@ -88,15 +85,7 @@ nav li{
 	flex: 1 1 auto;
 }
 
-/*grid*/
-.layout-full{
-	width: 100%;
-}
-
-.layout-product-grid{
-	flex: 0 0 auto;
-}
-
+/*----------------------------grid----------------------------*/
 .layout-major{
 	flex: 8 0 auto;
 }
@@ -113,8 +102,31 @@ nav li{
 	flex: 1 0 auto;
 }
 
+@media (max-width: 80em){
+	/*----------------------product listing-----------------------*/
+	.product-type{
+		font-size: 0.8rem;
+	}
+
+	.product-name{
+		font-size: 1.2rem;
+	}
+
+	.product-rating p{
+		font-size: 0.8rem;
+	}
+
+	.product-rating{
+		margin: 0.5rem 0 0 0;
+	}
+
+	.product-price{
+		font-size: 0.8rem;
+	}
+}
+
 @media (max-width: 75em){
-	/*event banner*/
+	/*-----------------------event banner-----------------------*/
 	.event-banner-content h1{
 		font-size: 3rem;
 	}
@@ -125,7 +137,7 @@ nav li{
 }
 
 @media (max-width: 60em){
-	/*event banner*/
+	/*-----------------------event banner-----------------------*/
 	.event-banner-content h1{
 		font-size: 2.5rem;
 		margin: 0 0 0.8rem 0;
@@ -138,10 +150,15 @@ nav li{
 	.event-banner-content li{
 	    display: block;
 	}
+
+	/*----------------------product listing-----------------------*/
+	.product-post{
+		flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 40em){
-	/*nav*/
+	/*-----------------------main nav-----------------------*/
 	.nav-container{
 		padding: 0.5rem 2rem;
 	}
@@ -155,23 +172,7 @@ nav li{
 		display: none;
 	}
 
-	/*product listing*/
-	.product-post, .layout-product-grid{
-		max-width: 10rem;
-		min-width: 0;
-		margin-bottom: 2rem;
-	}
-
-	.product-rating{
-		display: flex;
-		align-items: center;
-	}
-
-	.product-rating p{
-		padding: 0.1rem 0 0 0.2rem;
-	}
-
-	/*event banner*/
+	/*-----------------------event banner-----------------------*/
 	.event-banner-content h1{
 		font-size: 2rem;
 	}
@@ -184,15 +185,23 @@ nav li{
 		font-size: 0.8rem;
 	}
 
-	.category-name{
-		top: -6rem;
-		left: 0.5rem;
-		max-width: 5rem;
+	/*----------------------product listing-----------------------*/
+	.product-post{
+		margin-bottom: 2rem;
+	}
+
+	.product-rating{
+		display: flex;
+		align-items: center;
+	}
+
+	.product-rating p{
+		padding: 0.1rem 0 0 0.2rem;
 	}
 }
 
 @media (max-width: 35em){
-	/*event banner*/
+	/*-----------------------event banner-----------------------*/
 	.event-banner-content{
 		top: 10%;
 	}
@@ -207,12 +216,17 @@ nav li{
 }
 
 @media (max-width: 30em){
-	/*main nav*/
+	h2{
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	/*-----------------------main nav-----------------------*/
 	#main-nav{
 		padding: 0 1rem;
 	}
 
-	/*event banner*/
+	/*-----------------------event banner-----------------------*/
 	.event-banner-content{
 		left: 7%;
 		top: 7%;
@@ -232,5 +246,24 @@ nav li{
 
 	.button-cta{
 		padding: 0.3rem 1rem;
+	}
+
+	/*------------------------section title-----------------------*/
+	.section-heading{
+		margin: 0 7%;
+	}
+
+	.section-heading a{
+		font-size: 0.8rem;
+		top: 0.3rem;
+	}
+
+	/*----------------------product listing-----------------------*/
+	.product-listing-container{
+		margin: 0 7%;
+	}
+
+	.product-rating img{
+		width: 0.8rem;
 	}
 }

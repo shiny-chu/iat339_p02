@@ -12,7 +12,11 @@ header{
 	top: 4rem;
 }
 
-/*text*/
+section{
+	margin-bottom: 5rem;
+}
+
+/*------------------------------text------------------------------*/
 h1, h2, h6{
 	font-family: 'Raleway', sans-serif;
 }
@@ -50,7 +54,7 @@ p, ol, ul{
 	margin: 0;
 }
 
-/*link*/
+/*------------------------------link------------------------------*/
 a{
 	color: rgb(143, 107, 83);
 	text-decoration: none;
@@ -61,7 +65,7 @@ a:hover, a:active, a:focus{
 	color: rgb(199, 168, 134);
 }
 
-/*button using a*/
+/*------------------------------button using a------------------------------*/
 .button-cta{
 	background-color: white;
 	font-weight: 600;
@@ -75,7 +79,7 @@ a:hover, a:active, a:focus{
 	border: 0.5px solid rgb(199, 168, 134);
 }
 
-/*button*/
+/*------------------------------button------------------------------*/
 button{
 	border: none;
 	font-weight: 600;
@@ -106,7 +110,7 @@ button{
 	outline-color: rgb(250, 185, 20);
 }
 
-/*form*/
+/*------------------------------form------------------------------*/
 label{
 	display: block;
 	font-weight: 600;
@@ -126,7 +130,7 @@ input[type=text]:focus{
 	outline-color: rgb(199, 168, 134);
 }
 
-/*lists*/
+/*------------------------------lists------------------------------*/
 ul{
 	list-style: none;
 }
@@ -139,13 +143,14 @@ ol li{
 	margin-left: -0.5em;
 }
 
-/*img*/
+/*------------------------------img------------------------------*/
 img{
 	height: auto;
 	max-width: 100%;
 }
 
-/*navigation*/
+/*------------------------------main nav------------------------------*/
+/* touch-friendly sub navigation from https://w3bits.com/css-responsive-nav-menu/ */
 nav a{
 	color: rgb(61, 61, 61);
 }
@@ -226,7 +231,9 @@ nav a:hover, nav a:focus, nav a:active{
 	padding: 0;
 }
 
-/*off-canvas nav*/
+/*------------------------------off-canvas nav------------------------------*/
+/* off-canvas menu tutorial from https://css-tricks.com/off-canvas-menu-with-css-target/
+	multi-level collapsible menu tutorial from https://codyhouse.co/gem/css-multi-level-accordion-menu */
 #side-nav:target{
 	width: 250px;
 }
@@ -317,7 +324,7 @@ nav a:hover, nav a:focus, nav a:active{
 	cursor: pointer;
 }
 
-/*event banner*/
+/*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;
 }
@@ -350,21 +357,30 @@ nav a:hover, nav a:focus, nav a:active{
     display: inline-block;
 }
 
-/*section title*/
-.go-to-page{
+/*------------------------------section title------------------------------*/
+.section-heading{
+	position: relative;
+	margin: 0 10%;
+}
+
+.section-heading h2{
+	padding-bottom: 0.5rem;
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+	color: rgb(61, 61, 61);
+}
+
+.section-heading a{
 	position: absolute;
-	right: 8rem;
+	right: 0;
+	top: 0.5rem;
 	text-transform: uppercase;
+	font-weight: 600;
 }
 
-.product-section{
-	margin:0 6rem;
-}
-
-/*product listing*/
+/*------------------------------product listing------------------------------*/
 .product-post{
 	padding: 0.8rem;
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 }
 
 .product-post:hover, .product-post:focus, .product-post:active{
@@ -388,7 +404,6 @@ nav a:hover, nav a:focus, nav a:active{
 .product-name{
 	color: rgb(61, 61, 61);
 	margin: 0.5rem 0 0 0;
-	width: 15rem;
 }
 
 .product-rating p{
@@ -405,7 +420,7 @@ nav a:hover, nav a:focus, nav a:active{
 	margin: 1rem 0 0 0;
 }
 
-/*review*/
+/*------------------------------review------------------------------*/
 .review-post{
 	padding: 2rem 1rem;
 	border-bottom: 0.5px solid rgb(169, 169, 169);
@@ -442,7 +457,7 @@ nav a:hover, nav a:focus, nav a:active{
 	color: rgb(61, 61, 61);
 }
 
-/*color*/
+/*------------------------------color------------------------------*/
 .primary-dark{
 	background-color: rgb(97, 56, 28);
 }
@@ -465,11 +480,4 @@ nav a:hover, nav a:focus, nav a:active{
 
 .grey-light{
 	background-color: rgb(169, 169, 169);
-}
-
-.section-heading{
-	padding-bottom: 0.5rem;
-	border-bottom: 0.5px solid rgb(200, 200, 200);
-	color: rgb(61, 61, 61);
-	margin: 5rem 8rem 4rem;
 }

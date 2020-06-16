@@ -12,12 +12,12 @@
 	<link rel="stylesheet" href="css/grid.css">
 
 	<!-- code from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- OFF CANVAS NAV BAR -->
+	<!-- OFF CANVAS NAV BAR -->
 	<div id="side-nav">
 		<a href="#">
 			<img class="close-btn" src="img/ic-clear.svg" alt="close menu">
@@ -96,7 +96,7 @@
 		</ul>
 	</div>
 
-<!-- MAIN NAV BAR -->
+	<!-- MAIN NAV BAR -->
 	<div id="main-nav">
 		<a href="#side-nav">
 			<img class="nav-hamburger" src="img/ic-menu.svg" width="24" height="24" alt="open menu">
@@ -171,9 +171,10 @@
 		</div>
 	</div>
 
+	<!-- PAGE CONTENT STARTS HERE -->
 	<div class="content">
 
-	<!-- BANNER -->
+	<!-- EVENT BANNER -->
 		<section id="event-banner">
 			<picture>
 				<source media="(min-width: 55em)" srcset="img/event-banner.png">
@@ -194,71 +195,74 @@
 
 	<!-- PRODUCT LIST -->
 		<section id="best-sellers">
-			<a href="index.html" class="go-to-page">View All Products</a>
-			<h2 class="section-heading">Best Sellers</h2>
+			<div class="section-heading">
+				<h2>Best Sellers</h2>
+				<a href="#">View All Products</a>
+			</div>
+
+			<div class="product-listing-container">
+				<a href="#" class="product-post">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<h3 class="product-type">Black Tea</h3>
+					<h2 class="product-name">Chocolate Darjeeling</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (20)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/flowery-earl-grey.png" alt="Tea leaves of flowery earl grey">
+					<h3 class="product-type">Black Tea</h3>
+					<h2 class="product-name">Flowery Earl Grey</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (18)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/strawberry-oolong.png" alt="Tea leaves of strawberry oolong">
+					<h3 class="product-type">Oolong Tea</h3>
+					<h2 class="product-name">Strawberry Oolong</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (13)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>
+				</a>
+
+				<a href="#" class="product-post">
+					<img src="img/peppermint.png" alt="Tea leaves of peppermint tea">
+					<h3 class="product-type">Herbal Tea</h3>
+					<h2 class="product-name">Peppermint</h2>
+					<div class="product-rating">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<img src="img/ic-star.svg" alt="a filled star">
+						<p>5 (16)</p>
+					</div>
+					<p class="product-price">$8.00 / 20g</p>
+				</a>
+			</div>
 		</section>
 
-		<div class="container product-section">
-			<a href="#" class="product-post">
-				<img src="img/product1.png" alt="Tea leaves of chocolate darjeeling">
-				<h3 class="product-type">Black Tea</h3>
-				<h2 class="product-name">Chocolate Darjeeling</h2>
-				<div class="product-rating">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<p>5 (20)</p>
-				</div>
-				<p class="product-price">$8.00 / 20g</p>
-			</a>
-
-			<a href="#" class="product-post">
-				<img src="img/product2.png" alt="Tea leaves of chocolate darjeeling">
-				<h3 class="product-type">Black Tea</h3>
-				<h2 class="product-name">Flowery Earl Grey</h2>
-				<div class="product-rating">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<p>5 (18)</p>
-				</div>
-				<p class="product-price">$8.00 / 20g</p>
-			</a>
-
-			<a href="#" class="product-post">
-				<img src="img/product3.png" alt="Tea leaves of chocolate darjeeling">
-				<h3 class="product-type">Oolong Tea</h3>
-				<h2 class="product-name">Strawberry Oolong</h2>
-				<div class="product-rating">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<p>5 (13)</p>
-				</div>
-				<p class="product-price">$8.00 / 20g</p>
-			</a>
-
-			<a href="#" class="product-post">
-				<img src="img/product4.png" alt="Tea leaves of chocolate darjeeling">
-				<h3 class="product-type">Herbal Tea</h3>
-				<h2 class="product-name">Peppermint</h2>
-				<div class="product-rating">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<img src="img/ic-star.svg" alt="a filled star">
-					<p>5 (16)</p>
-				</div>
-				<p class="product-price">$8.00 / 20g</p>
-			</a>
-		</div>
 
 		<!-- SHOP BY TEA TYPES -->
 
