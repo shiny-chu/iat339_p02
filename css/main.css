@@ -393,14 +393,6 @@ nav a:hover, nav a:focus, nav a:active{
 	margin: 0.5rem 0 0 0;
 }
 
-/*newly added*/
-.category-name{
-	position: relative;
-	top: -4rem;
-	left: 1.2rem;
-	width: 100%;
-}
-
 .product-name{
 	color: rgb(61, 61, 61);
 	margin: 0.5rem 0 0 0;
@@ -418,6 +410,36 @@ nav a:hover, nav a:focus, nav a:active{
 .product-price{
 	color: rgb(114, 114, 114);
 	margin: 1rem 0 0 0;
+}
+
+/*-----------------------------tea type------------------------------*/
+.tea-type-post{
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.tea-type-post img{
+	opacity: 0.8;
+	transition: all 0.3s ease 0s;
+}
+
+.tea-type-post h2{
+	margin: 0;
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	font-weight: 400;
+	color: rgb(97, 56, 28);
+	transition: all 0.3s ease 0s;
+}
+
+.tea-type-post:hover img, .tea-type-post:focus img, .tea-type-post:active img{
+	opacity: 0.6;
+}
+
+.tea-type-post:hover h2, .tea-type-post:focus h2, .tea-type-post:active h2{
+	color: rgb(143, 107, 83);
 }
 
 /*------------------------------review------------------------------*/

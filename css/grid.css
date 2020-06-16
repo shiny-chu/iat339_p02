@@ -67,6 +67,13 @@ nav li{
 	max-width: 16rem;
 }
 
+/*-----------------------------tea type------------------------------*/
+.tea-type-post{
+	flex: 1 1 20%;
+	max-width: 16rem;
+}
+
+
 /*----------------------------review----------------------------*/
 .review-post-top{
 	display: flex;
@@ -155,6 +162,11 @@ nav li{
 	.product-post{
 		flex: 0 1 50%;
 	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post{
+		flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 40em){
@@ -187,7 +199,7 @@ nav li{
 
 	/*----------------------product listing-----------------------*/
 	.product-post{
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.product-rating{
@@ -197,6 +209,11 @@ nav li{
 
 	.product-rating p{
 		padding: 0.1rem 0 0 0.2rem;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post{
+		margin-bottom: 0rem;
 	}
 }
 
@@ -265,5 +282,11 @@ nav li{
 
 	.product-rating img{
 		width: 0.8rem;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post h2{
+		bottom: 1.5rem;
+		left: 1.5rem;
 	}
 }
