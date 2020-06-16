@@ -72,39 +72,6 @@ a:hover, a:active, a:focus{
 	border: 0.5px solid rgb(199, 168, 134);
 }
 
-.banner-contents{
-	position: absolute;
-	left: 9%;
-	/*z-index: -1;*/
-}
-
-.banner-h2{
-	font-size: 4.1rem;
-    /*bottom: 205px;*/
-    bottom: 41%;
-    color: rgb(97 56 28);
-    margin-left: -6px;
-}
-
-.banner-subtitle{
-	font-size: 1.54rem;
-	/*bottom: 200px;*/
-	bottom: 40%;
-    color: rgb(61 61 61);
-    margin-left: -2px;
-}
-
-.go-to-page{
-	position: absolute;
-	right: 8rem;
-	text-transform: uppercase;
-}
-
-.product-section{
-	margin:0 6rem;
-}
-
-
 /*button*/
 button{
 	border: none;
@@ -195,10 +162,8 @@ nav a:hover, nav a:focus, nav a:active{
 #main-nav{
 	border-bottom: 0.5px solid rgb(200, 200, 200);
 	background-color: white;
-	/*original*/
-	/*position: fixed;*/
-	/*newly added*/
-	position: relative;
+	position: fixed;
+	z-index: 29;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -275,7 +240,7 @@ nav a:hover, nav a:focus, nav a:active{
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 10;
+	z-index: 30;
 	top: 0;
 	left: 0;
 	background-color: rgb(222, 207, 184);
@@ -355,6 +320,39 @@ nav a:hover, nav a:focus, nav a:active{
 	top: 1.5rem;
 	left: 2rem;
 	cursor: pointer;
+}
+
+/*event banner*/
+.banner-contents{
+	position: absolute;
+	left: 9%;
+	/*z-index: -1;*/
+}
+
+.banner-h2{
+	font-size: 4.1rem;
+    /*bottom: 205px;*/
+    bottom: 41%;
+    color: rgb(97 56 28);
+    margin-left: -6px;
+}
+
+.banner-subtitle{
+	font-size: 1.54rem;
+	/*bottom: 200px;*/
+	bottom: 40%;
+    color: rgb(61 61 61);
+    margin-left: -2px;
+}
+
+.go-to-page{
+	position: absolute;
+	right: 8rem;
+	text-transform: uppercase;
+}
+
+.product-section{
+	margin:0 6rem;
 }
 
 /*product listing*/
