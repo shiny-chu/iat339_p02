@@ -183,6 +183,12 @@ nav li{
 	.button-cta {
 		font-size: 0.8rem;
 	}
+
+	.category-name{
+		top: -6rem;
+		left: 0.5rem;
+		max-width: 5rem;
+	}
 }
 
 @media (max-width: 35em){

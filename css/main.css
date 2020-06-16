@@ -377,6 +377,14 @@ nav a:hover, nav a:focus, nav a:active{
 	margin: 0.5rem 0 0 0;
 }
 
+/*newly added*/
+.category-name{
+	position: relative;
+	top: -4rem;
+	left: 1.2rem;
+	width: 100%;
+}
+
 .product-name{
 	color: rgb(61, 61, 61);
 	margin: 0.5rem 0 0 0;
