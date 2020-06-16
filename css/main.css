@@ -63,13 +63,47 @@ a:hover, a:active, a:focus{
 	text-transform: uppercase;
 	text-align: center;
 	padding: 1rem 0;
-	width: 50%;
+	width: 12%;
 	border: 0.5px solid rgb(143, 107, 83);
+	bottom: 21%;
 }
 
 .button-cta:hover, .button-cta:active, .button-cta:focus{
 	border: 0.5px solid rgb(199, 168, 134);
 }
+
+.banner-contents{
+	position: absolute;
+	left: 9%;
+	/*z-index: -1;*/
+}
+
+.banner-h2{
+	font-size: 4.1rem;
+    /*bottom: 205px;*/
+    bottom: 41%;
+    color: rgb(97 56 28);
+    margin-left: -6px;
+}
+
+.banner-subtitle{
+	font-size: 1.54rem;
+	/*bottom: 200px;*/
+	bottom: 40%;
+    color: rgb(61 61 61);
+    margin-left: -2px;
+}
+
+.go-to-page{
+	position: absolute;
+	right: 8rem;
+	text-transform: uppercase;
+}
+
+.product-section{
+	margin:0 6rem;
+}
+
 
 /*button*/
 button{
@@ -141,6 +175,14 @@ img{
 	max-width: 100%;
 }
 
+.banner-img{
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+	z-index: -1;
+
+}
+
 /*navigation*/
 nav a{
 	color: rgb(61, 61, 61);
@@ -153,7 +195,10 @@ nav a:hover, nav a:focus, nav a:active{
 #main-nav{
 	border-bottom: 0.5px solid rgb(200, 200, 200);
 	background-color: white;
-	position: fixed;
+	/*original*/
+	/*position: fixed;*/
+	/*newly added*/
+	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -331,6 +376,7 @@ nav a:hover, nav a:focus, nav a:active{
 .product-name{
 	color: rgb(61, 61, 61);
 	margin: 0.5rem 0 0 0;
+	width: 15rem;
 }
 
 .product-rating p{
@@ -407,4 +453,11 @@ nav a:hover, nav a:focus, nav a:active{
 
 .grey-light{
 	background-color: rgb(169, 169, 169);
+}
+
+.section-heading{
+	padding-bottom: 0.5rem;
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+	color: rgb(61, 61, 61);
+	margin: 8rem 8rem 4rem;
 }

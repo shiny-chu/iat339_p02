@@ -12,6 +12,8 @@
 	flex-wrap: wrap;
 
 	justify-content: space-around;
+	/*newly added*/
+	position: relative;
 }
 
 /*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
@@ -58,6 +60,7 @@ nav li{
 	margin-left: 2rem;
 	max-width: 1.5rem;
 }
+
 
 /*product listing*/
 .product-post{
@@ -124,5 +127,43 @@ nav li{
 
 	.nav-component-web{
 		display: none;
+	}
+
+	.product-post, .layout-product-grid{
+		max-width: 10rem;
+		min-width: 0;
+		margin-bottom: 2rem;
+	}
+
+	.product-rating{
+		display: flex;
+		align-items: center;
+	}
+
+	.product-rating p{
+		padding: 0.1rem 0 0 0.2rem;
+	}
+
+}
+
+@media (max-width: 58em){
+
+	/*banner "shop now" button*/
+	.button-cta{
+		font-size:0.5rem;
+		min-width: 15%;
+		padding: 0.5rem 0.5rem;
+	}
+	/*banner content text*/
+	.banner-h2{
+		font-size:1.8rem;
+		bottom: 50%;
+		margin-left: -1px;
+	}
+
+	.banner-subtitle{
+		font-size: 0.8rem;
+		bottom: 45%;
+		margin-left: 0px;
 	}
 }
