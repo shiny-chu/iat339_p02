@@ -143,6 +143,13 @@ nav li{
 	}
 }
 
+@media (max-width: 65em){
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content{
+		top: 15%;
+	}
+}
+
 @media (max-width: 60em){
 	/*-----------------------event banner-----------------------*/
 	.event-banner-content h1{
@@ -166,6 +173,13 @@ nav li{
 	/*----------------------tea type-----------------------*/
 	.tea-type-post{
 		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 55em){
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content li{
+		display: block;
 	}
 }
 
@@ -293,5 +307,19 @@ nav li{
 	.tea-type-post h2{
 		bottom: 1.5rem;
 		left: 1.5rem;
+	}
+
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content{
+		top: 10%;
+	}
+
+	.tea-page-banner-content h1{
+		font-size: 1.5rem;
+		margin: 0 0 0.5rem 0;
+	}
+
+	.tea-page-banner-content li{
+		font-size: 0.8rem;
 	}
 }

@@ -369,6 +369,33 @@ nav a:hover, nav a:focus, nav a:active{
     display: inline-block;
 }
 
+/*------------------------------tea page banner------------------------------*/
+.tea-page-banner{
+	position: relative;
+}
+
+.tea-page-banner-content{
+	position: absolute;
+	left: 10%;
+	top: 25%;
+}
+
+.tea-page-banner-content h1{
+    color: rgb(97, 56, 28);
+    margin: 0 0 1rem 0;
+}
+
+.tea-page-banner-content ul{
+	padding: 0;
+	margin: 0 0 2rem 0;
+}
+
+.tea-page-banner-content li{
+    color: rgb(61, 61, 61);
+    display: inline-block;
+}
+
+
 /*------------------------------section title------------------------------*/
 .section-heading{
 	position: relative;
