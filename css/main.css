@@ -7,6 +7,11 @@ header{
 	border-bottom: 0.5px solid rgb(200, 200, 200);
 }
 
+.content{
+	position: absolute;
+	top: 4rem;
+}
+
 /*text*/
 h1, h2, h6{
 	font-family: 'Raleway', sans-serif;
@@ -62,10 +67,8 @@ a:hover, a:active, a:focus{
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 1rem 0;
-	width: 12%;
+	padding: 0.5rem 2rem;
 	border: 0.5px solid rgb(143, 107, 83);
-	bottom: 21%;
 }
 
 .button-cta:hover, .button-cta:active, .button-cta:focus{
@@ -140,14 +143,6 @@ ol li{
 img{
 	height: auto;
 	max-width: 100%;
-}
-
-.banner-img{
-	height: auto;
-	max-width: 100%;
-	width: 100%;
-	z-index: -1;
-
 }
 
 /*navigation*/
@@ -323,25 +318,39 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 /*event banner*/
-.banner-contents{
+#event-banner{
+	position: relative;
+}
+
+.event-banner-content{
 	position: absolute;
-	left: 9%;
+	left: 10%;
+	top: 20%;
 }
 
-.banner-h2{
-	font-size: 4.1rem;
-    bottom: 41%;
-    color: rgb(97 56 28);
-    margin-left: -6px;
+.event-banner-content h1{
+	font-size: 4rem;
+    color: rgb(97, 56, 28);
+    margin: 0 0 1rem 0;
 }
 
-.banner-subtitle{
-	font-size: 1.54rem;
-	bottom: 40%;
-    color: rgb(61 61 61);
-    margin-left: -2px;
+.event-banner-content h3{
+	color: rgb(114, 114, 114);
+	margin: 0 0 0.5rem 0;
 }
 
+.event-banner-content ul{
+	padding: 0;
+	margin: 0 0 2rem 0;
+}
+
+.event-banner-content li{
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+/*section title*/
 .go-to-page{
 	position: absolute;
 	right: 8rem;

@@ -99,12 +99,12 @@
 <!-- MAIN NAV BAR -->
 	<div id="main-nav">
 		<a href="#side-nav">
-			<img class="nav-component-mobile" src="img/ic-menu.svg" width="24" height="24" alt="open menu">
+			<img class="nav-hamburger" src="img/ic-menu.svg" width="24" height="24" alt="open menu">
 		</a>
 		<a href="index.html">
 			<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
 		</a>
-		<nav class="nav-page nav-component-web">
+		<nav class="nav-page">
 			<ul class="menu">
 				<li class="main-nav-section">
 					<input class="main-nav-input" type="checkbox" name="tea-main" id="tea-main">
@@ -171,82 +171,94 @@
 		</div>
 	</div>
 
-<!-- BANNER -->
-	<section id="banner">
-		<div class="container">
-			<img class="banner-img" src="img/banner-image.png" alt="banner">
-			<a href="#elements" class="banner-contents button-cta">shop now</a>
-			<h2 class="banner-contents banner-h2">Morning Ritual</h2>
-			<h2 class="banner-contents banner-subtitle">Rise and shine. Wake up and get energized.</h2>
+	<div class="content">
+
+	<!-- BANNER -->
+		<section id="event-banner">
+			<picture>
+				<source media="(min-width: 55em)" srcset="img/event-banner.png">
+
+				<img src="img/event-banner-s.png" srcset="img/event-banner-s.png" alt="a cup of tea">
+			</picture>
+
+			<div class="event-banner-content">
+				<h3>New Collection</h3>
+				<h1>Morning Ritual</h1>
+				<ul>
+					<li>Rise and shine. </li>
+					<li>Wake up and get energized.</li>
+				</ul>
+				<a href="#" class="button-cta">shop now</a>
+			</div>
+		</section>
+
+	<!-- PRODUCT LIST -->
+		<section id="best-sellers">
+			<a href="index.html" class="go-to-page">View All Products</a>
+			<h2 class="section-heading">Best Sellers</h2>
+		</section>
+
+		<div class="container product-section">
+			<a href="#" class="product-post">
+				<img src="img/product1.png" alt="Tea leaves of chocolate darjeeling">
+				<h3 class="product-type">Black Tea</h3>
+				<h2 class="product-name">Chocolate Darjeeling</h2>
+				<div class="product-rating">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<p>5 (20)</p>
+				</div>
+				<p class="product-price">$8.00 / 20g</p>
+			</a>
+
+			<a href="#" class="product-post">
+				<img src="img/product2.png" alt="Tea leaves of chocolate darjeeling">
+				<h3 class="product-type">Black Tea</h3>
+				<h2 class="product-name">Flowery Earl Grey</h2>
+				<div class="product-rating">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<p>5 (18)</p>
+				</div>
+				<p class="product-price">$8.00 / 20g</p>
+			</a>
+
+			<a href="#" class="product-post">
+				<img src="img/product3.png" alt="Tea leaves of chocolate darjeeling">
+				<h3 class="product-type">Oolong Tea</h3>
+				<h2 class="product-name">Strawberry Oolong</h2>
+				<div class="product-rating">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<p>5 (13)</p>
+				</div>
+				<p class="product-price">$8.00 / 20g</p>
+			</a>
+
+			<a href="#" class="product-post">
+				<img src="img/product4.png" alt="Tea leaves of chocolate darjeeling">
+				<h3 class="product-type">Herbal Tea</h3>
+				<h2 class="product-name">Peppermint</h2>
+				<div class="product-rating">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<img src="img/ic-star.svg" alt="a filled star">
+					<p>5 (16)</p>
+				</div>
+				<p class="product-price">$8.00 / 20g</p>
+			</a>
 		</div>
-	</section>
-
-	<!-- BEST SELLERS -->
-	<section id="best-sellers">
-		<a href="index.html" class="go-to-page">View All Products</a>
-		<h2 class="section-heading">Best Sellers</h2>
-	</section>
-
-	<div class="container product-section">
-		<a href="#" class="product-post">
-			<img src="img/product1.png" alt="Tea leaves of chocolate darjeeling">
-			<h3 class="product-type">Black Tea</h3>
-			<h2 class="product-name">Chocolate Darjeeling</h2>
-			<div class="product-rating">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<p>5 (20)</p>
-			</div>
-			<p class="product-price">$8.00 / 20g</p>
-		</a>
-
-		<a href="#" class="product-post">
-			<img src="img/product2.png" alt="Tea leaves of chocolate darjeeling">
-			<h3 class="product-type">Black Tea</h3>
-			<h2 class="product-name">Flowery Earl Grey</h2>
-			<div class="product-rating">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<p>5 (18)</p>
-			</div>
-			<p class="product-price">$8.00 / 20g</p>
-		</a>
-
-		<a href="#" class="product-post">
-			<img src="img/product3.png" alt="Tea leaves of chocolate darjeeling">
-			<h3 class="product-type">Oolong Tea</h3>
-			<h2 class="product-name">Strawberry Oolong</h2>
-			<div class="product-rating">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<p>5 (13)</p>
-			</div>
-			<p class="product-price">$8.00 / 20g</p>
-		</a>
-
-		<a href="#" class="product-post">
-			<img src="img/product4.png" alt="Tea leaves of chocolate darjeeling">
-			<h3 class="product-type">Herbal Tea</h3>
-			<h2 class="product-name">Peppermint</h2>
-			<div class="product-rating">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<img src="img/ic-star.svg" alt="a filled star">
-				<p>5 (16)</p>
-			</div>
-			<p class="product-price">$8.00 / 20g</p>
-		</a>
 	</div>
 
 	<!-- SHOP BY TEA TYPES -->

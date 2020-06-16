@@ -12,8 +12,6 @@
 	flex-wrap: wrap;
 
 	justify-content: space-around;
-	/*newly added*/
-	position: relative;
 }
 
 /*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
@@ -38,7 +36,7 @@
 	justify-content: flex-end;
 }
 
-.nav-component-mobile{
+.nav-hamburger{
 	display: none;
 }
 
@@ -60,7 +58,6 @@ nav li{
 	margin-left: 2rem;
 	max-width: 1.5rem;
 }
-
 
 /*product listing*/
 .product-post{
@@ -116,24 +113,49 @@ nav li{
 	flex: 1 0 auto;
 }
 
+@media (max-width: 75em){
+	/*event banner*/
+	.event-banner-content h1{
+		font-size: 3rem;
+	}
+
+	.event-banner-content li{
+	    font-size: 1rem;
+	}
+}
+
+@media (max-width: 60em){
+	/*event banner*/
+	.event-banner-content h1{
+		font-size: 2.5rem;
+		margin: 0 0 0.8rem 0;
+	}
+
+	.event-banner-content ul{
+		margin: 0 0 1.5rem 0;
+	}
+
+	.event-banner-content li{
+	    display: block;
+	}
+}
+
 @media (max-width: 40em){
+	/*nav*/
 	.nav-container{
 		padding: 0.5rem 2rem;
 	}
 
-	.nav-logo{
-		flex: 10 1 auto;
-	}
-
-	.nav-component-mobile{
+	.nav-hamburger{
 		display: inline-block;
 		flex: 1 1 auto;
 	}
 
-	.nav-component-web{
+	.nav-page{
 		display: none;
 	}
 
+	/*product listing*/
 	.product-post, .layout-product-grid{
 		max-width: 10rem;
 		min-width: 0;
@@ -149,26 +171,60 @@ nav li{
 		padding: 0.1rem 0 0 0.2rem;
 	}
 
+	/*event banner*/
+	.event-banner-content h1{
+		font-size: 2rem;
+	}
+
+	.event-banner-content h3{
+		font-size: 0.8rem;
+	}
+
+	.button-cta {
+		font-size: 0.8rem;
+	}
 }
 
-@media (max-width: 58em){
+@media (max-width: 35em){
+	/*event banner*/
+	.event-banner-content{
+		top: 10%;
+	}
 
-	/*banner "shop now" button*/
+	.event-banner-content h1{
+		font-size: 1.5rem;
+	}
+
+	.event-banner-content li{
+	    font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 30em){
+	/*main nav*/
+	#main-nav{
+		padding: 0 1rem;
+	}
+
+	/*event banner*/
+	.event-banner-content{
+		left: 7%;
+		top: 7%;
+	}
+
+	.event-banner-content h1{
+		margin: 0 0 0.3rem 0;
+	}
+
+	.event-banner-content h3{
+		margin: 0 0 0.3rem 0;
+	}
+
+	.event-banner-content ul{
+		margin: 0 0 0.7rem 0;
+	}
+
 	.button-cta{
-		font-size:0.5rem;
-		min-width: 15%;
-		padding: 0.5rem 0.5rem;
-	}
-	/*banner content text*/
-	.banner-h2{
-		font-size:1.8rem;
-		bottom: 50%;
-		margin-left: -1px;
-	}
-
-	.banner-subtitle{
-		font-size: 0.8rem;
-		bottom: 45%;
-		margin-left: 0px;
+		padding: 0.3rem 1rem;
 	}
 }
