@@ -324,6 +324,18 @@ nav a:hover, nav a:focus, nav a:active{
 	cursor: pointer;
 }
 
+/*------------------------------footer------------------------------*/
+.footer{
+	margin: 0;
+	padding: 1rem 1rem 1rem 2rem;
+	border-top: 0.5px solid rgb(200, 200, 200);
+}
+
+.footer p{
+	color: rgb(169, 169, 169);
+	font-size: 0.8rem;
+}
+
 /*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;

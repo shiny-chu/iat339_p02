@@ -243,6 +243,11 @@ nav li{
 		padding: 0 1rem;
 	}
 
+	/*-----------------------main nav-----------------------*/
+	.footer{
+		padding: 1rem;
+	}
+
 	/*-----------------------event banner-----------------------*/
 	.event-banner-content{
 		left: 7%;
