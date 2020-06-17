@@ -364,7 +364,7 @@ nav a:hover, nav a:focus, nav a:active{
 	color: rgb(143, 107, 83);
 }
 
-#side-nav .close-btn{
+.close-btn{
 	position: absolute;
 	top: 1.5rem;
 	left: 2rem;
@@ -585,22 +585,25 @@ nav a:hover, nav a:focus, nav a:active{
 #filter{
 	padding: 0 1rem 0 5rem;
 	max-width: 15rem;
+	background-color: white;
 }
 
 #filter .filter-category{
 	color: rgb(114, 114, 114);
 	border-bottom: 0.5px solid rgb(114, 114, 114);
+	margin: 1rem 0 1rem 0;
 }
 
 #filter h3{
 	color: rgb(169, 169, 169);
+	margin: 1rem 0 0 0;
 }
 
 #filter ul{
 	padding: 0;
 }
 
-#filter li, #filter p{
+#filter a{
 	color: rgb(114, 114, 114);
 }
 /*------------------------customer service-------------------------*/
@@ -682,6 +685,26 @@ margin-bottom: 3rem;
 .about-description-size{
 	font-size: 0.9rem;
 	margin-left: 0;
+}
+
+#filter a:hover, #filter a:focus, #filter a:active{
+	color: rgb(143, 107, 83);
+}
+
+.filter-close, .filter-btn{
+	display: none;
+}
+
+.filter-btn{
+	padding: 0.5rem 2rem;
+	border: 0.5px solid rgb(143, 107, 83);
+	position: absolute;
+	top: -3rem;
+	left: 8%;
+}
+
+.filter-btn:hover, .filter-btn:focus, .filter-btn:active{
+	border: 0.5px solid rgb(199, 168, 134);
 }
 
 /*------------------------------color------------------------------*/

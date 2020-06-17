@@ -85,6 +85,7 @@ nav li{
 #filter{
 	display: inline-block;
 	flex: 1 0 20%;
+	min-width: 10rem;
 }
 
 #tea-list{
@@ -101,13 +102,14 @@ nav li{
 
 	justify-content: space-around;
 	padding: 0 5rem 0 1rem;
+
+	position: relative;
 }
 
 #tea-list .product-post{
-	flex: 1 1 25%;
+	flex: 0 1 25%;
 	max-width: 16rem;
 }
-
 
 /*----------------------------review----------------------------*/
 .review-post-top{
@@ -166,6 +168,19 @@ nav li{
 	.tea-page-banner-content{
 		bottom: 15%;
 	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list{
+		padding: 0 3rem 0 0.5rem;
+	}
+
+	#tea-list .product-post{
+		flex: 0 1 33%;
+	}
+
+	#filter{
+		padding: 0 0.5rem 0 3rem;
+	}
 }
 
 @media (max-width: 60em){
@@ -198,6 +213,16 @@ nav li{
 	/*----------------------tea page banner-----------------------*/
 	.tea-page-banner-content li{
 		display: block;
+	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list .product-post{
+		flex: 0 1 50%;
+	}
+
+	/*---------------------------filter-------------------------*/
+	#filter h3, #filter a{
+		font-size: 0.8rem;
 	}
 }
 
@@ -246,6 +271,47 @@ nav li{
 	/*----------------------tea type-----------------------*/
 	.tea-type-post{
 		margin-bottom: 0rem;
+	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list{
+		padding: 0 1rem;
+	}
+
+	/*----------------------filter-------------------*/
+	#filter:target{
+		width: 16rem;
+		padding: 4rem 2rem;
+	}
+
+	#filter{
+		height: 100%;
+		width: 0;
+		max-width: none;
+		min-width: 0;
+		position: fixed;
+		z-index: 30;
+		top: 0;
+		left: 0;
+		padding: 4rem 0rem;
+		background-color: rgb(222, 207, 184);
+		overflow-x: hidden;
+		white-space: nowrap;
+		transition: all 0.3s ease;
+	}
+
+	.filter-close, .filter-btn{
+		display: block;
+	}
+
+	#filter h3{
+		color: rgb(143, 107, 83);
+		font-size: 1rem;
+	}
+
+	#filter a{
+		color: rgb(61, 61, 61);
+		font-size: 1rem;
 	}
 }
 
