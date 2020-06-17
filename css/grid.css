@@ -111,6 +111,48 @@ nav li{
 	max-width: 16rem;
 }
 
+/*--------------------------contact-------------------------*/
+#contact-us{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-start;
+
+	padding: 0 10%;
+}
+
+#contact-us form{
+	flex: 2 1 75%;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+	padding: 0 2rem 0 0;
+}
+
+.form-entries-s{
+	flex: 1 1 33%;
+}
+
+.form-entries-m{
+	flex: 1 1 66%;
+}
+
+.form-entries-l{
+	width: 100%;
+}
+
+.customer-service{
+	flex: 1 1 25%;
+}
+
 /*----------------------------review----------------------------*/
 .review-post-top{
 	display: flex;
@@ -180,6 +222,44 @@ nav li{
 
 	#filter{
 		padding: 0 0.5rem 0 3rem;
+	}
+
+	/*--------------------------page heading-------------------------*/
+	#page-heading{
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	/*--------------------------contact-------------------------*/
+	#contact-us{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+	
+	#contact-us form{
+		padding-right: 0;
+	}
+
+	.customer-service{
+		margin-bottom: 2rem;
+		padding: 1rem 0 0 0.5rem;
+		order: -1;
+		border-left: none;
+		border-top: 0.5px solid rgb(200, 200, 200);
+		border-bottom: 0.5px solid rgb(200, 200, 200);
+	}
+
+	.customer-service h2{
+		display: none;
+	}
+
+	.contact-info li{
+		display: inline-block;
+	}
+
+	.contact-info li:first-of-type{
+		padding-right: 1rem; 
 	}
 }
 
@@ -313,6 +393,19 @@ nav li{
 		color: rgb(61, 61, 61);
 		font-size: 1rem;
 	}
+
+	/*--------------------------contact-------------------------*/
+	.form-entries-s, .form-entries-m{
+		flex: 0 0 100%
+	}
+
+	#contact-us button{
+		width: 100%;
+	}
+
+	.form-entries-s, .form-entries-m, .form-entries-l{
+		padding-right: 0;
+	}
 }
 
 @media (max-width: 35em){
@@ -376,11 +469,6 @@ nav li{
 	.section-heading a{
 		font-size: 0.8rem;
 		top: 0.3rem;
-	}
-
-	/*------------------------page title-----------------------*/
-	.page-heading{
-		margin: 4% 7% 0;
 	}
 
 	/*----------------------product listing-----------------------*/

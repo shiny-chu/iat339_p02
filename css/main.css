@@ -10,6 +10,8 @@ header{
 .content{
 	position: absolute;
 	top: 4rem;
+	left: 0;
+	right: 0;
 }
 
 section{
@@ -23,6 +25,7 @@ h1, h2, h6{
 
 h1{
 	font-size: 2rem;
+	color: rgb(61, 61, 61);
 }
 
 h2{
@@ -124,60 +127,28 @@ label{
 	margin: 0 0 0.1rem 0.1rem;
 }
 
-input[type=text]{
+input[type=text], textarea{
 	width: 100%;
 	padding: 0.5rem 0.5rem;
 	border: 1px solid rgb(169, 169, 169);
 	transition: all 0.3s ease 0s;
 }
 
-input[type=text]:focus{
+/* textarea resize limit tutorial from http://qnimate.com/html-textarea-fixed-size/*/
+textarea{
+	height: 10rem;
+	resize: vertical;
+}
+
+input[type=text]:focus, textarea:focus{
 	outline-color: rgb(199, 168, 134);
 }
 
-/*newly added*/
-.form-info-row{
-	display: flex;
-	flex-direction: row;
-	margin-left: 8.2rem;
-	margin-bottom: 3rem;
-}
-
-/*tutorial on moving submit button to the right from https://www.w3schools.com/cssref/css3_pr_justify-content.asp?fbclid=IwAR0bIbteGyCPw0sIyw3WsRaYBoaCu15mpPrWLZYl9i8gHuDk0DxEsdzMqX8*/
-.form-info-submit{
-	justify-content:flex-end;
-	margin-right: 4.1%;
-}
-
-textarea{
-	font-size: 1.2rem;
-    margin-bottom: 1rem;
-  	padding: 0.5rem 0.5rem;
-  	height: 15rem;
-  	/* textarea resize limit tutorial from http://qnimate.com/html-textarea-fixed-size/*/
-  	resize: vertical;
-}
-
-.form-entries{
-	display: flex;
-	flex-direction: column;
-	margin-right: 2rem;
-}
-
-.form-entries-email{
-	width: 62.8%;
-}
-
-.form-entries-subject{
-	width: 100%;
-}
-
-.form-entries-message{
-	width: 100%;
+.form-entries-s, .form-entries-m, .form-entries-l{
+	padding: 0 1rem 1rem 0;
 }
 
 /*------------------------------lists------------------------------*/
-
 ul{
 	list-style: none;
 }
@@ -383,11 +354,6 @@ nav a:hover, nav a:focus, nav a:active{
 	font-size: 0.8rem;
 }
 
-/*footer for contact page*/
-.contact-footer{
-	width:183%;
-}
-
 /*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;
@@ -446,7 +412,10 @@ nav a:hover, nav a:focus, nav a:active{
     color: rgb(61, 61, 61);
     display: inline-block;
 }
-
+/*------------------------------page heading------------------------------*/
+#page-heading{
+	padding: 5rem 10% 0 10%;
+}
 
 /*------------------------------section title------------------------------*/
 .section-heading{
@@ -466,17 +435,6 @@ nav a:hover, nav a:focus, nav a:active{
 	top: 0.5rem;
 	text-transform: uppercase;
 	font-weight: 600;
-}
-
-/*------------------------------page title------------------------------*/
-.page-heading{
-	position: relative;
-	margin: 10% 9.1% 0;
-}
-
-.page-heading h2{
-	padding-bottom: 3rem;
-	color: rgb(61, 61, 61);
 }
 
 /*------------------------------product listing------------------------------*/
@@ -606,44 +564,58 @@ nav a:hover, nav a:focus, nav a:active{
 #filter a{
 	color: rgb(114, 114, 114);
 }
-/*------------------------customer service-------------------------*/
 
-.customer-service{
+#filter a:hover, #filter a:focus, #filter a:active{
+	color: rgb(143, 107, 83);
+}
+
+.filter-close, .filter-btn{
+	display: none;
+}
+
+.filter-btn{
+	padding: 0.5rem 2rem;
+	border: 0.5px solid rgb(143, 107, 83);
 	position: absolute;
+	top: -3rem;
+	left: 8%;
+}
+
+.filter-btn:hover, .filter-btn:focus, .filter-btn:active{
+	border: 0.5px solid rgb(199, 168, 134);
+}
+
+/*----------------------------contact------------------------------*/
+.customer-service{
 	border-left: 0.5px solid rgb(200, 200, 200);
-	height: 72.7%;
-	top:9rem;
-	left: 108%;
-	padding: 0rem 1rem; 
-	width: 50%;
+	padding: 0 0 0 2rem;
+	min-width: 15rem;
 }
 
-.customer-service-font-size{
-	font-size: 1.3rem;
-	margin-top: -1.3rem;
+.customer-service h2{
+	margin-top: 0;
 }
 
+.customer-service ul{
+	padding: 0;
+}
+
+.customer-service p, .customer-service li{
+	color: rgb(114, 114, 114);
+}
 
 .contact-info{
-margin-left: 6rem;
+	position: relative;
+	padding: 0 0 1rem 2rem;
 }
 
-.contact-info-font{
-padding-bottom: 0.5rem;
-color: rgb(114 114 114);
-}
-
-.contact-info-row{
-margin-bottom: 3rem;
-}
-
-.contact-info-img{
+.contact-info img{
 	position: absolute;
-	margin-left: -2.3rem;
+	top: 0;
+	left: 0;
 }
 
 /*----------------------------about page---------------------------*/
-
 .about-page{
 	position: relative;
 	margin-bottom:0;
@@ -687,28 +659,7 @@ margin-bottom: 3rem;
 	margin-left: 0;
 }
 
-#filter a:hover, #filter a:focus, #filter a:active{
-	color: rgb(143, 107, 83);
-}
-
-.filter-close, .filter-btn{
-	display: none;
-}
-
-.filter-btn{
-	padding: 0.5rem 2rem;
-	border: 0.5px solid rgb(143, 107, 83);
-	position: absolute;
-	top: -3rem;
-	left: 8%;
-}
-
-.filter-btn:hover, .filter-btn:focus, .filter-btn:active{
-	border: 0.5px solid rgb(199, 168, 134);
-}
-
 /*------------------------------color------------------------------*/
-
 .primary-dark{
 	background-color: rgb(97, 56, 28);
 }

@@ -88,8 +88,8 @@
 				</label>
 
 				<ul class="collapsible-sub">
-					<li><a href="#" class="collapsible-lv3">About Us</a></li>
-					<li><a href="#" class="collapsible-lv3">Contact Us</a></li>
+					<li><a href="about.html" class="collapsible-lv3">About Us</a></li>
+					<li><a href="contact.html" class="collapsible-lv3">Contact Us</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -173,100 +173,82 @@
 
 	<!-- PAGE CONTENT STARTS HERE -->
 	<div class="content">
+
+		<!-- PAGE HEADING -->
+		<section id="page-heading">
+				<h1>Contact Us</h1>
+			</section>
 	
 		<!-- CONTACT US -->
 		<section id="contact-us">
 
-			<div class="page-heading">
-				<h2 class="page-heading">Contact Us</h2>
-			</div>
-
+			<!-- FORM -->
 			<form method="post" action="#">
-				<div class="form-info">
-					<div class="form-info-row">
-						<div class="form-entries">
-							<label for="form-f-name">First Name</label>
-							<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-
-						<div class="form-entries">
-							<label for="form-l-name">Last Name</label>
-							<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-
-						<div class="form-entries">
-							<label for="form-ordernumber">Order Number</label>
-							<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-					</div>
-
-					<div class="form-info-row">
-						<div class="form-entries form-entries-email">
-						<label for="form-email">Email</label>
-						<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-
-						<div class="form-entries">
-							<label for="form-phone">Phone</label>
-							<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-					</div>
-
-					<div class="form-info-row">
-						<div class="form-entries form-entries-subject">
-							<label for="form-subject">Subject</label>
-							<input class="text-input" type="text" id="form-name" placeholder="">
-						</div>
-					</div>
-
-					<div class="form-info-row">
-						<div class="form-entries form-entries-message">
-							<label for="form-message">Message</label>
-							<textarea placeholder=""></textarea>
-						</div>
-					</div>
-
-					<div class="form-info-row form-info-submit">
-						<button type="submit" class="button-submit form-button">Submit</button>
-					</div>
+				<div class="form-entries-s">
+					<label for="form-f-name">First Name</label>
+					<input type="text" id="form-f-name">
 				</div>
+
+				<div class="form-entries-s">
+					<label for="form-l-name">Last Name</label>
+					<input type="text" id="form-l-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-ordernumber">Order Number</label>
+					<input type="text" id="form-ordernumber">
+				</div>
+
+				<div class="form-entries-m">
+					<label for="form-email">Email</label>
+					<input type="text" id="form-email">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-phone">Phone</label>
+					<input type="text" id="form-phone">
+				</div>
+
+				<div class="form-entries-l">
+					<label for="form-subject">Subject</label>
+					<input type="text" id="form-subject">
+				</div>
+
+				<div class="form-entries-l">
+					<label for="form-message">Message</label>
+					<textarea id="form-message"></textarea>
+				</div>
+
+				<button type="submit" class="button-submit">Send</button>
 			</form>
-		</section>
 
-		<!-- CUSTOMER SERVICE SECTION -->
-		<section id="customer-service">
+			<!-- CUSTOMER SERVICE SECTION -->
 			<div class="customer-service">
-				<div class="page-heading">
-					<h2 class="page-heading customer-service-font-size">Customer Service</h2>
-				</div>
+				<h2>Customer Service</h2>
 
-				<div class="contact-info">
-					<div class="contact-info-row">
-						<div class="contact-info-img">
-							<img src="img/ic_access_time.png" alt="operating hours">
-						</div>
-						<p class="contact-info-font">Monday to Sunday</p>
-						<p class="contact-info-font">9am - 5pm</p>
-					</div>
+				<ul>
+					<li class="contact-info">
+						<img src="img/ic-time.svg" alt="operating hours">
+						<ul>
+							<li>Monday to Sunday</li>
+							<li>9am - 5pm</li>
+						</ul>
+					</li>
 
-					<div class="contact-info-row">
-						<div class="contact-info-img">
-							<img src="img/ic_local_phone.png" alt="operating hours">
-						</div>
+					<li class="contact-info">
+						<img src="img/ic-phone.svg" alt="operating hours">
 						<p class="contact-info-font">1-111-111-1111</p>
-					</div>
+					</li>
 
-					<div class="contact-info-row">
-						<div class="contact-info-img">
-							<img src="img/ic_mail.png" alt="operating hours">
-						</div>
+					<li class="contact-info">
+						<img src="img/ic-mail.svg" alt="operating hours">
 						<p class="contact-info-font">company@mail.com</p>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 
-			<!-- FOOTER -->
+		<!-- FOOTER -->
 		<section class="footer contact-footer">
 			<p>© 2020 Summer IAT339 D101 Shiny Chu, Ashley Wong</p>
 		</section>
