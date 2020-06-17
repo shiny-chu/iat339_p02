@@ -370,14 +370,14 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 /*------------------------------tea page banner------------------------------*/
-.tea-page-banner{
+#tea-page-banner{
 	position: relative;
 }
 
 .tea-page-banner-content{
 	position: absolute;
 	left: 10%;
-	top: 25%;
+	bottom: 25%;
 }
 
 .tea-page-banner-content h1{
@@ -516,6 +516,29 @@ nav a:hover, nav a:focus, nav a:active{
 
 .review-content{
 	color: rgb(61, 61, 61);
+}
+
+/*------------------------------filter------------------------------*/
+#filter{
+	padding: 0 1rem 0 5rem;
+	max-width: 15rem;
+}
+
+#filter .filter-category{
+	color: rgb(114, 114, 114);
+	border-bottom: 0.5px solid rgb(114, 114, 114);
+}
+
+#filter h3{
+	color: rgb(169, 169, 169);
+}
+
+#filter ul{
+	padding: 0;
+}
+
+#filter li, #filter p{
+	color: rgb(114, 114, 114);
 }
 
 /*------------------------------color------------------------------*/

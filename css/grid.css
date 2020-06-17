@@ -73,6 +73,41 @@ nav li{
 	max-width: 16rem;
 }
 
+/*--------------------------product listing page-------------------------*/
+.tea-page-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-around;
+}
+
+#filter{
+	display: inline-block;
+	flex: 1 0 20%;
+}
+
+#tea-list{
+	display: inline-block;
+	flex: 9 0 80%;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+	padding: 0 5rem 0 1rem;
+}
+
+#tea-list .product-post{
+	flex: 1 1 25%;
+	max-width: 16rem;
+}
+
 
 /*----------------------------review----------------------------*/
 .review-post-top{
@@ -90,23 +125,6 @@ nav li{
 
 .review-time{
 	flex: 1 1 auto;
-}
-
-/*----------------------------grid----------------------------*/
-.layout-major{
-	flex: 8 0 auto;
-}
-
-.layout-minor{
-	flex: 4 0 auto;
-}
-
-.layout-sidebar-major{
-	flex: 11 0 auto;
-}
-
-.layout-sidebar-minor{
-	flex: 1 0 auto;
 }
 
 @media (max-width: 80em){
@@ -146,7 +164,7 @@ nav li{
 @media (max-width: 65em){
 	/*----------------------tea page banner-----------------------*/
 	.tea-page-banner-content{
-		top: 15%;
+		bottom: 15%;
 	}
 }
 
@@ -311,7 +329,7 @@ nav li{
 
 	/*----------------------tea page banner-----------------------*/
 	.tea-page-banner-content{
-		top: 10%;
+		bottom: 5%;
 	}
 
 	.tea-page-banner-content h1{
