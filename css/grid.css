@@ -312,6 +312,11 @@ nav li{
 		top: 0.3rem;
 	}
 
+	/*------------------------page title-----------------------*/
+	.page-heading{
+		margin: 4% 7% 0;
+	}
+
 	/*----------------------product listing-----------------------*/
 	.product-listing-container{
 		margin: 0 7%;

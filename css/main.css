@@ -100,6 +100,11 @@ button{
 	outline-color: rgb(250, 185, 20);
 }
 
+/*newly added for contact page*/
+.form-button{
+	width: 14rem;
+}
+
 .button-reset{
 	background-color: transparent;
 	color: rgb(114, 114, 114);
@@ -121,8 +126,8 @@ label{
 
 input[type=text]{
 	width: 100%;
-	padding: 0.8rem 1rem;
-	border: 2px solid rgb(169, 169, 169);
+	padding: 0.5rem 0.5rem;
+	border: 1px solid rgb(169, 169, 169);
 	transition: all 0.3s ease 0s;
 }
 
@@ -130,7 +135,49 @@ input[type=text]:focus{
 	outline-color: rgb(199, 168, 134);
 }
 
+/*newly added*/
+.form-info-row{
+	display: flex;
+	flex-direction: row;
+	margin-left: 8.2rem;
+	margin-bottom: 3rem;
+}
+
+/*tutorial on moving submit button to the right from https://www.w3schools.com/cssref/css3_pr_justify-content.asp?fbclid=IwAR0bIbteGyCPw0sIyw3WsRaYBoaCu15mpPrWLZYl9i8gHuDk0DxEsdzMqX8*/
+.form-info-submit{
+	justify-content:flex-end;
+	margin-right: 4.1%;
+}
+
+textarea{
+	font-size: 1.2rem;
+    margin-bottom: 1rem;
+  	padding: 0.5rem 0.5rem;
+  	height: 15rem;
+  	/* textarea resize limit tutorial from http://qnimate.com/html-textarea-fixed-size/*/
+  	resize: vertical;
+}
+
+.form-entries{
+	display: flex;
+	flex-direction: column;
+	margin-right: 2rem;
+}
+
+.form-entries-email{
+	width: 62.8%;
+}
+
+.form-entries-subject{
+	width: 100%;
+}
+
+.form-entries-message{
+	width: 100%;
+}
+
 /*------------------------------lists------------------------------*/
+
 ul{
 	list-style: none;
 }
@@ -336,6 +383,11 @@ nav a:hover, nav a:focus, nav a:active{
 	font-size: 0.8rem;
 }
 
+/*footer for contact page*/
+.contact-footer{
+	width:183%;
+}
+
 /*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;
@@ -414,6 +466,17 @@ nav a:hover, nav a:focus, nav a:active{
 	top: 0.5rem;
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+/*------------------------------page title------------------------------*/
+.page-heading{
+	position: relative;
+	margin: 10% 9.1% 0;
+}
+
+.page-heading h2{
+	padding-bottom: 3rem;
+	color: rgb(61, 61, 61);
 }
 
 /*------------------------------product listing------------------------------*/
@@ -540,8 +603,45 @@ nav a:hover, nav a:focus, nav a:active{
 #filter li, #filter p{
 	color: rgb(114, 114, 114);
 }
+/*------------------------customer service-------------------------*/
+
+.customer-service{
+	position: absolute;
+	border-left: 0.5px solid rgb(200, 200, 200);
+	height: 72.7%;
+	top:9rem;
+	left: 100%;
+	margin-top: 0rem;
+	padding: 0rem 1rem; 
+	width: 50%;
+}
+
+.customer-service-font-size{
+	font-size: 1.3rem;
+	margin-top: 0.5rem;
+}
+
+
+.contact-info{
+margin-left: 6rem;
+}
+
+.contact-info-font{
+padding-bottom: 0.5rem;
+color: rgb(114 114 114);
+}
+
+.contact-info-row{
+margin-bottom: 3rem;
+}
+
+.contact-info-img{
+	position: absolute;
+	margin-left: -2.3rem;
+}
 
 /*------------------------------color------------------------------*/
+
 .primary-dark{
 	background-color: rgb(97, 56, 28);
 }
