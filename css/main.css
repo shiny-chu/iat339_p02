@@ -659,6 +659,63 @@ nav a:hover, nav a:focus, nav a:active{
 	margin-left: 0;
 }
 
+/*-----------------------------cart-------------------------------*/
+.cart-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.cart-p{
+	width: 50%;
+}
+
+.line{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(114, 114, 114);
+	height: 0.5px;
+	width: 100%;
+}
+
+.line-bottom{
+	margin-top: 5%;
+}
+
+.product-column{
+	padding-top: 7%;
+}
+
+.product-description{
+	padding-top: 5%; 
+	padding-left: 5%;
+	display: inline-block;
+}
+
+/*tutorial on displaying image next to text from https://stackoverflow.com/questions/19302122/how-to-put-a-text-beside-the-image-html*/
+.cart-img{
+	width: 50%;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.quantity-column{
+	padding-top: 12.2%;
+}
+
+.total-column{
+	padding-top: 11.3%;
+}
+
+.subtotal-row{
+	padding: 5% 0;
+}
+
+.continue-shopping{
+	padding: 8.5% 0;
+}
+
 /*------------------------------color------------------------------*/
 .primary-dark{
 	background-color: rgb(97, 56, 28);
