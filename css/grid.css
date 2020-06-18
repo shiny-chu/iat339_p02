@@ -213,6 +213,22 @@ nav li{
 	.event-banner-content li{
 	    font-size: 1rem;
 	}
+
+	/*---------------------about page-----------------------*/
+	.about-section-1{
+		top: 25%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 25%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 20%;
+		right: 10%;
+	}
 }
 
 @media (max-width: 65em){
@@ -246,7 +262,7 @@ nav li{
 		flex-wrap: -ms-flex;
 		flex-wrap: wrap;
 	}
-	
+
 	#contact-us form{
 		padding-right: 0;
 	}
@@ -270,6 +286,22 @@ nav li{
 
 	.contact-info li:first-of-type{
 		padding-right: 1rem; 
+	}
+
+	/*---------------------about page-----------------------*/
+	.about-section-1{
+		top: 15%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 15%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 10%;
+		right: 10%;
 	}
 }
 
@@ -315,6 +347,43 @@ nav li{
 		font-size: 0.8rem;
 	}
 }
+
+@media (max-width: 50em){
+	/*---------------------about page-----------------------*/
+	.about-content h1{
+		font-size: 1.5rem;
+	}
+
+	.about-content h2{
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	.about-content p{
+		font-size: 0.8rem;
+		max-width: 20rem;
+	}
+
+	.about-banner{
+		margin-bottom: 2rem;
+	}
+
+	.about-section-1{
+		top: 20%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 20%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 15%;
+		right: 10%;
+	}
+}
+
 
 @media (max-width: 40em){
 	/*-----------------------main nav-----------------------*/
@@ -416,6 +485,22 @@ nav li{
 	.form-entries-s, .form-entries-m, .form-entries-l{
 		padding-right: 0;
 	}
+
+	/*--------------------------about page-------------------------*/
+	.about-section-1{
+		top: 15%;
+		left: 25%;
+	}
+
+	.about-section-2{
+		top: 15%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 5%;
+		right: 10%;
+	}
 }
 
 @media (max-width: 35em){
@@ -430,6 +515,12 @@ nav li{
 
 	.event-banner-content li{
 	    font-size: 0.8rem;
+	}
+
+	/*--------------------------about page-------------------------*/
+	.about-section-1, .about-section-2, .about-section-3{
+		top: 20%;
+		left: 20%;
 	}
 }
 
@@ -508,5 +599,27 @@ nav li{
 
 	.tea-page-banner-content li{
 		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 28em) {
+	/*--------------------------about page-------------------------*/
+	.about-section-1, .about-section-2{
+		top: 15%;
+		left: 18%;
+	}
+
+	.about-section-3{
+		top: 10%;
+		left: 18%;
+	}
+
+	.about-content h1{
+		max-width: 10rem;
+	}
+
+	.about-content p{
+		max-width: 15rem;
+		color: rgb(61, 61, 61);
 	}
 }

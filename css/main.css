@@ -616,47 +616,36 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 /*----------------------------about page---------------------------*/
-.about-page{
+.about-banner{
 	position: relative;
-	margin-bottom:0;
-} 
-
-.about-info-left{
-	position: absolute; 
-	right: auto;
-	width:50%;  
-	left: 0;
-	height:100%; 
-	bottom:0; 
-	padding-top:5%;
 }
 
-.about-info-right{
-	position: absolute; 
-	left:auto; 
-	width:50%;  
-	right:0; 
-	height:100%; 
-	bottom:0; 
-	padding-top:5%;
-}
-
-.about-info-bg{
-	background-color: white; 
-	bottom:0; 
-	height:100%; 
-}
-
-.about-section-content{
+.about-content{
 	position: absolute;
-	left: 10%;
-	bottom: 25%;
-	top: 2%;
 }
 
-.about-description-size{
-	font-size: 0.9rem;
-	margin-left: 0;
+.about-content h1, .about-content h2{
+	color: rgb(97, 56, 28);
+}
+
+.about-content p{
+	max-width: 25rem;
+	color: rgb(61, 61, 61);
+}
+
+.about-section-1{
+	top: 25%;
+	left: 35%;
+}
+
+.about-section-2{
+	top: 25%;
+	left: 15%;
+}
+
+.about-section-3{
+	top: 20%;
+	right: 15%;
 }
 
 /*-----------------------------cart-------------------------------*/
