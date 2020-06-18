@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LooseLeaf Tea</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<!-- code from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- MAIN NAV BAR -->
+	<div id="main-nav">
+		<a href="index.html">
+			<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
+		</a>
+	</div>
+
+	<!-- PAGE CONTENT STARTS HERE -->
+	<div class="content">
+		<!-- BREAD CRUMB NAVIGATION -->
+		<div id="breadcrumb-nav">
+			<p><a href="cart.html" class="return-btn">cart</a>><a href="shipping.html" class="return-btn">shipping</a>><a href="billing.html" class="return-btn breadcrumb-current">billing</a>
+		</div>
+
+		<!-- PAGE HEADING -->
+		<section id="page-heading-checkout">
+			<h1>Payment</h1>
+		</section>
+	
+		<!-- BILLING -->
+		<section id="billing">
+
+			<!-- FORM -->
+			<form method="post" action="#">
+				<div class="form-entries-m">
+					<label for="form-card-number">Card Number</label>
+					<input type="text" id="form-f-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-card-exp">Expiration Date</label>
+					<input type="text" id="form-card-exp" placeholder="MM/YY">
+				</div>
+
+				<div class="form-entries-m">
+					<label for="form-card-name">Name on Card</label>
+					<input type="text" id="form-card-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-card-code">Security Code</label>
+					<input type="text" id="form-card-code">
+				</div>
+
+				<h2 class="form-entries-l">Billing Address</h2>
+
+				<div class="form-entries-l form-radio">
+					<input type="radio" id="billing-address-same" name="billing-address" value="billing-address-same">
+					<label for="billing-address-same">Same as shipping address</label>
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-f-name">First Name</label>
+					<input type="text" id="form-f-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-l-name">Last Name</label>
+					<input type="text" id="form-l-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-phone">Phone</label>
+					<input type="text" id="form-phone">
+				</div>
+
+				<div class="form-entries-l">
+					<label for="form-address">Address</label>
+					<input type="text" id="form-address">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-city">City</label>
+					<input type="text" id="form-city">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-province">Province</label>
+					<input type="text" id="form-province">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-postal">Postal Code</label>
+					<input type="text" id="form-postal">
+				</div>
+
+				<a href="shipping.html" class="return-btn">back to shipping</a>
+				<a href="index.html" class="submit-btn">place order</a>
+			</form>
+
+			<!-- SUMMARY -->
+			<div class="summary">
+				<h3>Summary</h3>
+
+				<div class="summary-content">
+					<h6>Subtotal</h6>
+					<p>$8.00</p>
+				</div>
+
+				<div class="summary-content">
+					<h6>Tax</h6>
+					<p>$0.96</p>
+				</div>
+
+				<div class="summary-content">
+					<h6>Shipping</h6>
+					<p>$15.25</p>
+				</div>
+
+				<div class="summary-content summary-total">
+					<h2>Total</h2>
+					<h5>$24.21</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<section class="footer contact-footer">
+			<p>© 2020 Summer IAT339 D101 Shiny Chu, Ashley Wong</p>
+		</section>
+	</div>
+</body>

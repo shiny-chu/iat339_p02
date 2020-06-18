@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LooseLeaf Tea</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+
+	<!-- code from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- MAIN NAV BAR -->
+	<div id="main-nav">
+		<a href="index.html">
+			<img class="nav-logo" src="img/logo.svg" alt="looseleaf logo">
+		</a>
+	</div>
+
+	<!-- PAGE CONTENT STARTS HERE -->
+	<div class="content">
+		<!-- BREAD CRUMB NAVIGATION -->
+		<div id="breadcrumb-nav">
+			<p><a href="cart.html" class="return-btn">cart</a>><a href="shipping.html" class="return-btn breadcrumb-current">shipping</a>><a href="billing.html" class="return-btn">billing</a>
+		</div>
+
+		<!-- PAGE HEADING -->
+		<section id="page-heading-checkout">
+			<h1>Shipping</h1>
+		</section>
+	
+		<!-- SHIPPING -->
+		<section id="shipping">
+
+			<!-- FORM -->
+			<form method="post" action="#">
+				<div class="form-entries-s">
+					<label for="form-f-name">First Name</label>
+					<input type="text" id="form-f-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-l-name">Last Name</label>
+					<input type="text" id="form-l-name">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-phone">Phone</label>
+					<input type="text" id="form-phone">
+				</div>
+
+				<div class="form-entries-l">
+					<label for="form-address">Address</label>
+					<input type="text" id="form-address">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-city">City</label>
+					<input type="text" id="form-city">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-province">Province</label>
+					<input type="text" id="form-province">
+				</div>
+
+				<div class="form-entries-s">
+					<label for="form-postal">Postal Code</label>
+					<input type="text" id="form-postal">
+				</div>
+
+				<h2 class="form-entries-l">Contact Information</h2>
+
+				<div class="form-entries-l">
+					<label for="form-email">Email</label>
+					<input type="text" id="form-email">
+				</div>
+
+				<h2 class="form-entries-l">Shipping Method</h2>
+
+				<div class="form-entries-l form-radio">
+					<input type="radio" id="shipping-express" name="shipping" value="shipping-express" checked>
+					<label for="shipping-express">Express Shipping (2-3 Business days) $15.25</label>
+				</div>
+
+				<div class="form-entries-l form-radio">
+					<input type="radio" id="shipping-standard" name="shipping" value="shipping-standard">
+					<label for="shipping-standard">Standard Shipping (7-8 Business days) $9.75</label>
+				</div>
+
+				<a href="cart.html" class="return-btn">back to cart</a>
+				<a href="billing.html" class="submit-btn">Continue to billing</a>
+			</form>
+
+			<!-- SUMMARY -->
+			<div class="summary">
+				<h3>Summary</h3>
+
+				<div class="summary-content">
+					<h6>Subtotal</h6>
+					<p>$8.00</p>
+				</div>
+
+				<div class="summary-content">
+					<h6>Tax</h6>
+					<p>$0.96</p>
+				</div>
+
+				<div class="summary-content">
+					<h6>Shipping</h6>
+					<p>$15.25</p>
+				</div>
+
+				<div class="summary-content summary-total">
+					<h2>Total</h2>
+					<h5>$24.21</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<section class="footer contact-footer">
+			<p>© 2020 Summer IAT339 D101 Shiny Chu, Ashley Wong</p>
+		</section>
+	</div>
+</body>

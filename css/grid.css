@@ -111,8 +111,8 @@ nav li{
 	max-width: 16rem;
 }
 
-/*--------------------------contact-------------------------*/
-#contact-us{
+/*--------------------------contact + shipping + billing-------------------------*/
+#contact-us, #shipping, #billing{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -122,7 +122,7 @@ nav li{
 	padding: 0 10%;
 }
 
-#contact-us form{
+#contact-us form, #shipping form, #billing form{
 	flex: 2 1 75%;
 
 	display: -webkit-flex;
@@ -137,6 +137,11 @@ nav li{
 	padding: 0 2rem 0 0;
 }
 
+.customer-service{
+	flex: 1 1 25%;
+}
+
+/*----------------------------form------------------------------*/
 .form-entries-s{
 	flex: 1 1 33%;
 }
@@ -149,10 +154,6 @@ nav li{
 	width: 100%;
 }
 
-.customer-service{
-	flex: 1 1 25%;
-}
-
 /*----------------------------cart------------------------------*/
 #my-cart{
 	display: -webkit-flex;
@@ -161,6 +162,21 @@ nav li{
 	justify-content: flex-start;
 	flex-direction: column;
 	padding: 0 10%;
+}
+
+/*--------------------------summary--------------------------*/
+.summary{
+	flex: 1 1 25%;
+}
+
+.summary-content{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+
+	padding: 1rem 0;
 }
 
 /*----------------------------review----------------------------*/
@@ -256,17 +272,18 @@ nav li{
 		margin-bottom: 3rem;
 	}
 
-	/*--------------------------contact-------------------------*/
-	#contact-us{
+	/*--------------------------contact + shipping + billing-------------------------*/
+	#contact-us, #shipping, #billing{
 		flex-wrap: -webkit-flex;
 		flex-wrap: -ms-flex;
 		flex-wrap: wrap;
 	}
 
-	#contact-us form{
+	#contact-us form, #shipping form, #billing form{
 		padding-right: 0;
 	}
 
+	/*--------------------------contact-------------------------*/
 	.customer-service{
 		margin-bottom: 2rem;
 		padding: 1rem 0 0 0.5rem;
@@ -302,6 +319,12 @@ nav li{
 	.about-section-3{
 		top: 10%;
 		right: 10%;
+	}
+
+	/*--------------------------summary-------------------------*/
+	.summary{
+		padding: 5rem 0 0 0;
+		border-left: none;
 	}
 }
 
@@ -474,16 +497,8 @@ nav li{
 	}
 
 	/*--------------------------contact-------------------------*/
-	.form-entries-s, .form-entries-m{
-		flex: 0 0 100%
-	}
-
 	#contact-us button{
 		width: 100%;
-	}
-
-	.form-entries-s, .form-entries-m, .form-entries-l{
-		padding-right: 0;
 	}
 
 	/*--------------------------about page-------------------------*/
@@ -500,6 +515,24 @@ nav li{
 	.about-section-3{
 		top: 5%;
 		right: 10%;
+	}
+
+	/*---------------------------form-------------------------*/
+	.form-entries-s, .form-entries-m{
+		flex: 0 0 100%
+	}
+
+	.form-entries-s, .form-entries-m, .form-entries-l{
+		padding-right: 0;
+	}
+
+	form .return-btn{
+		order: 20;
+		margin: 0.5rem 0 0 35%;
+	}
+
+	form .submit-btn{
+		width: 100%;
 	}
 }
 
@@ -621,5 +654,14 @@ nav li{
 	.about-content p{
 		max-width: 15rem;
 		color: rgb(61, 61, 61);
+	}
+
+	/*---------------------------form-------------------------*/
+	form .return-btn{
+		margin: 0.5rem 0 0 30%;
+	}
+
+	form .submit-btn{
+		min-width: 0;
 	}
 }
