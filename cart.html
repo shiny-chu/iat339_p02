@@ -174,67 +174,85 @@
 	<div class="content">
 
 		<!-- PAGE HEADING -->
-		<section id="page-heading">
+		<section id="page-heading" class="page-heading-cart">
 			<h1>My Cart</h1>
+			<h3>1 item</h3>
 		</section>
 
 		<section id="my-cart">
-			<div class="cart-row">
-				<div class="cart-p">
-					<h3>Product</h3>
-				</div>
+			<div class="cart-product-list">
+				<!-- CART CATEGORIES -->
+				<div class="cart-category">
+					<h3 class="cart-product-col">Product</h3>
+					<h3 class="cart-quantity-col">Quantity</h3>
+					<h3 class="cart-price-col">Total</h3>
+				</div>	
 
-				<div class="cart-q">
-					<h3>Quantity</h3>
-				</div>
-
-				<div class="cart-t">
-					<h3>Total</h3>
-				</div>
-			</div>
-
-			<div class="line"></div>
-
-
-			<div class="cart-row">
-				<div class="cart-p product-column">
-					<div class="cart-img">
+				<!-- PRODUCT LIST -->
+				<div class="cart-product">
 					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-					</div>
 
-					<div class="product-description">
-					<h3 class="product-type">Black Tea</h3>
-					<h2 class="product-name">Vanilla Earl Grey</h2>
-						<div class="product-rating">
-							<p>20g (10 cups)</p>
+					<div class="cart-product-name cart-product-col">
+						<h3>Black Tea</h3>
+						<h2>Chocolate Darjeeling</h2>
+						<p>20g (10 cups)</p>
+
+						<div class="cart-mobile">
+							<form action="#">
+								<label for="quantity">Quantity</label>
+								<input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+							</form>
+							<h2>$8.00</h2>
 						</div>
 					</div>
+
+					<div class="cart-product-quantity cart-quantity-col">
+						<form action="#">
+							<label for="quantity">Quantity</label>
+							<input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+						</form>
+					</div>
+
+					<div class="cart-product-price cart-price-col">
+						<h2>$8.00</h2>
+					</div>
 				</div>
 
-				<div class="cart-q quantity-column">
-					<h3>Quantity</h3>
+				<!-- SUBTOTAL -->
+				<div class="cart-total">
+					<h2 class="cart-product-col">Subtotal</h2>
+					<h2 class="cart-price-col">$8.00</h2>
 				</div>
 
-				<div class="cart-t total-column">
-					<h2>$8.00</h2>
-				</div>
+				<!-- LINKS -->
+				<a href="index.html" class="return-btn">continue shopping</a>
+				<a href="shipping.html" class="submit-btn">check out</a>
 			</div>
 
-			<div class="line line-bottom"></div>
+			<!-- SUMMARY -->
+			<div class="summary">
+				<h3>Summary</h3>
 
-			<!-- SUBTOTAL ROW -->
-			<div class="cart-row">
-				<div class="continue-shopping cart-p"><a href="#">continue shopping</a></div>
-
-				<div class="subtotal-row cart-q">
-					<h2>Subtotal</h2>
+				<div class="summary-content">
+					<h6>Subtotal</h6>
+					<p>$8.00</p>
 				</div>
 
-				<div class="subtotal-row cart-t">
-					<h2>$8.00</h2>
+				<div class="summary-content">
+					<h6>Tax</h6>
+					<p>$0.96</p>
+				</div>
+
+				<div class="summary-content">
+					<h6>Shipping</h6>
+					<p>calculate later</p>
+				</div>
+
+				<div class="summary-content summary-total">
+					<h2>Total</h2>
+					<h5>$8.96</h5>
 				</div>
 			</div>
-
 		</section>
 
 		<!-- FOOTER -->

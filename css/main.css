@@ -173,12 +173,12 @@ form h2{
 	margin: 2rem 0 0 0;
 }
 
-form .return-btn{
+.return-btn{
 	margin-top: 3.5rem;
 	padding-left: 0;
 }
 
-form .submit-btn{
+.submit-btn{
 	margin-top: 3rem;
 	min-width: 20rem;
 }
@@ -197,6 +197,18 @@ form .submit-btn{
 	padding-left: 1.5rem;
 	font-weight: 400;
 	text-transform: capitalize;
+}
+
+input[type=number]{
+	width: 6rem;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+
+input[type=number]:focus{
+	outline-color: rgb(199, 168, 134);
 }
 
 /*------------------------------lists------------------------------*/
@@ -490,6 +502,15 @@ nav a:hover, nav a:focus, nav a:active{
 	max-width: 40rem;
 }
 
+.page-heading-cart h1, .page-heading-cart h3{
+	display: inline-block;
+}
+
+.page-heading-cart h3{
+	color: rgb(114, 114, 114);
+	padding-left: 2rem;
+}
+
 #page-heading-checkout{
 	padding: 2rem 10%;
 	margin: 0;
@@ -727,60 +748,49 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 /*-----------------------------cart-------------------------------*/
-.cart-row{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
+.cart-product-list h2, .cart-product-list h3{
+	margin: 0;
 }
 
-.cart-p{
-	width: 50%;
+.cart-product-list h2{
+	color: rgb(61, 61, 61);
 }
 
-.line{
-	display: flex;
-	flex-direction: column;
-	background-color: rgb(114, 114, 114);
-	height: 0.5px;
-	width: 100%;
+.cart-product{
+	padding: 1rem 0;
 }
 
-.line-bottom{
-	margin-top: 5%;
+.cart-product h3{
+	color: rgb(143, 107, 83);
 }
 
-.product-column{
-	padding-top: 7%;
+.cart-product p{
+	color: rgb(114, 114, 114);
+	margin-top: 0.5rem;
 }
 
-.product-description{
-	padding-top: 5%; 
-	padding-left: 5%;
-	display: inline-block;
+.cart-product-name{
+	padding-left: 1rem;
 }
 
-/*tutorial on displaying image next to text from https://stackoverflow.com/questions/19302122/how-to-put-a-text-beside-the-image-html*/
-.cart-img{
-	width: 50%;
-	display: inline-block;
-	vertical-align:top;
+.cart-product label{
+	display: none;
 }
 
-.quantity-column{
-	padding-top: 12.2%;
+.cart-category h3{
+	color: rgb(114, 114, 114);
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+	padding: 0 0.5rem 0.5rem 0.5rem; 
 }
 
-.total-column{
-	padding-top: 11.3%;
+.cart-total h2{
+	text-align: right;
+	border-top: 0.5px solid rgb(200, 200, 200);
+	padding-top: 1rem;
 }
 
-.subtotal-row{
-	padding: 5% 0;
-}
-
-.continue-shopping{
-	padding: 8.5% 0;
+.cart-mobile{
+	display: none;
 }
 
 /*----------------------------summary------------------------------*/
@@ -818,26 +828,6 @@ nav a:hover, nav a:focus, nav a:active{
 
 .summary-total{
 	border-top: 0.5px solid rgb(200, 200, 200);
-}
-
-/*----------------------------shipping------------------------------*/
-.customer-service ul{
-	padding: 0;
-}
-
-.customer-service p, .customer-service li{
-	color: rgb(114, 114, 114);
-}
-
-.contact-info{
-	position: relative;
-	padding: 0 0 1rem 2rem;
-}
-
-.contact-info img{
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 /*------------------------------color------------------------------*/
