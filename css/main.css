@@ -502,18 +502,25 @@ nav a:hover, nav a:focus, nav a:active{
 	max-width: 40rem;
 }
 
-.page-heading-cart h1, .page-heading-cart h3{
+.page-heading-cart h1, .page-heading-order-success h1{
 	display: inline-block;
+	padding-right: 2rem;
 }
 
-.page-heading-cart h3{
+.page-heading-cart h3, .page-heading-order-success h3{
+	display: inline-block;
 	color: rgb(114, 114, 114);
-	padding-left: 2rem;
 }
 
 #page-heading-checkout{
 	padding: 2rem 10%;
 	margin: 0;
+}
+
+#page-heading .submit-btn{
+	padding: 1rem 1.5rem;
+	width: 18rem;
+	min-width: 18rem;
 }
 
 /*------------------------------section title------------------------------*/
@@ -791,6 +798,14 @@ nav a:hover, nav a:focus, nav a:active{
 
 .cart-mobile{
 	display: none;
+}
+
+.cart-product-quantity p{
+	padding: 0.5rem 2.5rem;
+}
+
+.cart-mobile p{
+	padding: 0 0 0.5rem 0;
 }
 
 /*----------------------------summary------------------------------*/
