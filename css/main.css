@@ -612,6 +612,77 @@ nav a:hover, nav a:focus, nav a:active{
 	color: rgb(143, 107, 83);
 }
 
+
+/*-------------------------product detail---------------------------*/
+.product-detail-imgs{
+	width: 100%;
+	max-width: 100%;
+}
+
+.big-prod-img{
+	width: 100%;
+}
+
+.product-detail-img-row{
+	/*display:flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+/*  display: inline;
+  padding: 3rem 0;*/
+}
+
+/*.small-img{
+	width: 100%;
+	max-width: 100%;
+}*/
+
+.prod-detail-section h3{
+	color: rgb(114, 114, 114);
+	font-size: 0.8rem;
+}
+
+.product-size{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+.size-opt{
+	width: 30%;
+	text-transform: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 100;
+	padding: 2% 2%;
+}
+
+.size-opt:hover, .size-opt:focus, .size-opt:active{
+	background-color: rgb(114 114 114);
+	color: white;
+	outline-color: rgb(61 61 61);
+}
+
+input[name=product-quantity]{
+	width: 100%;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+
+.add-to-cart{
+	width: 100%;
+	margin-top: 7%;
+}
+
+/*.about-prod h3 {
+	width: 100%;
+    color: rgb(114, 114, 114);
+    border-bottom: 0.5px solid rgb(200, 200, 200);
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}*/
+
 /*------------------------------review------------------------------*/
 .review-post{
 	padding: 2rem 1rem;
