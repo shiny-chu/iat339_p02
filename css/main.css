@@ -676,12 +676,38 @@ input[name=product-quantity]{
 	margin-top: 7%;
 }
 
-/*.about-prod h3 {
-	width: 100%;
+/*--sections in product detail page--*/
+
+.section-headers h3 {
     color: rgb(114, 114, 114);
-    border-bottom: 0.5px solid rgb(200, 200, 200);
-    padding: 0 0.5rem 0.5rem 0.5rem;
-}*/
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+}
+
+.section-headers{ 
+width: 100%;
+border-top: 0.5px solid rgb(200, 200, 200);
+/*padding: 0 5%;*/
+
+}
+
+.prod-characteristics-sub{
+	display: flex;
+	flex-direction: column;
+}
+
+.prod-characteristics-section{
+	display: flex;
+	flex-direction: row;
+}
+.prod-characteristics-sub h3{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.prod-characteristics-sub p{
+	padding: 0 0 1.5rem 1rem;
+	margin-top: 0;
+}
 
 /*------------------------------review------------------------------*/
 .review-post{

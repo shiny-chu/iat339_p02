@@ -162,10 +162,34 @@ display: -webkit-flex;
   /*justify-content: space-between;*/
 /*}*/
 
-
 .product-to-cart {
     flex: 1 1 50%;
 }
+
+#product-description{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-start;
+
+	padding: 0 10%;
+}
+
+.prod-about{
+	 flex: 2 1 50%;
+	 padding-right: 5rem;
+}
+
+.prod-characteristics{
+	 flex: 1 1 25%;
+}
+
+.prod-ingredients{
+	 flex: 1 1 25%;
+
+}
+
 /*--------------------------contact + shipping + billing + cart-------------------------*/
 #contact-us, #shipping, #billing, #my-cart{
 	display: -webkit-flex;
