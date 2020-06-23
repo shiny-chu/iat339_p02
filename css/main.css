@@ -643,7 +643,7 @@ nav a:hover, nav a:focus, nav a:active{
   position: absolute;
   top: -29rem;
   left: 0;
-  padding: 0 2rem 0 1rem;
+  padding: 0 2rem 0 0;
   opacity: 0;
   transition: all 0.3s linear;
 }
@@ -656,7 +656,7 @@ nav a:hover, nav a:focus, nav a:active{
 	opacity: 1; 
 }
 
-/*-------------------------product detail---------------------------*/
+/*-------------------------product details---------------------------*/
 .product-to-cart form h3{
 	color: rgb(114, 114, 114);
 	font-size: 0.8rem;
@@ -701,45 +701,44 @@ nav a:hover, nav a:focus, nav a:active{
 	width: 100%;
 }
 
-/*--sections in product detail page--*/
-
+/*-------------------------product description---------------------------*/
 .section-headers h3 {
     color: rgb(114, 114, 114);
-    padding: 3rem 0.5rem 0.5rem 0.5rem;
+    padding: 3rem 0.5rem 0.5rem 0;
 }
 
 .section-headers{ 
-width: 100%;
-border-top: 0.5px solid rgb(200, 200, 200);
+	width: 100%;
+	border-top: 0.5px solid rgb(200, 200, 200);
 }
 
-.prod-characteristics-sub{
-	display: flex;
-	flex-direction: column;
+.prod-characteristics ul{
+	padding: 0 0 1rem 0;
 }
 
-.prod-characteristics-section{
-	display: flex;
-	flex-direction: row;
-}
-.prod-characteristics-sub h3{
-	padding-top: 0;
-	margin-top: 0;
+.prod-characteristics ul:last-of-type{
+	padding: 0;
 }
 
-.prod-characteristics-sub p{
-	padding: 0 0 1.5rem 1rem;
-	margin-top: 0;
+.prod-characteristics li{
+	display: inline-block;
 }
 
-.img-instructions{
-	display:flex;
-  flex-direction: row;
+.prod-characteristics ul h3{
+	padding: 0;
+	margin: 0;
+	color: rgb(169, 169, 169);
+	width: 5rem;
 }
 
-.small-img figcaption{
+/*-------------------------product how to---------------------------*/
+#product-how-to figure{
+	display: inline-block;
 	text-align: center;
 }
+
+
+
 
 .reviews-summary{
 	/*border-right: 0.5px solid rgb(200, 200, 200);*/
