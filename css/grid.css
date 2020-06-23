@@ -200,12 +200,64 @@ nav li{
 	justify-content: space-around;
 }
 
-.review-s{
-	flex: 1 1 30%;
+/*----------------------------review----------------------------*/
+.review-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
 }
 
-.review-u{
-	flex: 2 1 70%;
+.review-overview{
+	flex: 1 1 30%;
+	padding: 0 3rem 0 0;
+
+	align-self: flex-start;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5rem;
+}
+
+.review-bar-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.review-individual{
+	flex: 1 1 70%;
+}
+
+.review-post-top{
+	display: flex;
+	align-items: baseline;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+}
+
+.review-name{
+	flex: 1 1 auto;
+}
+
+.review-purchase{
+	flex: 20 1 auto;
+}
+
+.review-time{
+	flex: 1 1 auto;
 }
 
 /*--------------------------contact + shipping + billing + cart-------------------------*/
@@ -299,24 +351,6 @@ nav li{
 	justify-content: space-between;
 
 	padding: 1rem 0;
-}
-
-/*----------------------------review----------------------------*/
-.review-post-top{
-	display: flex;
-	align-items: baseline;
-}
-
-.review-name{
-	flex: 1 1 auto;
-}
-
-.review-purchase{
-	flex: 20 1 auto;
-}
-
-.review-time{
-	flex: 1 1 auto;
 }
 
 @media (max-width: 80em){
