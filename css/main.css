@@ -613,15 +613,6 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 
-<<<<<<< HEAD
-/*-------------------------product detail---------------------------*/
-.product-detail-imgs, .big-prod-img{
-	width: 100%;
-	max-width: 100%;
-}
-
-.prod-detail-section h3{
-=======
 /*-------------------------tab gallery---------------------------*/
 /* tab gallery tutorial from https://www.cssscript.com/simple-tab-gallery-with-pure-css-css3/ */
 .product-img-container{
@@ -667,7 +658,6 @@ nav a:hover, nav a:focus, nav a:active{
 
 /*-------------------------product detail---------------------------*/
 .product-to-cart form h3{
->>>>>>> master
 	color: rgb(114, 114, 114);
 	font-size: 0.8rem;
 }
@@ -755,7 +745,6 @@ border-top: 0.5px solid rgb(200, 200, 200);
 	/*border-right: 0.5px solid rgb(200, 200, 200);*/
 	padding: 0 2rem 0 0;
 	min-width: 15rem;
-	
 }
 
 .user-reviews h3{
