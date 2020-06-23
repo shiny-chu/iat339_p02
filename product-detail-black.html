@@ -39,11 +39,11 @@
 							</label>
 
 							<ul class="collapsible-sub">
-								<li><a href="collection-morning.html" class="collapsible-lv3">Morning Ritual</a></li>
-								<li><a href="collection-morning.html" class="collapsible-lv3">Bedtime Story</a></li>
-								<li><a href="collection-morning.html" class="collapsible-lv3">Refreshing Mind</a></li>
-								<li><a href="collection-morning.html" class="collapsible-lv3">Decaf</a></li>
-								<li><a href="collection-morning.html" class="collapsible-lv3">Best Sellers</a></li>
+								<li><a href="#" class="collapsible-lv3">Morning Ritual</a></li>
+								<li><a href="#" class="collapsible-lv3">Bedtime Story</a></li>
+								<li><a href="#" class="collapsible-lv3">Refreshing Mind</a></li>
+								<li><a href="#" class="collapsible-lv3">Decaf</a></li>
+								<li><a href="#" class="collapsible-lv3">Best Sellers</a></li>
 							</ul>
 						</li>
 							
@@ -116,11 +116,11 @@
 							<li class="main-nav-sub-row">
 								<ul>
 									<li class="sub-category">collection</li>
-									<li><a href="collection-morning.html" class="main-nav-lv2">Morning Ritual</a></li>
-									<li><a href="collection-morning.html" class="main-nav-lv2">Bedtime Story</a></li>
-									<li><a href="collection-morning.html" class="main-nav-lv2">Refreshing Mind</a></li>
-									<li><a href="collection-morning.html" class="main-nav-lv2">Decaf</a></li>
-									<li><a href="collection-morning.html" class="main-nav-lv2">Best Sellers</a></li>
+									<li><a href="#" class="main-nav-lv2">Morning Ritual</a></li>
+									<li><a href="#" class="main-nav-lv2">Bedtime Story</a></li>
+									<li><a href="#" class="main-nav-lv2">Refreshing Mind</a></li>
+									<li><a href="#" class="main-nav-lv2">Decaf</a></li>
+									<li><a href="#" class="main-nav-lv2">Best Sellers</a></li>
 								</ul>
 							</li>
 
@@ -184,58 +184,16 @@
 
 
 		<section id="product-details">
-
-			<div class="product-img-container">
-				<ul class="thumbnail-container">
-					<li>
-						<input type="radio" name="select" id="image1" checked>
-						<label for="image1">
-							<img src="img/chocolate-darjeeling.png">
-						</label>
-
-						<div class="main-image">
-							<img src="img/chocolate-darjeeling-l.png">
-						</div>
-					</li>
-
-					<li>
-						<input type="radio" name="select" id="image2">
-						<label for="image2">
-							<img src="img/chocolate-darjeeling2.png">
-						</label>
-				
-						<div class="main-image">
-							<img src="img/chocolate-darjeeling2-l.png">
-						</div>
-					</li>
-
-					<li>
-						<input type="radio" name="select" id="image3">
-						<label for="image3">
-							<img src="img/chocolate-darjeeling3.png">
-						</label>
-				
-						<div class="main-image">
-							<img src="img/chocolate-darjeeling3-l.png">
-						</div>
-					</li>
-
-					<li>
-						<input type="radio" name="select" id="image4">
-						<label for="image4">
-							<img src="img/chocolate-darjeeling4.png">
-						</label>
-				
-						<div class="main-image">
-							<img src="img/chocolate-darjeeling4-l.png">
-						</div>
-					</li>
-				</ul>
+			<div class="product-detail-imgs">
+				<div class="big-prod-img">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+				</div>
 			</div>
+
 
 			<div class="product-to-cart">
 				<h3 class="product-type">Black Tea</h3>
-				<h1 class="product-name">Chocolate Darjeeling</h1>
+				<h2 class="product-name">Chocolate Darjeeling</h2>
 					<div class="product-rating">
 						<img src="img/ic-star.svg" alt="a filled star">
 						<img src="img/ic-star.svg" alt="a filled star">
@@ -246,37 +204,26 @@
 					</div>
 				<p class="product-price">$8.00 / 20g</p>
 
-				<form method="post" action="#">
-					<h3 class="form-entries-l">size</h3>
-					<div class="form-entries-s size-opt">
-						<input type="radio" id="size-s" name="product-size" value="size-s" checked>
-						<label for="size-s">20g (10 cups)</label>
+					<div class="prod-detail-section">
+						<h3>size</h3>
+							<div class="product-size">
+								<button type="submit" class="size-opt">20g (10 cups)</button>
+								<button type="submit" class="size-opt">100g (50 cups)</button>
+								<button type="submit" class="size-opt">250g (125 cups)</button>
+							</div>
 					</div>
 
-					<div class="form-entries-s size-opt">
-						<input type="radio" id="size-m" name="product-size" value="size-m">
-						<label for="size-m">100g (50 cups)</label>
-					</div>
-
-					<div class="form-entries-s size-opt">
-						<input type="radio" id="size-l" name="product-size" value="size-l">
-						<label for="size-l">250g (125 cups)</label>
-					</div>
-
-					<div class="form-entries-l">
+					<div class="prod-detail-section">
 						<h3>quantity</h3>
 						<input type="number" id="quantity" name="product-quantity" min="1" max="10" value="1">
 					</div>
 
-					<div class="form-entries-l">
+					<div class="prod-detail-section">
 						<h3>total</h3>
 						<p>$8.00 + Shipping</p>
 					</div>
 
-					<div class="form-entries-l">
-						<button type="submit" class="button-submit">add to cart</button>
-					</div>
-				</form>
+					<button type="submit" class="button-submit add-to-cart">add to cart</button>
 			</div>
 		</section>
 
@@ -309,36 +256,36 @@
 					<h3> ingredients</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Tristique penatibus sollicitudin lacus nisl. Accumsan donec id.</p>
 				</div>
-		</section>
+	</section>
 
-		<section id="product-how-to">	
-			<div class="how-to-brew section-headers">
-				<h3>how to brew</h3>
-				<div class="img-instructions">
-					<figure class="small-img">
-						<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
-					</figure>
+	<section id="product-how-to">	
+		<div class="how-to-brew section-headers">
+			<h3>how to brew</h3>
+			<div class="img-instructions">
+				<figure class="small-img">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
+				</figure>
 
-					<figure class="small-img">
-						<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
-					</figure>
+				<figure class="small-img">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
+				</figure>
 
-					<figure class="small-img">
-						<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
-					</figure>
+				<figure class="small-img">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
+				</figure>
 
-					<figure class="small-img">
-						<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
-					</figure>
-				</div>
+				<figure class="small-img">
+					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<figcaption>Lorem ipsum dolor sit amet, consectetur</figcaption>
+				</figure>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="reviews">	
+	<section id="reviews">	
 			<div class="prod-reviews section-headers review-s">
 				<h3>reviews</h3>
 				<div class="reviews-summary">
@@ -409,8 +356,8 @@
 				</div>
 			</div>
 			</div>
-		</section>
-
+	</section>
+	
 		<!-- FOOTER -->
 		<section class="footer">
 			<p>© 2020 Summer IAT339 D101 Shiny Chu, Ashley Wong</p>
