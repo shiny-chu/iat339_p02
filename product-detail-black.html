@@ -184,38 +184,69 @@
 
 
 		<section id="product-details">
-			<div class="product-detail-imgs">
-				<div class="big-prod-img">
-					<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-				</div>
-		
-		<!-- 			<div class="product-detail-img-row">
-						<div class="small-img">
-							<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						</div>
 
-						<div class="small-img">
-							<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
-						</div>
+			<div class="product-img-container">
+				<ul class="thumbnail-container">
+					<li>
+						<input type="radio" name="select" id="image1" checked>
+						<label for="image1">
+							<img src="img/chocolate-darjeeling.png">
+						</label>
 
-						<div class="small-img">
-							<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+						<div class="main-image">
+							<img src="img/chocolate-darjeeling-l.png">
 						</div>
+					</li>
 
-						<div class="small-img">
-							<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<li>
+						<input type="radio" name="select" id="image2">
+						<label for="image2">
+							<img src="img/strawberry-oolong.png">
+						</label>
+				
+						<div class="main-image">
+							<img src="img/strawberry-oolong-l.png">
 						</div>
+					</li>
 
-						<div class="small-img">
-							<img src="img/chocolate-darjeeling.png" alt="Tea leaves of chocolate darjeeling">
+					<li>
+						<input type="radio" name="select" id="image3">
+						<label for="image3">
+							<img src="img/flowery-earl-grey.png">
+						</label>
+				
+						<div class="main-image">
+							<img src="img/flowery-earl-grey-l.png">
 						</div>
-					</div> -->
+					</li>
+
+					<li>
+						<input type="radio" name="select" id="image4">
+						<label for="image4">
+							<img src="img/peppermint.png">
+						</label>
+				
+						<div class="main-image">
+							<img src="img/peppermint.png-l">
+						</div>
+					</li>
+
+					<li>
+						<input type="radio" name="select" id="image5">
+						<label for="image5">
+							<img src="img/chocolate-darjeeling.png">
+						</label>
+
+						<div class="main-image">
+							<img src="img/chocolate-darjeeling-l.png">
+						</div>
+					</li>
+				</ul>
 			</div>
-
 
 			<div class="product-to-cart">
 				<h3 class="product-type">Black Tea</h3>
-				<h2 class="product-name">Chocolate Darjeeling</h2>
+				<h1 class="product-name">Chocolate Darjeeling</h1>
 					<div class="product-rating">
 						<img src="img/ic-star.svg" alt="a filled star">
 						<img src="img/ic-star.svg" alt="a filled star">
@@ -226,26 +257,37 @@
 					</div>
 				<p class="product-price">$8.00 / 20g</p>
 
-					<div class="prod-detail-section">
-						<h3>size</h3>
-							<div class="product-size">
-								<button type="submit" class="size-opt">20g (10 cups)</button>
-								<button type="submit" class="size-opt">100g (50 cups)</button>
-								<button type="submit" class="size-opt">250g (125 cups)</button>
-							</div>
+				<form method="post" action="#">
+					<h3 class="form-entries-l">size</h3>
+					<div class="form-entries-s size-opt">
+						<input type="radio" id="size-s" name="product-size" value="size-s" checked>
+						<label for="size-s">20g (10 cups)</label>
 					</div>
 
-					<div class="prod-detail-section">
+					<div class="form-entries-s size-opt">
+						<input type="radio" id="size-m" name="product-size" value="size-m">
+						<label for="size-m">100g (50 cups)</label>
+					</div>
+
+					<div class="form-entries-s size-opt">
+						<input type="radio" id="size-l" name="product-size" value="size-l">
+						<label for="size-l">250g (125 cups)</label>
+					</div>
+
+					<div class="form-entries-l">
 						<h3>quantity</h3>
 						<input type="number" id="quantity" name="product-quantity" min="1" max="10" value="1">
 					</div>
 
-					<div class="prod-detail-section">
+					<div class="form-entries-l">
 						<h3>total</h3>
 						<p>$8.00 + Shipping</p>
 					</div>
 
-					<button type="submit" class="button-submit add-to-cart">add to cart</button>
+					<div class="form-entries-l">
+						<button type="submit" class="button-submit">add to cart</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
