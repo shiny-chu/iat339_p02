@@ -614,27 +614,10 @@ nav a:hover, nav a:focus, nav a:active{
 
 
 /*-------------------------product detail---------------------------*/
-.product-detail-imgs{
+.product-detail-imgs, .big-prod-img{
 	width: 100%;
 	max-width: 100%;
 }
-
-.big-prod-img{
-	width: 100%;
-}
-
-.product-detail-img-row{
-	/*display:flex;
-  flex-direction: row;
-  justify-content: space-between;*/
-/*  display: inline;
-  padding: 3rem 0;*/
-}
-
-/*.small-img{
-	width: 100%;
-	max-width: 100%;
-}*/
 
 .prod-detail-section h3{
 	color: rgb(114, 114, 114);
@@ -686,8 +669,6 @@ input[name=product-quantity]{
 .section-headers{ 
 width: 100%;
 border-top: 0.5px solid rgb(200, 200, 200);
-/*padding: 0 5%;*/
-
 }
 
 .prod-characteristics-sub{
@@ -707,6 +688,54 @@ border-top: 0.5px solid rgb(200, 200, 200);
 .prod-characteristics-sub p{
 	padding: 0 0 1.5rem 1rem;
 	margin-top: 0;
+}
+
+.img-instructions{
+	display:flex;
+  flex-direction: row;
+}
+
+.small-img figcaption{
+	text-align: center;
+}
+
+.reviews-summary{
+	/*border-right: 0.5px solid rgb(200, 200, 200);*/
+	padding: 0 2rem 0 0;
+	min-width: 15rem;
+	
+}
+
+.user-reviews h3{
+	padding: 0rem 0rem 0 3rem; 
+	display: inline-block;
+}
+
+.user-reviews h2{
+	font-size: 0.9rem;
+	padding: 1rem 0 0 1rem; 
+	font-weight: 400;
+	display: inline-block;
+}
+
+.user-reviews-stars{
+	padding: 0 0 0 3rem; 
+}
+
+.user-reviews-stars h2{
+	display: inline-block;
+	padding: 0 0 0 1rem; 
+}
+
+.user-reviews-stars p{
+	padding: 0 0 2rem 0; 
+	border-bottom: 0.5px solid rgb(200, 200, 200);
+}
+
+.review-section{
+		border-left: 0.5px solid rgb(200, 200, 200);
+		padding: 0 0 0 1rem; 
+		margin-top: 5rem;
 }
 
 /*------------------------------review------------------------------*/
