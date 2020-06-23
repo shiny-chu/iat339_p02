@@ -130,7 +130,24 @@ nav li{
 }
 
 /*--------------------------product details-------------------------*/
+<<<<<<< HEAD
 #product-details, #product-description, #product-how-to, #reviews{
+=======
+.thumbnail-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: center;
+
+	padding: 0;
+	position: absolute;
+	top: 29rem;
+	left: 0;
+}
+
+#product-details{
+>>>>>>> master
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -140,9 +157,16 @@ nav li{
 	padding: 0 10%;
 }
 
-.product-detail-imgs{
-flex: 1 1 50%;
-display: -webkit-flex;
+.product-img-container{
+	flex: 1 1 60%;
+}
+
+.product-to-cart {
+    flex: 1 1 40%;
+}
+
+.product-to-cart form{
+	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
 
@@ -151,11 +175,15 @@ display: -webkit-flex;
 	flex-wrap: wrap;
 
 	justify-content: space-between;
+<<<<<<< HEAD
 	padding: 0rem 2rem 0 0;
 }
 
 .product-to-cart {
     flex: 1 1 50%;
+=======
+	align-items: baseline;
+>>>>>>> master
 }
 
 .prod-about{
