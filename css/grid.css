@@ -130,6 +130,19 @@ nav li{
 }
 
 /*--------------------------product details-------------------------*/
+.thumbnail-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: center;
+
+	padding: 0;
+	position: absolute;
+	top: 29rem;
+	left: 0;
+}
+
 #product-details{
 	display: -webkit-flex;
 	display: -ms-flex;

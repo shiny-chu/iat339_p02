@@ -620,18 +620,9 @@ nav a:hover, nav a:focus, nav a:active{
 	position: relative;
 }
 
-.thumbnail-container{
-	padding: 0;
-	position: absolute;
-	top: 28rem;
-	left: 0;
-}
-
 .thumbnail-container li{
-  display: inline-block;
-  width: 19%;
-  text-align: center;
-  vertical-align: middle;
+  width: 15%;
+  padding: 0 1rem;
 }
 
 .thumbnail-container input[name="select"]{ 
@@ -644,13 +635,13 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 .thumbnail-container label img{
-	width: 80%;
+	width: 100%;
 	height: auto;
 }
 
 .thumbnail-container .main-image {
   position: absolute;
-  top: -28rem;
+  top: -29rem;
   left: 0;
   padding: 0 2rem 0 1rem;
   opacity: 0;
