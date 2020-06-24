@@ -558,26 +558,26 @@ nav a:hover, nav a:focus, nav a:active{
 	cursor: pointer;
 }
 
-.product-type{
+.product-type, .product-detail-type{
 	color: rgb(143, 107, 83);
 	margin: 0.5rem 0 0 0;
 }
 
-.product-name{
+.product-name, .product-detail-name{
 	color: rgb(61, 61, 61);
 	margin: 0.5rem 0 0 0;
 }
 
-.product-rating p{
+.product-rating p, .product-detail-rating p{
 	display: inline-block;
 	color: rgb(143, 107, 83);
 }
 
-.product-rating{
+.product-rating, .product-detail-rating{
 	margin: 0.5rem 0 0 0;
 }
 
-.product-price{
+.product-price, .product-detail-price{
 	color: rgb(114, 114, 114);
 	margin: 1rem 0 0 0;
 }
@@ -621,8 +621,8 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 .thumbnail-container li{
-  width: 15%;
-  padding: 0 1rem;
+	width: 15%;
+	padding: 0 1rem;
 }
 
 .thumbnail-container input[name="select"]{ 
@@ -630,26 +630,31 @@ nav a:hover, nav a:focus, nav a:active{
 }
 
 .thumbnail-container label{
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
 
 .thumbnail-container label img{
+	max-width: 20rem;
 	width: 100%;
-	height: auto;
 }
 
 .thumbnail-container .main-image {
-  position: absolute;
-  top: -29rem;
-  left: 0;
-  padding: 0 3rem 0 0;
-  opacity: 0;
-  transition: all 0.3s linear;
+	position: absolute;
+	bottom: 5rem;
+	left: 0;
+	padding: 0 3rem 0 0;
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+
+.thumbnail-container .main-image img{
+	width: 100%;
+	max-width: 45rem;
 }
 
 .thumbnail-container input[name="select"]:checked + label {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 .thumbnail-container input[name="select"]:checked ~ .main-image { 
