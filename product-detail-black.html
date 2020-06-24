@@ -181,7 +181,7 @@
 
 		<!-- BREAD CRUMB NAVIGATION -->
 		<section id="breadcrumb-nav">
-			<p><a href="index.html" class="return-btn">tea</a>><a href="productlist-black.html" class="return-btn">black tea</a>><a href="#" class="return-btn breadcrumb-current">vanilla earl grey</a>
+			<p><a href="index.html" class="return-btn">tea</a>&gt;<a href="productlist-black.html" class="return-btn">black tea</a>&gt;<a href="#" class="return-btn breadcrumb-current">vanilla earl grey</a>
 		</section>
 
 
@@ -192,6 +192,7 @@
 					<li>
 						<input type="radio" name="select" id="image1" checked>
 						<label for="image1">
+							<span>product image 1</span>
 							<img src="img/chocolate-darjeeling.png" alt="close up of chocolate darjeeling tea leaves">
 						</label>
 
@@ -203,6 +204,7 @@
 					<li>
 						<input type="radio" name="select" id="image2">
 						<label for="image2">
+							<span>product image 2</span>
 							<img src="img/chocolate-darjeeling2.png" alt="chocolate darjeeling tea leaves in a bowl">
 						</label>
 				
@@ -214,6 +216,7 @@
 					<li>
 						<input type="radio" name="select" id="image3">
 						<label for="image3">
+							<span>product image 3</span>
 							<img src="img/chocolate-darjeeling3.png" alt="chocolate darjeeling tea in a cup">
 						</label>
 				
@@ -225,6 +228,7 @@
 					<li>
 						<input type="radio" name="select" id="image4">
 						<label for="image4">
+							<span>product image 4</span>
 							<img src="img/chocolate-darjeeling4.png" alt="chocolate darjeeling tea leaves in our nature-friendly packaging">
 						</label>
 				
@@ -266,7 +270,7 @@
 					</div>
 
 					<div class="form-entries-l">
-						<h3>quantity</h3>
+						<label for="quantity">quantity</label>
 						<input type="number" id="quantity" name="product-quantity" min="1" max="10" value="1">
 					</div>
 
@@ -360,7 +364,7 @@
 							<img src="img/ic-star.svg" alt="a filled star">
 							<img src="img/ic-star.svg" alt="a filled star">
 							<img src="img/ic-star-half.svg" alt="a half-filled star">
-							<h4 class="review-title">4.2</h2>
+							<h4 class="review-title">4.2</h4>
 						</div>
 						<h3>15 reviews</h3>
 						<div class="review-bar-container">
@@ -503,19 +507,19 @@
 					<h3>Rating</h3>
 					<div class="rating-stars">
 						<input type="radio" name="stars" id="5star">
-						<label for="5star">★</label>
+						<label for="5star">★<span>5 star</span></label>
 
 						<input type="radio" name="stars" id="4star">
-						<label for="4star">★</label>
+						<label for="4star">★<span>4 star</span></label>
 
 						<input type="radio" name="stars" id="3star">
-						<label for="3star">★</label>
+						<label for="3star">★<span>3 star</span></label>
 
 						<input type="radio" name="stars" id="2star">
-						<label for="2star">★</label>
+						<label for="2star">★<span>2 star</span></label>
 
 						<input type="radio" name="stars" id="1star">
-						<label for="1star">★</label>
+						<label for="1star">★<span>1 star</span></label>
 					</div>
 				</div>
 				<div class="form-entries-s">
@@ -535,7 +539,7 @@
 					<textarea id="review-message"></textarea>
 				</div>
 				<a href="#reviews" class="submit-btn">Submit</a>
-
+				<button type="submit" class="button-none">Submit</button>
 			</form>
 		</section>
 
