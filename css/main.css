@@ -139,6 +139,10 @@ button{
 	outline-color: rgb(250, 185, 20);
 }
 
+.button-none{
+	display: none;
+}
+
 /*------------------------------form------------------------------*/
 label{
 	display: block;
@@ -310,6 +314,12 @@ nav a:hover, nav a:focus, nav a:active{
 
 .main-nav-sub ul, .main-nav-sub-row{
 	padding: 0;
+}
+
+fieldset{
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 /*------------------------------off-canvas nav------------------------------*/
