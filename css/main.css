@@ -828,6 +828,71 @@ nav a:hover, nav a:focus, nav a:active{
 	color: rgb(61, 61, 61);
 }
 
+/*-------------------------review form---------------------------*/
+#review-form{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 40;
+	margin: 0;
+	display: none;
+}
+
+#review-form:target{
+	display: block;
+}
+
+.review-form-content{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	overflow: auto;
+	background-color: white; 
+}
+
+.review-form-content h2, .review-form-content h3{
+	margin: 0;
+	display: inline-block;
+}
+
+.review-form-content h3{
+	color: rgb(114, 114, 114);
+	padding-right: 1rem;
+}
+
+.review-form-content .close-btn{
+	position: static;
+}
+
+/* star rating tutorial from https://codepen.io/GeoffreyCrofte/pen/jEkBL */
+
+.rating-stars{
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.rating-stars input{
+	float: right;
+	opacity: 0;
+	position: absolute;
+}
+
+.rating-stars label{
+	float: right;
+	color: rgb(200, 200, 200);
+	transition: all 0.3s ease 0s;
+}
+
+.rating-stars label:hover ~ label, .rating-stars input:focus ~ label, .rating-stars label:hover{
+	cursor: pointer;
+	color: rgb(199, 168, 134);
+}
+
 /*------------------------------filter------------------------------*/
 #filter{
 	padding: 0 1rem 0 5rem;

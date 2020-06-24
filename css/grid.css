@@ -260,6 +260,45 @@ nav li{
 	flex: 1 1 auto;
 }
 
+/*----------------------------review form----------------------------*/
+.review-form-content{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+
+	padding: 5% 5%;
+}
+
+.review-form-content .review-form-top{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.review-form-ratings{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.review-form-content h2{
+	flex: 10 1 auto;
+}
+
+.review-form-content .close-btn{
+	flex: 1 1 auto;
+}
+
 /*--------------------------contact + shipping + billing + cart-------------------------*/
 #contact-us, #shipping, #billing, #my-cart{
 	display: -webkit-flex;

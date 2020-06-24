@@ -190,44 +190,44 @@
 					<li>
 						<input type="radio" name="select" id="image1" checked>
 						<label for="image1">
-							<img src="img/chocolate-darjeeling.png">
+							<img src="img/chocolate-darjeeling.png" alt="close up of chocolate darjeeling tea leaves">
 						</label>
 
 						<div class="main-image">
-							<img src="img/chocolate-darjeeling-l.png">
+							<img src="img/chocolate-darjeeling-l.png" alt="close up of chocolate darjeeling tea leaves">
 						</div>
 					</li>
 
 					<li>
 						<input type="radio" name="select" id="image2">
 						<label for="image2">
-							<img src="img/chocolate-darjeeling2.png">
+							<img src="img/chocolate-darjeeling2.png" alt="chocolate darjeeling tea leaves in a bowl">
 						</label>
 				
 						<div class="main-image">
-							<img src="img/chocolate-darjeeling2-l.png">
+							<img src="img/chocolate-darjeeling2-l.png" alt="chocolate darjeeling tea leaves in a bowl">
 						</div>
 					</li>
 
 					<li>
 						<input type="radio" name="select" id="image3">
 						<label for="image3">
-							<img src="img/chocolate-darjeeling3.png">
+							<img src="img/chocolate-darjeeling3.png" alt="chocolate darjeeling tea in a cup">
 						</label>
 				
 						<div class="main-image">
-							<img src="img/chocolate-darjeeling3-l.png">
+							<img src="img/chocolate-darjeeling3-l.png" alt="chocolate darjeeling tea in a cup">
 						</div>
 					</li>
 
 					<li>
 						<input type="radio" name="select" id="image4">
 						<label for="image4">
-							<img src="img/chocolate-darjeeling4.png">
+							<img src="img/chocolate-darjeeling4.png" alt="chocolate darjeeling tea leaves in our nature-friendly packaging">
 						</label>
 				
 						<div class="main-image">
-							<img src="img/chocolate-darjeeling4-l.png">
+							<img src="img/chocolate-darjeeling4-l.png" alt="chocolate darjeeling tea leaves in our nature-friendly packaging">
 						</div>
 					</li>
 				</ul>
@@ -411,7 +411,7 @@
 								<img src="img/ic-star.svg" alt="a filled star">
 								<img src="img/ic-star.svg" alt="a filled star">
 								<img src="img/ic-star.svg" alt="a filled star">
-								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star-outline.svg" alt="an empty star">
 								<h2 class="review-title">Perfect balance</h2>
 							</div>
 							<p class="review-content">Wasn't expecting to enjoy this tea as much as I do! The flavours work well and it's a very unique blend, will be re-purchasing.</p>
@@ -479,7 +479,7 @@
 								<img src="img/ic-star.svg" alt="a filled star">
 								<img src="img/ic-star.svg" alt="a filled star">
 								<img src="img/ic-star.svg" alt="a filled star">
-								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star-outline.svg" alt="an empty star">
 								<h2 class="review-title">Perfect for rainy days</h2>
 							</div>
 							<p class="review-content">The hints of chocolate in this is really comforting. Nice addition to my collection.</p>
@@ -487,6 +487,54 @@
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<section id="review-form">
+			<form class="review-form-content" method="post" action="#">
+				<div class="form-entries-l review-form-top">
+					<h2> Review for Chocolate Darjeeling</h2>
+					<a href="#reviews">
+						<img class="close-btn" src="img/ic-clear.svg" alt="close review form">
+					</a>
+				</div>
+				<div class="form-entries-l review-form-ratings">
+					<h3>Rating</h3>
+					<div class="rating-stars">
+						<input type="radio" name="stars" id="5star">
+						<label for="5star">★</label>
+
+						<input type="radio" name="stars" id="4star">
+						<label for="4star">★</label>
+
+						<input type="radio" name="stars" id="3star">
+						<label for="3star">★</label>
+
+						<input type="radio" name="stars" id="2star">
+						<label for="2star">★</label>
+
+						<input type="radio" name="stars" id="1star">
+						<label for="1star">★</label>
+					</div>
+				</div>
+				<div class="form-entries-s">
+					<label for="form-name">Name</label>
+					<input type="text" id="form-name" name="form-name">
+				</div>
+				<div class="form-entries-m">
+					<label for="form-email">Email</label>
+					<input type="email" id="form-email" name="form-email">
+				</div>
+				<div class="form-entries-l">
+					<label for="review-title">Review Title</label>
+					<input type="text" id="review-title">
+				</div>
+				<div class="form-entries-l">
+					<label for="review-message">Review</label>
+					<textarea id="review-message"></textarea>
+				</div>
+				<a href="#reviews" class="submit-btn">Submit</a>
+
+			</form>
 		</section>
 
 		<!-- FOOTER -->
