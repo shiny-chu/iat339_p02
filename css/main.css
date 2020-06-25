@@ -726,6 +726,12 @@ fieldset{
 	width: 100%;
 }
 
+.product-to-cart .submit-btn{
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+}
+
 /*-------------------------product description---------------------------*/
 .section-headers > h3 {
     color: rgb(114, 114, 114);
