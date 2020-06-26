@@ -886,6 +886,10 @@ fieldset{
 	display: inline-block;
 }
 
+.review-form-content h2{
+	color: rgb(97, 56, 28);
+}
+
 .review-form-content h3{
 	color: rgb(114, 114, 114);
 	padding-right: 1rem;
@@ -997,6 +1001,51 @@ fieldset{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+/*-------------------------contact feedback---------------------------*/
+#contact-feedback{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 40;
+	margin: 0;
+	display: none;
+}
+
+#contact-feedback:target{
+	display: block;
+}
+
+.contact-feedback-content{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	overflow: auto;
+	background-color: white;
+	padding: 2rem;
+}
+
+.contact-feedback-content h2{
+	color: rgb(97, 56, 28);
+}
+
+.contact-feedback-content p{
+	max-width: 21rem;
+}
+
+.contact-feedback-content .close-btn{
+	left: auto;
+	right: 2rem;
+}
+
+.contact-feedback-content a{
+	display: block;
 }
 
 /*----------------------------about page---------------------------*/

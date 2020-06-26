@@ -329,6 +329,15 @@ nav li{
 	flex: 1 1 25%;
 }
 
+.contact-feedback-content{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 /*----------------------------form------------------------------*/
 .form-entries-s{
 	flex: 1 1 33%;
@@ -803,6 +812,10 @@ nav li{
 	/*--------------------------contact-------------------------*/
 	#contact-us button{
 		width: 100%;
+	}
+
+	.contact-feedback-content a{
+		width: 50%;
 	}
 
 	/*--------------------------about page-------------------------*/
