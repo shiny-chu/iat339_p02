@@ -608,12 +608,12 @@ nav li{
 		padding: 0;
 	}
 
-	.thumbnail-container input[name="select"]{ 
-		display: inline-block; 
+	.thumbnail-container label img{
+		display: none;
 	}
 
-	.thumbnail-container label{
-		display: none;
+	.dot{
+		display: block;
 	}
 
 	.product-to-cart{
