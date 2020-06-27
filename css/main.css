@@ -446,8 +446,13 @@ fieldset{
 .footer p{
 	color: rgb(169, 169, 169);
 	font-size: 0.8rem;
+	display: inline;
 }
 
+.styleguide {
+	display: inline;
+	justify-content: space-between;
+}
 /*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;
