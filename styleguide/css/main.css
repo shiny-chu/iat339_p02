@@ -231,6 +231,187 @@ nav a:hover, nav a:focus, nav a:active{
 	color: rgb(61, 61, 61);
 }
 
+/*tea types*/
+.tea-type-post{
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.tea-type-post img{
+	opacity: 0.8;
+	transition: all 0.3s ease 0s;
+}
+
+.tea-type-post h2{
+	margin: 0;
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	font-weight: 400;
+	color: rgb(97, 56, 28);
+	transition: all 0.3s ease 0s;
+}
+
+.tea-type-post:hover img, .tea-type-post:focus img, .tea-type-post:active img{
+	opacity: 0.6;
+}
+
+.tea-type-post:hover h2, .tea-type-post:focus h2, .tea-type-post:active h2{
+	color: rgb(143, 107, 83);
+}
+
+.product-listing-container{
+	margin-bottom: 5rem;
+}
+/*product filter*/
+#filter{
+	padding: 0 1rem 0 5rem;
+	max-width: 15rem;
+	background-color: white;
+	margin-bottom: 5rem;
+}
+
+#filter .filter-category{
+	color: rgb(114, 114, 114);
+	border-bottom: 0.5px solid rgb(114, 114, 114);
+	margin: 1rem 0 1rem 0;
+}
+
+#filter h3{
+	color: rgb(169, 169, 169);
+	margin: 1rem 0 0 0;
+}
+
+#filter ul{
+	padding: 0;
+}
+
+#filter a{
+	color: rgb(114, 114, 114);
+}
+
+#filter a:hover, #filter a:focus, #filter a:active{
+	color: rgb(143, 107, 83);
+}
+
+/*.filter-close, .filter-btn{
+	display: none;
+}*/
+
+.filter-btn{
+	padding: 0.5rem 2rem;
+	border: 0.5px solid rgb(143, 107, 83);
+	position: absolute;
+	top: -3rem;
+	left: 8%;
+}
+
+.filter-btn:hover, .filter-btn:focus, .filter-btn:active{
+	border: 0.5px solid rgb(199, 168, 134);
+}
+
+/*breadcrumb nav*/
+
+#breadcrumb-nav p{
+	color: rgb(114, 114, 114);
+}
+
+#breadcrumb-nav{
+	margin-top: 0rem;
+	margin-bottom: 5rem;
+}
+
+#breadcrumb-nav .breadcrumb-current{
+	color: rgb(143, 107, 83);
+}
+
+.return-btn{
+	color: rgb(114, 114, 114);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.return-btn:hover, .return-btn:focus, .return-btn:active{
+	color: rgb(169, 169, 169);
+}
+
+/*Tab Gallery*/
+/*not on styleguide yet*/
+
+/*quantity*/
+
+input[type=number]{
+	width: 20rem;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+	margin-bottom: 5rem;
+}
+
+input[type=number]:focus{
+	outline-color: rgb(199, 168, 134);
+}
+
+/*review summary*/
+.review-overview .review-rating img{
+	width: 1.8rem;
+}
+
+.review-overview h3{
+	color: rgb(114, 114, 114);
+}
+
+.review-bar-container p{
+	color: rgb(114, 114, 114);
+}
+
+.bar-box{
+	width: 70%;
+	height: 1rem;
+	border: 0.5px solid rgb(200, 200, 200);
+}
+
+.bar-content{
+	background-color: rgb(199, 168, 134);
+	height: 0.9rem;
+}
+
+.bar-0{width: 0;}
+.bar-1{width: 10%;}
+.bar-2{width: 20%;}
+.bar-3{width: 30%;}
+.bar-4{width: 40%;}
+.bar-5{width: 50%;}
+.bar-6{width: 60%;}
+.bar-7{width: 70%;}
+.bar-8{width: 80%;}
+.bar-9{width: 90%;}
+
+.review-overview a{
+	display: inline-block;
+	width: 100%;
+}
+
+.review-submit-btn{
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: rgb(143, 107, 83);
+	color: white;
+	padding: 1rem 0;
+	width: 50%;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+.review-submit-btn:hover, .review-submit-btn:focus, .review-submit-btn:active{
+	color: white;
+	background-color: rgb(199, 168, 134);
+}
+
+
 /*color*/
 .primary-dark{
 	background-color: rgb(97, 56, 28);

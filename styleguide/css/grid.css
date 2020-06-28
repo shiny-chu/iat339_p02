@@ -101,6 +101,17 @@ nav li{
 	flex: 1 0 auto;
 }
 
+/*review summary*/
+.review-bar-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
 
 @media (max-width: 58em){
 	/*navigation*/

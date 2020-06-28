@@ -768,6 +768,258 @@ input[type=text]:focus{
 				</div>
 			</div>
 		</div>
+		<!-- NEWLY ADDED: TEA TYPES-->
+		<div class="pattern">
+			<h3 class="pattern-heading">Tea Types</h3>
+			<div class="container">
+
+			<div class="product-listing-container">
+				<a href="#" class="tea-type-post">
+					<img src="img/type-black.png" alt="Loose leaf black tea">
+					<h2>Black Tea</h2>
+				</a>
+
+				<a href="#" class="tea-type-post">
+					<img src="img/type-green.png" alt="Tea leaves of chocolate darjeeling">
+					<h2>Green Tea</h2>
+				</a>
+
+				<a href="#" class="tea-type-post">
+					<img src="img/type-herbal.png" alt="Loose leaf herbal tea">
+					<h2>Herbal Tea</h2>
+				</a>
+
+				<a href="#" class="tea-type-post">
+					<img src="img/type-rooibos.png" alt="Loose leaf rooibos tea">
+					<h2>Rooibos Tea</h2>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div class="product-listing-container"&gt;
+	&lt;a href="#" class="tea-type-post"&gt;
+		&lt;img src="img/type-black.png" alt="Loose leaf black tea"&gt;
+		&lt;h2&gt;Black Tea&lt;/h2&gt;
+	&lt;/a&gt;
+
+	&lt;a href="#" class="tea-type-post"&gt;
+		&lt;img src="img/type-green.png" alt="Tea leaves of chocolate darjeeling"&gt;
+		&lt;h2&gt;Green Tea&lt;/h2&gt;
+	&lt;/a&gt;
+
+	&lt;a href="#" class="tea-type-post"&gt;
+		&lt;img src="img/type-herbal.png" alt="Loose leaf herbal tea"&gt;
+		&lt;h2&gt;Herbal Tea&lt;/h2&gt;
+	&lt;/a&gt;
+
+	&lt;a href="#" class="tea-type-post"&gt;
+		&lt;img src="img/type-rooibos.png" alt="Loose leaf rooibos tea"&gt;
+		&lt;h2>Rooibos Tea&lt;/h2&gt;
+	&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- NEWLY ADDED: FILTER-->
+		<div class="pattern">
+			<h3 class="pattern-heading">Product Filter</h3>
+			<div class="container">
+				<div id="filter">
+				<h3 class="filter-category">sort</h3>
+				<ul>
+					<li><a href="#">Most popular</a></li>
+				</ul>
+
+				<h3 class="filter-category">filter</h3>
+				<h3>caffine level</h3>
+				<ul>
+					<li><a href="#">High (8)</a></li>
+					<li><a href="#">Low (4)</a></li>
+				</ul>
+				<h3>tea type</h3>
+				<ul>
+					<li><a href="#">Black (21)</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div id="filter"&gt;
+	&lt;h3 class="filter-category">sort&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Most popular&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;h3 class="filter-category"&gt;filter&lt;/h3&gt;
+	&lt;h3>caffine level&lt;/h3&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;High (8)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Low (4)&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;h3>tea type&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Black (21)&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- NEWLY ADDED: BREADCRUMB NAV-->
+		<div class="pattern">
+			<h3 class="pattern-heading">Breadcrumb Navigation</h3>
+			<div class="container">
+				<section id="breadcrumb-nav">
+			<p><a href="#" class="return-btn">tea</a>&gt;<a href="#" class="return-btn">black tea</a>&gt;<a href="#" class="return-btn breadcrumb-current">chocolate darjeeling</a>
+		</section>
+			</div>
+
+			<div class="container">
+					<div class="pattern-code">
+						<p>HTML</p>
+						<pre><code>&lt;section id="breadcrumb-nav"&gt;
+		&lt;p&gt;&lt;a href="#" class="return-btn"&gt;tea&lt;/a&gt;&gt;&lt;a href="#" class="return-btn"&gt;black tea&lt;/a&gt;&gt;&lt;a href="#" class="return-btn breadcrumb-current"&gt;chocolate darjeeling&lt;/a&gt;
+&lt;/section&gt;</code></pre>
+					</div>
+			</div>
+		</div>
+
+		<!-- NEWLY ADDED: QUANTITY-->
+		<div class="pattern">
+			<h3 class="pattern-heading">Quantity</h3>
+			<div class="container">
+				<div class="form-entries-l">
+					<label for="quantity">quantity</label>
+					<input type="number" id="quantity" name="product-quantity" min="1" max="10" value="1">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div class="form-entries-l"&gt;
+	&lt;label for="quantity"&gt;quantity&lt;/label&gt;
+	&lt;input type="number" id="quantity" name="product-quantity" min="1" 
+	max="10" value="1"&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>input[type=number]{
+	width: 20rem;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+
+input[type=number]:focus{
+	outline-color: rgb(199, 168, 134);
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- NEWLY ADDED: REVIEWS SUMMARY-->
+		<div class="pattern">
+			<h3 class="pattern-heading">Review Summary</h3>
+			<div class="container">
+				<div class="section-headers">
+					<h3>reviews</h3>
+					<div class="review-container">
+						<div class="review-overview">
+							<div class="review-rating">
+								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star.svg" alt="a filled star">
+								<img src="img/ic-star-half.svg" alt="a half-filled star">
+								<h4 class="review-title">4.2</h4>
+							</div>
+
+							<h3>15 reviews</h3>
+							<div class="review-bar-container">
+								<p>5 star</p>
+								<div class="bar-box">
+									<div class="bar-7 bar-content"></div>
+								</div>
+								<p>8</p>
+							</div>
+
+							<div class="review-bar-container">
+								<p>4 star</p>
+								<div class="bar-box">
+									<div class="bar-4 bar-content"></div>
+								</div>
+								<p>4</p>
+							</div>
+
+							<div class="review-bar-container">
+								<p>3 star</p>
+								<div class="bar-box">
+									<div class="bar-1 bar-content"></div>
+								</div>
+								<p>1</p>
+							</div>
+
+							<div class="review-bar-container">
+								<p>2 star</p>
+								<div class="bar-box">
+									<div class="bar-0 bar-content"></div>
+								</div>
+								<p>0</p>
+							</div>
+
+							<div class="review-bar-container">
+								<p>1 star</p>
+								<div class="bar-box">
+									<div class="bar-2 bar-content"></div>
+								</div>
+								<p>2</p>
+							</div>
+
+							<a href="#review-form" class="review-submit-btn">Write a review</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="pattern-code">
+					<p>HTML</p>
+					<pre><code>&lt;div class="form-entries-l"&gt;
+	&lt;label for="quantity"&gt;quantity&lt;/label&gt;
+	&lt;input type="number" id="quantity" name="product-quantity" min="1" 
+	max="10" value="1"&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				<div class="pattern-code">
+					<p>CSS</p>
+					<pre><code>input[type=number]{
+	width: 20rem;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid rgb(169, 169, 169);
+	transition: all 0.3s ease 0s;
+}
+
+input[type=number]:focus{
+	outline-color: rgb(199, 168, 134);
+}</code></pre>
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+
+
 	</section>
 </body>
 </html>
