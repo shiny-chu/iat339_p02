@@ -175,8 +175,8 @@
 				<label class="main-nav-label" for="search"><span>Search</span><img class="nav-icon" src="img/ic-search.svg" alt="search"></label>
 
 				<div class="main-nav-sub">
-					<input type="text" id="search-bar" placeholder="Search...">
 					<label for="search-bar"><span>Search bar</span></label>
+					<input type="text" id="search-bar" placeholder="Search...">
 					<a href="search.html">Search</a>
 				</div>
 			</div>
@@ -201,7 +201,9 @@
 						<label for="image1">
 							<span>product image 1</span>
 							<img src="img/chocolate-darjeeling.png" alt="close up of chocolate darjeeling tea leaves">
-							<div class="dot"></div>
+							<svg width="12" height="12">
+								<circle cx="6" cy="6" r="6" fill="rgb(143, 107, 83)">
+							</svg>
 						</label>
 
 						<div class="main-image">
@@ -214,7 +216,9 @@
 						<label for="image2">
 							<span>product image 2</span>
 							<img src="img/chocolate-darjeeling2.png" alt="chocolate darjeeling tea leaves in a bowl">
-							<div class="dot"></div>
+							<svg width="12" height="12">
+								<circle cx="6" cy="6" r="6" fill="rgb(143, 107, 83)">
+							</svg>
 						</label>
 				
 						<div class="main-image">
@@ -227,7 +231,9 @@
 						<label for="image3">
 							<span>product image 3</span>
 							<img src="img/chocolate-darjeeling3.png" alt="chocolate darjeeling tea in a cup">
-							<div class="dot"></div>
+							<svg width="12" height="12">
+								<circle cx="6" cy="6" r="6" fill="rgb(143, 107, 83)">
+							</svg>
 						</label>
 				
 						<div class="main-image">
@@ -240,7 +246,9 @@
 						<label for="image4">
 							<span>product image 4</span>
 							<img src="img/chocolate-darjeeling4.png" alt="chocolate darjeeling tea leaves in our nature-friendly packaging">
-							<div class="dot"></div>
+							<svg width="12" height="12">
+								<circle cx="6" cy="6" r="6" fill="rgb(143, 107, 83)">
+							</svg>
 						</label>
 				
 						<div class="main-image">
@@ -251,7 +259,7 @@
 			</div>
 
 			<div class="product-to-cart">
-				<h3 class="product-detail-type">Black Tea</h3>
+				<span class="overline product-detail-type">Black Tea</span>
 				<h1 class="product-detail-name">Chocolate Darjeeling</h1>
 					<div class="product-detail-rating">
 						<img src="img/ic-star.svg" alt="a filled star">
@@ -261,7 +269,7 @@
 						<img src="img/ic-star-half.svg" alt="a half-filled star">
 						<p>4.2 (15)</p>
 					</div>
-				<p class="product-detail-price">$8.00 / 20g</p>
+				<h2 class="product-detail-price">$8.00 / 20g</h2>
 
 				<form method="post" action="#">
 					<h3 class="form-entries-l">size</h3>
@@ -551,7 +559,7 @@
 					<textarea id="review-message"></textarea>
 				</div>
 				<a href="#reviews" class="submit-btn">Submit</a>
-				<button type="submit" class="button-none">Submit</button>
+				<button type="submit" class="button-none">Post</button>
 			</form>
 		</section>
 

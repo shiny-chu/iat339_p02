@@ -61,7 +61,7 @@ nav li{
 	justify-content: space-between;
 }
 
-.page-heading-order-success h3{
+.page-heading-order-success h2{
 	flex: 20 0 auto;
 }
 
@@ -612,7 +612,7 @@ nav li{
 		display: none;
 	}
 
-	.dot{
+	.thumbnail-container circle{
 		display: block;
 	}
 
@@ -741,7 +741,7 @@ nav li{
 		font-size: 2rem;
 	}
 
-	.event-banner-content h3{
+	.event-banner-content .overline{
 		font-size: 0.8rem;
 	}
 
@@ -982,7 +982,7 @@ nav li{
 		margin: 0 0 0.3rem 0;
 	}
 
-	.event-banner-content h3{
+	.event-banner-content .overline{
 		margin: 0 0 0.3rem 0;
 	}
 

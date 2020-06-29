@@ -57,6 +57,12 @@ p, ol, ul{
 	margin: 0;
 }
 
+.overline{
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 /*------------------------------link------------------------------*/
 a{
 	color: rgb(143, 107, 83);
@@ -501,7 +507,7 @@ fieldset{
     margin: 0 0 1rem 0;
 }
 
-.event-banner-content h3{
+.event-banner-content .overline{
 	color: rgb(114, 114, 114);
 	margin: 0 0 0.5rem 0;
 }
@@ -547,7 +553,9 @@ fieldset{
 	padding: 5rem 10% 0 10%;
 }
 
-#page-heading p{
+#page-heading p, #page-heading h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
 	color: rgb(114, 114, 114);
 	max-width: 40rem;
 }
@@ -557,8 +565,12 @@ fieldset{
 	padding-right: 2rem;
 }
 
-.page-heading-cart h3, .page-heading-order-success h3{
+.page-heading-cart h2, .page-heading-order-success h2{
 	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
 	color: rgb(114, 114, 114);
 }
 
@@ -689,12 +701,9 @@ fieldset{
 	width: 100%;
 }
 
-.dot{
-	height: 0.8rem;
-	width: 0.8rem;
-	background-color: rgb(143, 107, 83);
-	border-radius: 50%;
+.thumbnail-container circle{
 	display: none;
+	cursor: pointer;
 }
 
 .thumbnail-container .main-image {
@@ -720,6 +729,11 @@ fieldset{
 }
 
 /*-------------------------product details---------------------------*/
+.product-to-cart h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+
 .product-to-cart form h3{
 	color: rgb(114, 114, 114);
 	font-size: 0.8rem;
@@ -763,7 +777,7 @@ fieldset{
 .size-opt input:checked + label{
 	background-color: rgb(199, 168, 134);
 	color: white;
-	outline-color: rgb(61 61 61);
+	outline-color: rgb(61, 61, 61);
 }
 
 .product-to-cart form input[type=number]{
@@ -982,6 +996,10 @@ fieldset{
 	color: rgb(114, 114, 114);
 	border-bottom: 0.5px solid rgb(114, 114, 114);
 	margin: 1rem 0 1rem 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 #filter h3{
@@ -1193,9 +1211,11 @@ fieldset{
 	color: rgb(114, 114, 114);
 }
 
-.summary-content h6{
+.summary-content .summary-title{
 	margin: 0;
 	color: rgb(61, 61, 61);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
 }
 
 .summary-content p{
@@ -1207,7 +1227,8 @@ fieldset{
 	color: rgb(61, 61, 61);
 }
 
-.summary-content h5{
+.summary-content .summary-total-price{
+	font-size: 1.5rem;
 	margin: 0;
 	color: rgb(143, 107, 83);
 }
