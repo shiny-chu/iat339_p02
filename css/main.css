@@ -19,7 +19,7 @@ section{
 }
 
 /*------------------------------text------------------------------*/
-h1, h2, h6{
+h1, h2{
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -37,19 +37,6 @@ h3{
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
-}
-
-h4{
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-h5{
-	font-size: 1.5rem;
-}
-
-h6{
-	font-size: 1rem;
 }
 
 p, ol, ul{
@@ -171,7 +158,7 @@ textarea{
 	resize: vertical;
 }
 
-input[type=text]:focus, textarea:focus, input[type=tel]:focus, input[type=email]:focus{
+input[type=text]:focus, textarea:focus, input[type=tel]:focus, input[type=email]:focus, input[type=number]:focus{
 	outline-color: rgb(199, 168, 134);
 }
 
@@ -215,10 +202,6 @@ input[type=number]{
 	text-align: center;
 	border: 1px solid rgb(169, 169, 169);
 	transition: all 0.3s ease 0s;
-}
-
-input[type=number]:focus{
-	outline-color: rgb(199, 168, 134);
 }
 
 /*------------------------------lists------------------------------*/
@@ -486,10 +469,6 @@ fieldset{
 	display: inline;
 }
 
-.styleguide {
-	display: inline;
-	justify-content: space-between;
-}
 /*------------------------------event banner------------------------------*/
 #event-banner{
 	position: relative;
@@ -548,6 +527,7 @@ fieldset{
     color: rgb(61, 61, 61);
     display: inline-block;
 }
+
 /*------------------------------page heading------------------------------*/
 #page-heading{
 	padding: 5rem 10% 0 10%;
@@ -669,7 +649,6 @@ fieldset{
 .tea-type-post:hover h2, .tea-type-post:focus h2, .tea-type-post:active h2{
 	color: rgb(143, 107, 83);
 }
-
 
 /*-------------------------tab gallery---------------------------*/
 /* tab gallery tutorial from https://www.cssscript.com/simple-tab-gallery-with-pure-css-css3/ */
@@ -901,6 +880,7 @@ fieldset{
 	display: inline-block;
 	margin: 0.8rem 1rem;
 	color: rgb(143, 107, 83);
+	font-size: 2rem;
 	font-weight: 400;
 }
 

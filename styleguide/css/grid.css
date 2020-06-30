@@ -14,8 +14,8 @@
 	justify-content: space-around;
 }
 
-/*navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk*/
-.nav-container{
+/*----navbar tutorial from https://www.youtube.com/watch?v=PwWHL3RyQgk-----*/
+#main-nav{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -26,10 +26,17 @@
 
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 3%;
 }
 
-.nav-component-mobile{
+.nav-icon-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-end;
+}
+
+.nav-hamburger{
 	display: none;
 }
 
@@ -52,16 +59,80 @@ nav li{
 	max-width: 1.5rem;
 }
 
-/*product listing*/
+
+/*----------------------------product listing-----------------------------*/
+.product-listing-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+
+	padding: 0 10%;
+}
+
 .product-post{
-	flex: 1 1 auto;
+	flex: 1 1 25%;
 	max-width: 16rem;
 }
 
-/*review*/
+/*-----------------------------tea type------------------------------*/
+.tea-type-post{
+	flex: 1 1 20%;
+	max-width: 16rem;
+}
+
+/*--------------------------tab gallery-------------------------*/
+.thumbnail-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: center;
+
+	padding: 0 3rem 0 0;
+	position: absolute;
+	top: 29rem;
+	left: 0;
+}
+
+/*----------------------------review----------------------------*/
+.review-overview{
+	padding: 0 3rem 0 0;
+
+	align-self: flex-start;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5rem;
+}
+
+.review-bar-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
 .review-post-top{
 	display: flex;
 	align-items: baseline;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
 }
 
 .review-name{
@@ -74,6 +145,56 @@ nav li{
 
 .review-time{
 	flex: 1 1 auto;
+}
+
+/*----------------------------cart------------------------------*/
+.cart-product, .cart-category, .cart-total{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.cart-product{
+	align-items: center;
+}
+
+.cart-category, .cart-total{
+	align-items: flex-start;
+}
+
+.cart-product img{
+	width: 10rem;
+}
+
+.cart-product-col{
+	flex: 20 0 30%;
+}
+
+.cart-quantity-col{
+	flex: 0 0 auto;
+}
+
+.cart-price-col{
+	flex: 0 1 20%;
+	text-align: right;
+}
+
+/*--------------------------summary--------------------------*/
+.summary{
+	flex: 1 1 25%;
+}
+
+.summary-content{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+
+	padding: 1rem 0;
 }
 
 /*grid*/
@@ -101,44 +222,527 @@ nav li{
 	flex: 1 0 auto;
 }
 
-/*review summary*/
-.review-bar-container{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
+@media (max-width: 80em){
+	/*----------------------product listing-----------------------*/
+	.product-type{
+		font-size: 0.8rem;
+	}
 
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem 0;
+	.product-name{
+		font-size: 1.2rem;
+	}
+
+	.product-rating p{
+		font-size: 0.8rem;
+	}
+
+	.product-rating{
+		margin: 0.5rem 0 0 0;
+	}
+
+	.product-price{
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 75em){
+	/*-----------------------event banner-----------------------*/
+	.event-banner-content h1{
+		font-size: 3rem;
+	}
+
+	.event-banner-content li{
+	    font-size: 1rem;
+	}
+
+	/*---------------------about page-----------------------*/
+	.about-section-1{
+		top: 25%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 25%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 20%;
+		right: 10%;
+	}
+
+	/*---------------------product details---------------------*/
+	.thumbnail-container li{
+		width: 20%;
+	}
+
+	.thumbnail-container{
+		top: 24rem;
+	}
+
+	.tab-gallery-preview{
+		margin: 0 0 30rem 0;
+	}
+}
+
+@media (max-width: 65em){
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content{
+		bottom: 15%;
+	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list{
+		padding: 0 3rem 0 0.5rem;
+	}
+
+	#tea-list .product-post{
+		flex: 0 1 33%;
+	}
+
+	#filter{
+		padding: 0 0.5rem 0 3rem;
+	}
+
+	/*--------------------------page heading-------------------------*/
+	#page-heading{
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	/*--------------------------contact + shipping + billing + cart-------------------------*/
+	#contact-us, #shipping, #billing, #my-cart{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+
+	#contact-us form, #shipping form, #billing form, .cart-product-list{
+		padding-right: 0;
+	}
+
+	/*--------------------------contact-------------------------*/
+	.customer-service{
+		margin-bottom: 2rem;
+		padding: 1rem 0 0 0.5rem;
+		order: -1;
+		border-left: none;
+		border-top: 0.5px solid rgb(200, 200, 200);
+		border-bottom: 0.5px solid rgb(200, 200, 200);
+	}
+
+	.customer-service h2{
+		display: none;
+	}
+
+	.contact-info li{
+		display: inline-block;
+	}
+
+	.contact-info li:first-of-type{
+		padding-right: 1rem; 
+	}
+
+	/*---------------------about page-----------------------*/
+	.about-section-1{
+		top: 15%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 15%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 10%;
+		right: 10%;
+	}
+
+	/*---------------------product details---------------------*/
+	.prod-about{
+		flex: 0 0 55%;
+	}
+
+	.prod-characteristics{
+		flex: 0 0 25%;
+	}
+
+	.prod-ingredients{
+		flex: 0 0 20%;
+	}
+}
+
+@media (max-width: 60em){
+	/*-----------------------event banner-----------------------*/
+	.event-banner-content h1{
+		font-size: 2.5rem;
+		margin: 0 0 0.8rem 0;
+	}
+
+	.event-banner-content ul{
+		margin: 0 0 1.5rem 0;
+	}
+
+	.event-banner-content li{
+	    display: block;
+	}
+
+	/*----------------------product listing-----------------------*/
+	.product-post{
+		flex: 0 1 50%;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post{
+		flex: 0 1 50%;
+	}
+
+	/*---------------------product details---------------------*/
+	#product-details, #product-description, .review-container{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+
+	.product-img-container{
+		flex: 0 0 100%;
+		padding: 0;
+		height: 30rem;
+	}
+
+	.thumbnail-container{
+		width: 100%;
+		padding: 0;
+		top: 32rem;
+	}
+
+	.thumbnail-container li{
+		width: 1rem;
+		padding: 0 1rem;
+	}
+
+	.thumbnail-container .main-image {
+		left: 10%;
+		right: 10%;
+		bottom: 2rem;
+		padding: 0;
+	}
+
+	.thumbnail-container label img{
+		display: none;
+	}
+
+	.thumbnail-container circle{
+		display: block;
+	}
+
+	.product-to-cart{
+		flex: 0 0 100%;
+	}
+
+	.prod-about{
+		flex: 0 0 100%;
+		margin-bottom: 5rem;
+		padding: 0 1rem;
+	}
+
+	.prod-characteristics, .prod-ingredients{
+		flex: 0 0 50%;
+		padding: 0 1rem;
+	}
+
+	.review-individual{
+		flex: 0 0 100%;
+	}
+
+	.review-post:first-of-type{
+		padding-top: 3rem;
+	}
+
+	.tab-gallery-preview{
+		margin: 0 0 8rem 0;
+	}
+}
+
+@media (max-width: 55em){
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content li{
+		display: block;
+	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list .product-post{
+		flex: 0 1 50%;
+	}
+
+	/*---------------------------filter-------------------------*/
+	#filter h3, #filter a{
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 50em){
+	/*---------------------about page-----------------------*/
+	.about-content h1{
+		font-size: 1.5rem;
+	}
+
+	.about-content h2{
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	.about-content p{
+		font-size: 0.8rem;
+		max-width: 20rem;
+	}
+
+	.about-banner{
+		margin-bottom: 2rem;
+	}
+
+	.about-section-1{
+		top: 20%;
+		left: 30%;
+	}
+
+	.about-section-2{
+		top: 20%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 15%;
+		right: 10%;
+	}
+
+	/*---------------------page heading-----------------------*/
+	.page-heading-order-success{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.page-heading-order-success h1{
+		padding: 0;
+	}
+}
+
+@media (max-width: 45em){
+	/*---------------------product details---------------------*/
+	.product-img-container{
+		height: 23rem;
+	}
+
+	.thumbnail-container{
+		top: 25rem;
+	}
 }
 
 
-@media (max-width: 58em){
-	/*navigation*/
+@media (max-width: 40em){
+	/*-----------------------main nav-----------------------*/
 	.nav-container{
-		padding: 1rem 5%;
+		padding: 0.5rem 2rem;
 	}
 
-	.nav-icon{
-	margin: 0;
-	}
-
-	.nav-component-mobile{
+	.nav-hamburger{
 		display: inline-block;
 		flex: 1 1 auto;
 	}
 
-	.nav-component-web{
+	.nav-page{
 		display: none;
 	}
+
+	/*-----------------------event banner-----------------------*/
+	.event-banner-content h1{
+		font-size: 2rem;
+	}
+
+	.event-banner-content .overline{
+		font-size: 0.8rem;
+	}
+
+	.button-cta {
+		font-size: 0.8rem;
+	}
+
+	/*----------------------product listing-----------------------*/
+	.product-post{
+		margin-bottom: 1.5rem;
+	}
+
+	.product-rating{
+		display: flex;
+		align-items: center;
+	}
+
+	.product-rating p{
+		padding: 0.1rem 0 0 0.2rem;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post{
+		margin-bottom: 0rem;
+	}
+
+	/*----------------------product listing page------------------*/
+	#tea-list{
+		padding: 0 1rem;
+	}
+
+	/*--------------------------contact-------------------------*/
+	#contact-us button{
+		width: 100%;
+	}
+
+	.contact-feedback-content a{
+		width: 50%;
+	}
+
+	/*--------------------------about page-------------------------*/
+	.about-section-1{
+		top: 15%;
+		left: 25%;
+	}
+
+	.about-section-2{
+		top: 15%;
+		left: 10%;
+	}
+
+	.about-section-3{
+		top: 5%;
+		right: 10%;
+	}
+
+	/*---------------------------form-------------------------*/
+	.form-entries-s, .form-entries-m{
+		flex: 0 0 100%
+	}
+
+	.form-entries-s, .form-entries-m, .form-entries-l{
+		padding-right: 0;
+	}
+
+	.return-btn{
+		order: 20;
+		margin: 0.5rem 0 0 35%;
+	}
+
+	#breadcrumb-nav .return-btn{
+		margin: 0;
+	}
+
+	.submit-btn{
+		width: 100%;
+	}
+
+	input[type=number]{
+		width: 4.5rem;
+		padding: 0.3rem 0;
+		font-size: 0.8rem;
+	}
+
+	/*---------------------------cart-------------------------*/
+	.cart-product-list h2{
+		font-size: 1.2rem;
+	}
+
+	.cart-product-list h3, .cart-product-list p{
+		font-size: 0.8rem;
+	}
+
+	.cart-product-list img{
+		width: 8rem;
+	}
+
+	/*---------------------product details---------------------*/
+	.instruction-container{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+
+	.instruction-container figure{
+		flex: 0 0 50%;
+	}
+
+	.product-to-cart .form-entries-s{
+		flex: 0 0 33%;
+	}
+
+	.product-to-cart .size-opt label{
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 35em){
+	/*-----------------------event banner-----------------------*/
+	.event-banner-content{
+		top: 10%;
+	}
+
+	.event-banner-content h1{
+		font-size: 1.5rem;
+	}
+
+	.event-banner-content li{
+	    font-size: 0.8rem;
+	}
+
+	/*--------------------------about page-------------------------*/
+	.about-section-1, .about-section-2, .about-section-3{
+		top: 20%;
+		left: 20%;
+	}
+
+	/*---------------------------cart-------------------------*/
+	.cart-product{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+
+	.cart-category .cart-quantity-col, .cart-category .cart-price-col, .cart-product-quantity, .cart-product-price{
+		display: none;
+	}
+
+	.cart-mobile{
+		display: inline-block;
+	}
+
+	.cart-product img{
+		width: 10rem;
+	}
+
+	.cart-product-list .return-btn{
+		margin: 0.5rem 0 0 30%;
+	}
+
+	.cart-mobile input[type=number]{
+		margin: 0.5rem 2rem 0 0;
+	}
+
+	.cart-mobile form, .cart-mobile h2{
+		display: inline-block;
+	}
+
+	/*---------------------product details---------------------*/
+	.product-img-container{
+		height: 18rem;
+	}
+
+	.thumbnail-container{
+		top: 20rem;
+	}
+
 
 	header{
 		flex-flow: column wrap;
 	}
-}
 
-@media (max-width: 45em) {
-	
 	h1{
 		font-size: 1.5rem;
 	}
@@ -152,37 +756,82 @@ nav li{
 		font-size: 0.8rem;
 	}
 
-	.product-post, .layout-product-grid{
-		max-width: 10rem;
-		min-width: 0;
-		margin-bottom: 2rem;
+	#page-title, #typography, #colour, #elements, #grid{
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
-	.product-rating{
-		display: flex;
-		align-items: center;
-	}
-
-	.product-rating p{
-		padding: 0.1rem 0 0 0.2rem;
-	}
-
-	.review-name{
-		margin: 0.5rem 0;
-	}
-
-	.review-rating img{
-		width: 1rem;
-	}
-
-	.review-title{
-		margin: 0.5rem;
+	#module > h2, #module .pattern-heading, #module .pattern-full-width-code{
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 
 @media (max-width: 30em){
-	html{
-		margin: 0 5%;
+	h2{
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	/*-----------------------main nav-----------------------*/
+	#main-nav{
+		padding: 0 1rem;
+	}
+
+	/*-----------------------main nav-----------------------*/
+	.footer{
+		padding: 1rem;
+	}
+
+	/*-----------------------event banner-----------------------*/
+	.event-banner-content{
+		left: 7%;
+		top: 7%;
+	}
+
+	.event-banner-content h1{
+		margin: 0 0 0.3rem 0;
+	}
+
+	.event-banner-content .overline{
+		margin: 0 0 0.3rem 0;
+	}
+
+	.event-banner-content ul{
+		margin: 0 0 0.7rem 0;
+	}
+
+	.button-cta{
+		padding: 0.3rem 1rem;
+	}
+
+	/*----------------------product listing-----------------------*/
+	.product-listing-container{
+		padding: 0 7%;
+	}
+
+	.product-rating img{
+		width: 0.8rem;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post h2{
+		bottom: 1.5rem;
+		left: 1.5rem;
+	}
+
+	/*----------------------tea page banner-----------------------*/
+	.tea-page-banner-content{
+		bottom: 5%;
+	}
+
+	.tea-page-banner-content h1{
+		font-size: 1.5rem;
+		margin: 0 0 0.5rem 0;
+	}
+
+	.tea-page-banner-content li{
+		font-size: 0.8rem;
 	}
 
 	header ul{
@@ -193,6 +842,100 @@ nav li{
 		margin: 0;
 	}
 }
+
+@media (max-width: 28em) {
+	/*--------------------------about page-------------------------*/
+	.about-section-1, .about-section-2{
+		top: 15%;
+		left: 18%;
+	}
+
+	.about-section-3{
+		top: 10%;
+		left: 18%;
+	}
+
+	.about-content h1{
+		max-width: 10rem;
+	}
+
+	.about-content p{
+		max-width: 15rem;
+		color: rgb(61, 61, 61);
+	}
+
+	/*---------------------------form-------------------------*/
+	.return-btn{
+		margin: 0.5rem 0 0 30%;
+	}
+
+	.submit-btn{
+		min-width: 0;
+	}
+
+	/*---------------------------cart-------------------------*/
+	.cart-mobile h2{
+		padding-top: 0.5rem;
+	}
+
+	.cart-product-name{
+		padding-left: 0.5rem;
+	}
+
+	.cart-product-list .return-btn{
+		margin: 0.5rem 0 0 20%;
+	}
+
+	/*---------------------breadcrumb nav---------------------*/
+	#breadcrumb-nav p{
+		font-size: 0.8rem;
+	}
+
+	/*---------------------product details---------------------*/
+	.product-img-container{
+		height: 13rem;
+	}
+
+	.thumbnail-container{
+		top: 15rem;
+	}
+
+	#product-details h1{
+		font-size: 1.5rem;
+	}
+
+	#product-details h3, #product-details p, #product-details li, #product-details label, #product-description h3, #product-description p, #product-description li, #product-how-to h3, #product-how-to p, #reviews h3, #reviews p{
+		font-size: 0.8rem;
+	}
+
+	.prod-characteristics{
+		flex: 0 0 100%;
+		margin-bottom: 4rem;
+	}
+
+	.prod-ingredients{
+		flex: 0 0 100%;
+	}
+
+	.prod-characteristics ul h3{
+		width: 4.5rem;
+	}
+
+	#product-details form p{
+		font-size: 1.2rem;
+	}
+
+	.review-rating img{
+		width: 1rem;
+	}
+
+	.review-rating h2{
+		display: block;
+		margin-left: 0;
+	}
+}
+
+
 
 /*------------------styling for the guide-----------------*/
 /*top navigation*/
