@@ -128,6 +128,16 @@ nav li{
 	flex: 0 1 25%;
 	max-width: 16rem;
 }
+/*--------------------------newsletter-------------------------*/
+#newsletter form{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: space-between;
+
+	padding-top: 1rem;
+}
 
 /*--------------------------product details-------------------------*/
 #product-details, #product-description, #product-how-to, #reviews{
@@ -329,7 +339,7 @@ nav li{
 	flex: 1 1 25%;
 }
 
-.contact-feedback-content{
+.feedback-content{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -814,7 +824,7 @@ nav li{
 		width: 100%;
 	}
 
-	.contact-feedback-content a{
+	.feedback-content a{
 		width: 50%;
 	}
 

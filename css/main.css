@@ -666,6 +666,29 @@ fieldset{
 	color: rgb(143, 107, 83);
 }
 
+/*-------------------------newsletter subscription---------------------------*/
+#newsletter{
+	padding: 0 10%;
+}
+
+#newsletter label{
+	display: none;
+}
+
+#newsletter input{
+	padding: 0.8rem 0.5rem;
+}
+
+#newsletter a{
+	display: inline-block;
+	padding: 0.8rem 0;
+	margin: 0;
+}
+
+#newsletter p{
+	color: rgb(61, 61, 61);
+}
+
 /*-------------------------tab gallery---------------------------*/
 /* tab gallery tutorial from https://www.cssscript.com/simple-tab-gallery-with-pure-css-css3/ */
 .product-img-container{
@@ -1062,7 +1085,7 @@ fieldset{
 }
 
 /*-------------------------contact feedback---------------------------*/
-#contact-feedback{
+#contact-feedback, #newsletter-feedback{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1074,11 +1097,11 @@ fieldset{
 	display: none;
 }
 
-#contact-feedback:target{
+#contact-feedback:target, #newsletter-feedback:target{
 	display: block;
 }
 
-.contact-feedback-content{
+.feedback-content{
 	position: absolute;
 	top: 10%;
 	left: 10%;
@@ -1089,20 +1112,20 @@ fieldset{
 	padding: 2rem;
 }
 
-.contact-feedback-content h2{
+.feedback-content h2{
 	color: rgb(97, 56, 28);
 }
 
-.contact-feedback-content p{
+.feedback-content p{
 	max-width: 21rem;
 }
 
-.contact-feedback-content .close-btn{
+.feedback-content .close-btn{
 	left: auto;
 	right: 2rem;
 }
 
-.contact-feedback-content a{
+.feedback-content a{
 	display: block;
 }
 
@@ -1122,6 +1145,16 @@ fieldset{
 .about-content p{
 	max-width: 25rem;
 	color: rgb(61, 61, 61);
+}
+
+.about-content .button-cta{
+	display: inline-block;
+	background-color: transparent;
+	margin-top: 1.5rem;
+}
+
+.about-content .button-cta:hover, .about-content .button-cta:focus, .about-content .button-cta:active{
+	background-color: rgba(255, 255, 255, 0.1c);
 }
 
 .about-section-1{
