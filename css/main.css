@@ -626,6 +626,16 @@ fieldset{
 	margin: 1rem 0 0 0;
 }
 
+.sale-before{
+	text-decoration: line-through;
+	color: rgb(169, 169, 169);
+}
+
+.sale-after{
+	color: rgb(143, 107, 83);
+	padding-left: 0.8rem;
+}
+
 /*-----------------------------tea type------------------------------*/
 .tea-type-post{
 	padding: 0.8rem;
