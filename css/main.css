@@ -1177,6 +1177,66 @@ fieldset{
 	right: 15%;
 }
 
+.about-section-header{
+	text-align: center;
+	color: rgb(97, 56, 28);
+}
+
+#about-founder, #about-contact{
+	background-color: rgb(248, 249, 251);
+}
+
+.founder-img-container{
+	width: 60%;
+	position: relative;
+}
+
+.founder-image {
+	position: absolute;
+	bottom: 5rem;
+	left: 0;
+}
+
+.founder-image img{
+	width: 100%;
+	max-width: 45rem;
+}
+
+.founder-story{
+	display: block;
+	width: 100%;
+}
+
+.founder-story h3{
+	margin-top: 0;
+	color: rgb(199, 168, 134);
+}
+
+.founder-story h2{
+	color: rgb(143, 107, 83);
+}
+
+.founder-story p{
+	margin-top: 1.5rem;
+	width: 100%;
+}
+
+.founder-sign{
+	margin-left: 80%;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.about-contact-detail{
+	display: block;
+	text-align: center;
+}
+
+.about-contact-detail p{
+	padding-bottom: 3rem;
+	align-content: center; 
+	}
+	
 /*-----------------------------cart-------------------------------*/
 .cart-product-list h2, .cart-product-list h3{
 	margin: 0;
