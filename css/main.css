@@ -917,7 +917,7 @@ fieldset{
 
 .review-title{
 	display: inline-block;
-	margin: 0.8rem 1rem;
+	margin: 0.8rem 0;
 	color: rgb(143, 107, 83);
 	font-size: 2rem;
 	font-weight: 400;
@@ -925,6 +925,10 @@ fieldset{
 
 .review-rating img{
 	width: 1.5rem;
+}
+
+.review-rating img:last-of-type{
+	margin-right: 1rem;
 }
 
 .review-content{
@@ -1114,6 +1118,7 @@ fieldset{
 
 .feedback-content h2{
 	color: rgb(97, 56, 28);
+	text-align: center;
 }
 
 .feedback-content p{
@@ -1147,14 +1152,14 @@ fieldset{
 	color: rgb(61, 61, 61);
 }
 
+#about-us-home h2{
+	font-weight: 400;
+}
+
 .about-content .button-cta{
 	display: inline-block;
 	background-color: transparent;
 	margin-top: 1.5rem;
-}
-
-.about-content .button-cta:hover, .about-content .button-cta:focus, .about-content .button-cta:active{
-	background-color: rgba(255, 255, 255, 0.1c);
 }
 
 .about-section-1{

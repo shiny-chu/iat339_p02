@@ -654,6 +654,13 @@ nav li{
 	.review-post:first-of-type{
 		padding-top: 3rem;
 	}
+
+	/*----------------------newsletter-----------------------*/
+	#newsletter form{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 55em){
@@ -706,6 +713,15 @@ nav li{
 	.about-section-3{
 		top: 15%;
 		right: 10%;
+	}
+
+	#about-us-home h2{
+		font-size: 1.5rem;
+	}
+
+	#about-us-home .about-content{
+		top: 15%;
+		left: 30%;
 	}
 
 	/*---------------------page heading-----------------------*/
@@ -783,6 +799,11 @@ nav li{
 		padding: 0 1rem;
 	}
 
+	/*---------------------newsletter-----------------------*/
+	#newsletter p, #newsletter a, #newsletter input{
+		font-size: 0.8rem;
+	}
+
 	/*----------------------filter-------------------*/
 	#filter:target{
 		width: 16rem;
@@ -822,10 +843,6 @@ nav li{
 	/*--------------------------contact-------------------------*/
 	#contact-us button{
 		width: 100%;
-	}
-
-	.feedback-content a{
-		width: 50%;
 	}
 
 	/*--------------------------about page-------------------------*/
@@ -925,6 +942,11 @@ nav li{
 		left: 20%;
 	}
 
+	#about-us-home .about-content{
+		top: 15%;
+		left: 20%;
+	}
+
 	/*---------------------------cart-------------------------*/
 	.cart-product{
 		flex-wrap: -webkit-flex;
@@ -977,7 +999,7 @@ nav li{
 		padding: 0 1rem;
 	}
 
-	/*-----------------------main nav-----------------------*/
+	/*-----------------------footer-----------------------*/
 	.footer{
 		padding: 1rem;
 	}
@@ -1004,6 +1026,19 @@ nav li{
 		padding: 0.3rem 1rem;
 	}
 
+	/*----------------------------about---------------------------*/
+	.about-content .button-cta{
+		padding: 0.5rem 1rem;
+	}
+
+	#about-us-home .about-content{
+		top: 15%;
+		left: 15%;
+	}
+
+	#about-us-home h2{
+		font-size: 1.2rem;
+	}
 
 	/*------------------------section title-----------------------*/
 	.section-heading{
@@ -1064,6 +1099,14 @@ nav li{
 	.about-content p{
 		max-width: 15rem;
 		color: rgb(61, 61, 61);
+	}
+
+	#about-us-home .about-section-1{
+		top: 10%;
+	}
+
+	#about-us-home .about-content h1{
+		max-width: 20rem;
 	}
 
 	/*---------------------------form-------------------------*/
@@ -1127,6 +1170,10 @@ nav li{
 		font-size: 1.2rem;
 	}
 
+	#reviews .review-title{
+		font-size: 1.5rem;
+	}
+
 	.review-rating img{
 		width: 1rem;
 	}
@@ -1134,5 +1181,190 @@ nav li{
 	.review-rating h2{
 		display: block;
 		margin-left: 0;
+	}
+
+	/*--------------------index---------------------*/
+	#event-banner, #best-sellers, #on-sale, #tea-type, #newsletter, .tea-page-container{
+		margin-bottom: 2rem;
+	}
+
+	/*---------------------product list---------------------*/
+	.sale-after{
+		display: block;
+		padding: 0;
+	}
+}
+
+@media (max-width: 24em) {
+	/*-----------------------main nav-----------------------*/
+	.nav-icon{
+		margin-left: 1rem;
+		max-width: 1.5rem;
+	}
+}
+
+@media (max-width: 22em) {
+	/*----------------------------about---------------------------*/
+	#about-us-home .about-content{
+		top: 12%;
+		left: 12%;
+	}
+
+	/*------------------------section title-----------------------*/
+	.section-heading{
+		margin: 0 5%;
+	}
+
+	/*----------------------product listing-----------------------*/
+	.product-listing-container, #tea-list{
+		padding: 0 5%;
+	}
+
+	.product-post{
+		padding: 0.3rem;
+	}
+
+	/*----------------------tea type-----------------------*/
+	.tea-type-post h2{
+		font-size: 1rem;
+	}
+
+	.tea-type-post{
+		padding: 0.3rem;
+	}
+
+	/*----------------------product list-----------------------*/
+	.filter-btn{
+		left: 5%;
+	}
+
+	/*----------------------tea page-----------------------*/
+	.tea-page-banner-content{
+		left: 5%;
+		bottom: 20%;
+	}
+
+	.tea-page-banner-content ul{
+		margin: 0;
+	}
+
+	/*----------------------breadcrumb nav-----------------------*/
+	#breadcrumb-nav{
+		padding: 1rem 5% 0 5%;
+	}
+
+	/*----------------------product detail-----------------------*/
+	#product-details, #product-description, #product-how-to, #reviews{
+		padding: 0 5%;
+		margin-bottom: 2rem;
+	}
+
+	.thumbnail-container{
+		top: 10rem;
+	}
+
+	.overline{
+		font-size: 0.8rem;
+	}
+
+	.product-to-cart .submit-btn, #reviews .submit-btn, #review-form .submit-btn{
+		padding: 0.8rem;
+	}
+
+	.section-headers > h3{
+		padding: 1rem 0 0 0;
+	}
+
+	.prod-about, .prod-characteristics{
+		margin-bottom: 2rem;
+	}
+
+	.review-post{
+		padding: 1rem 0;
+	}
+
+	.rating-stars{
+		font-size: 1.5rem;
+	}
+
+	#review-form .submit-btn{
+		margin-top: 0;
+	}
+
+	/*----------------------page heading-----------------------*/
+	#page-heading{
+		padding: 1rem 5% 0 5%;
+		margin-bottom: 1rem;
+	}
+
+	#page-heading h1{
+		font-size: 1.5rem;
+	}
+
+	#page-heading .submit-btn{
+		padding: 0.8rem 0;
+		margin: 2rem 0;
+	}
+
+	#page-heading p{
+		font-size: 0.8rem;
+	}
+
+	/*----------------------cart-----------------------*/
+	#my-cart{
+		padding: 0 5%;
+		margin-bottom: 2rem;
+	}
+
+	#my-cart .submit-btn{
+		padding: 0.8rem 0;
+		margin-top: 2rem;
+	}
+
+	.summary{
+		padding: 3rem 0 0 0;
+	}
+
+	/*----------------------checkout-----------------------*/
+	#page-heading-checkout{
+		padding: 0 5%;
+	}
+
+	#page-heading-checkout h1{
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	#shipping, #billing{
+		padding: 0 5%;
+		margin-bottom: 2rem;
+	}
+
+	#shipping label, #billing label{
+		font-size: 0.8rem;
+	}
+
+	#shipping .submit-btn, #billing .submit-btn{
+		padding: 0.8rem 0;
+		margin-top: 2rem;
+	}
+
+	#billing .return-btn{
+		margin-left: 25%;
+	}
+
+	/*----------------------contact-----------------------*/
+	#contact-us{
+		padding: 0 5%;
+		margin-bottom: 2rem;
+	}
+
+	#contact-us label, .customer-service li, .customer-service p{
+		font-size: 0.8rem;
+	}
+
+	#contact-us .submit-btn{
+		padding: 0.8rem 0;
+		margin-top: 1rem;
 	}
 }
