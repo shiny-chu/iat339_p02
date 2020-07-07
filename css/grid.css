@@ -422,9 +422,9 @@ nav li{
 	padding: 10% 10%;
 }
 
-.founder-img-container{
+/*.founder-img-container{
 	flex: 1 1 60%;
-}
+}*/
 
 .founder-story{
     flex: 1 1 40%;
@@ -691,6 +691,25 @@ nav li{
 		flex-wrap: -ms-flex;
 		flex-wrap: wrap;
 	}
+
+	.founder-story{
+		padding-top: 3rem;
+	    flex: 0 0 100%;
+	}
+
+	.founder-story p{
+		max-width: 100%;
+	}
+
+	.founder-img{
+		display: block;
+		margin-left:25%; 
+		margin-right:auto;
+	}
+
+	/*.founder-img-container{
+		flex: 0 0 100%;
+	}*/
 }
 
 @media (max-width: 55em){
@@ -727,7 +746,7 @@ nav li{
 	}
 
 	.about-banner{
-		margin-bottom: 2rem;
+		margin-bottom: 5rem;
 	}
 
 	.about-section-1{

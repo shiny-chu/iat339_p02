@@ -1197,6 +1197,10 @@ fieldset{
 	left: 0;
 }
 
+.founder-img{
+	padding-right: 5rem;
+}
+
 .founder-image img{
 	width: 100%;
 	max-width: 45rem;
@@ -1219,11 +1223,12 @@ fieldset{
 .founder-story p{
 	margin-top: 1.5rem;
 	width: 100%;
+	max-width: 100%;
 }
 
 .founder-sign{
-	margin-left: 80%;
-	margin-top: 2rem;
+	margin-top: 9%;
+	margin-left: 85%;
 	width: 100%;
 }
 
@@ -1236,7 +1241,7 @@ fieldset{
 	padding-bottom: 3rem;
 	align-content: center; 
 	}
-	
+
 /*-----------------------------cart-------------------------------*/
 .cart-product-list h2, .cart-product-list h3{
 	margin: 0;
