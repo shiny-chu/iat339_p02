@@ -707,6 +707,10 @@ nav li{
 		margin-right:auto;
 	}
 
+	.founder-sign{
+		margin-left: 0;
+	}
+
 	/*.founder-img-container{
 		flex: 0 0 100%;
 	}*/
