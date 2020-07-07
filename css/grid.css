@@ -411,6 +411,29 @@ nav li{
 	padding: 1rem 0;
 }
 
+/*--------------------------about--------------------------*/
+#about-founder, #about-contact{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	justify-content: flex-start;
+
+	padding: 10% 10%;
+}
+
+.founder-img-container{
+	flex: 1 1 60%;
+}
+
+.founder-story{
+    flex: 1 1 40%;
+}
+
+.about-contact-detail{
+	flex: 1 1 100%;
+}
+
 @media (max-width: 80em){
 	/*----------------------product listing-----------------------*/
 	.product-type{
@@ -657,6 +680,13 @@ nav li{
 
 	/*----------------------newsletter-----------------------*/
 	#newsletter form{
+		flex-wrap: -webkit-flex;
+		flex-wrap: -ms-flex;
+		flex-wrap: wrap;
+	}
+
+	/*----------------------about-----------------------*/
+	#about-founder, #about-contact{
 		flex-wrap: -webkit-flex;
 		flex-wrap: -ms-flex;
 		flex-wrap: wrap;
