@@ -547,29 +547,16 @@ fieldset{
 }
 
 .page-heading-cart h1, .page-heading-order-success h1{
-	/*display: inline-block;*/
-	/*padding-right: 2rem;*/
-	/*newly added*/
-	padding-right: 17rem;
+	display: inline-block;
+	padding-right: 2rem;
 }
 
 .page-heading-cart h2, .page-heading-order-success h2{
-	/*display: inline-block;*/
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
+	display: inline-block;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: rgb(114, 114, 114);
 }
 
-.receipt p, .receipt a{
-	display: inline-block;
-}
-
-.receipt p{
-padding-right: 4rem;
-padding-bottom: 0;
-}
 #page-heading-checkout{
 	padding: 2rem 10%;
 	margin: 0;

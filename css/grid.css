@@ -65,6 +65,10 @@ nav li{
 	flex: 20 0 auto;
 }
 
+.page-heading-order-success p{
+	width: 100%;
+}
+
 /*----------------------------product listing-----------------------------*/
 .product-listing-container{
 	display: -webkit-flex;
@@ -489,6 +493,11 @@ nav li{
 	.thumbnail-container{
 		top: 24rem;
 	}
+
+	#page-heading .submit-btn{
+		width: 15rem;
+		min-width: 15rem;
+	}
 }
 
 @media (max-width: 65em){
@@ -514,6 +523,24 @@ nav li{
 	#page-heading{
 		padding-top: 2rem;
 		margin-bottom: 3rem;
+	}
+
+	.page-heading-order-success{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.page-heading-order-success h1{
+		padding: 0;
+	}
+
+	.page-heading-order-success p{
+		width: auto;
+	}
+
+	.page-heading-order-success a{
+		margin-top: 2rem;
+		order: 4;
 	}
 
 	/*--------------------------contact + shipping + billing + cart-------------------------*/
@@ -765,16 +792,6 @@ nav li{
 		top: 15%;
 		left: 30%;
 	}
-
-	/*---------------------page heading-----------------------*/
-	.page-heading-order-success{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.page-heading-order-success h1{
-		padding: 0;
-	}
 }
 
 @media (max-width: 45em){
@@ -952,6 +969,11 @@ nav li{
 
 	.cart-product-list img{
 		width: 8rem;
+	}
+
+	/*------------------------page heading-------------------------*/
+	#page-heading.page-heading-order-success p{
+		font-size: 0.9rem;
 	}
 
 	/*---------------------product details---------------------*/
@@ -1377,6 +1399,10 @@ nav li{
 
 	#page-heading p{
 		font-size: 0.8rem;
+	}
+
+	#page-heading.page-heading-order-success h2{
+		font-size: 0.9rem;
 	}
 
 	/*----------------------cart-----------------------*/
