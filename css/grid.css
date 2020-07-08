@@ -412,26 +412,20 @@ nav li{
 }
 
 /*--------------------------about--------------------------*/
-#about-founder, #about-contact{
+#about-founder{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
 
-	justify-content: flex-start;
-
-	padding: 10% 10%;
+	justify-content: space-between;
 }
 
-/*.founder-img-container{
-	flex: 1 1 60%;
-}*/
+.founder-img{
+	flex: 1 1 auto;
+}
 
 .founder-story{
-    flex: 1 1 40%;
-}
-
-.about-contact-detail{
-	flex: 1 1 100%;
+    flex: 1 1 60%;
 }
 
 @media (max-width: 80em){
@@ -481,6 +475,10 @@ nav li{
 	.about-section-3{
 		top: 20%;
 		right: 10%;
+	}
+
+	.founder-img{
+		padding-right: 2rem;
 	}
 
 	/*---------------------product details---------------------*/
@@ -686,7 +684,7 @@ nav li{
 	}
 
 	/*----------------------about-----------------------*/
-	#about-founder, #about-contact{
+	#about-founder{
 		flex-wrap: -webkit-flex;
 		flex-wrap: -ms-flex;
 		flex-wrap: wrap;
@@ -697,23 +695,10 @@ nav li{
 	    flex: 0 0 100%;
 	}
 
-	.founder-story p{
-		max-width: 100%;
-	}
-
 	.founder-img{
-		display: block;
-		margin-left:25%; 
-		margin-right:auto;
+		padding-right: 0;
+		text-align: center;
 	}
-
-	.founder-sign{
-		margin-left: 0;
-	}
-
-	/*.founder-img-container{
-		flex: 0 0 100%;
-	}*/
 }
 
 @media (max-width: 55em){
@@ -739,7 +724,7 @@ nav li{
 		font-size: 1.5rem;
 	}
 
-	.about-content h2{
+	.about-content h2, #about-founder h2{
 		font-size: 1rem;
 		font-weight: 400;
 	}
@@ -747,6 +732,10 @@ nav li{
 	.about-content p{
 		font-size: 0.8rem;
 		max-width: 20rem;
+	}
+
+	#about-founder p, #about-founder .overline{
+		font-size: 0.8rem;
 	}
 
 	.about-banner{
@@ -796,6 +785,11 @@ nav li{
 
 	.thumbnail-container{
 		top: 20rem;
+	}
+
+	/*-----------------------main nav-----------------------*/
+	.nav-icon{
+		margin-left: 1.5rem;
 	}
 }
 
@@ -912,6 +906,11 @@ nav li{
 	.about-section-3{
 		top: 5%;
 		right: 10%;
+	}
+
+	#about-contact p{
+		font-size: 0.8rem;
+		padding-bottom: 1.5rem;
 	}
 
 	/*---------------------------form-------------------------*/
@@ -1135,14 +1134,9 @@ nav li{
 
 @media (max-width: 28em) {
 	/*--------------------------about page-------------------------*/
-	.about-section-1, .about-section-2{
+	.about-section-1, .about-section-2, .about-section-3{
 		top: 15%;
-		left: 18%;
-	}
-
-	.about-section-3{
-		top: 10%;
-		left: 18%;
+		left: 22%;
 	}
 
 	.about-content h1{
@@ -1152,6 +1146,18 @@ nav li{
 	.about-content p{
 		max-width: 15rem;
 		color: rgb(61, 61, 61);
+	}
+
+	.about-banner, #about-founder, #about-contact{
+		margin-bottom: 2rem;
+	}
+
+	.about-section-header{
+		margin: 3rem;
+	}
+
+	.founder-story{
+		padding-top: 1rem;
 	}
 
 	#about-us-home .about-section-1{
@@ -1252,7 +1258,12 @@ nav li{
 	/*-----------------------main nav-----------------------*/
 	.nav-icon{
 		margin-left: 1rem;
-		max-width: 1.5rem;
+	}
+
+	/*--------------------------about page-------------------------*/
+	.about-section-1, .about-section-2, .about-section-3{
+		top: 8%;
+		left: 18%;
 	}
 }
 
@@ -1261,6 +1272,11 @@ nav li{
 	#about-us-home .about-content{
 		top: 12%;
 		left: 12%;
+	}
+
+	.about-section-1, .about-section-2, .about-section-3{
+		top: 6%;
+		left: 14%;
 	}
 
 	/*------------------------section title-----------------------*/

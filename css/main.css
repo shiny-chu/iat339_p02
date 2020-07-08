@@ -1184,63 +1184,46 @@ fieldset{
 
 #about-founder, #about-contact{
 	background-color: rgb(248, 249, 251);
-}
-
-.founder-img-container{
-	width: 60%;
-	position: relative;
-}
-
-.founder-image {
-	position: absolute;
-	bottom: 5rem;
-	left: 0;
+	padding: 10%;
 }
 
 .founder-img{
 	padding-right: 5rem;
 }
 
-.founder-image img{
-	width: 100%;
-	max-width: 45rem;
-}
-
 .founder-story{
 	display: block;
-	width: 100%;
 }
 
-.founder-story h3{
-	margin-top: 0;
+.founder-story .overline{
 	color: rgb(199, 168, 134);
 }
 
 .founder-story h2{
-	color: rgb(143, 107, 83);
+	color: rgb(97, 56, 28);
 }
 
 .founder-story p{
-	margin-top: 1.5rem;
-	width: 100%;
-	max-width: 100%;
+	margin-top: 1rem;
+	color: rgb(61, 61, 61);
 }
 
 .founder-sign{
-	margin-top: 9%;
-	margin-left: 85%;
-	width: 100%;
+	text-align: right;
 }
 
-.about-contact-detail{
-	display: block;
+#about-contact{
 	text-align: center;
 }
 
-.about-contact-detail p{
+#about-contact p{
 	padding-bottom: 3rem;
-	align-content: center; 
-	}
+	color: rgb(61, 61, 61);
+}
+
+#about-contact .button-cta{
+	background-color: transparent;
+}
 
 /*-----------------------------cart-------------------------------*/
 .cart-product-list h2, .cart-product-list h3{

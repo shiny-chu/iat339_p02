@@ -427,7 +427,7 @@ fieldset{
 
 /*------------------------breadcrumb navigation------------------------------*/
 #breadcrumb-nav{
-	padding: 3rem 10% 0 10%;
+	padding: 3rem 0 0 0;
 }
 
 #breadcrumb-nav p{
@@ -763,11 +763,11 @@ fieldset{
 }
 
 /*-----------------------------cart-------------------------------*/
-.cart-product-list h2, .cart-product-list h3{
+.cart-product h2, .cart-product h3{
 	margin: 0;
 }
 
-.cart-product-list h2{
+.cart-product h2{
 	color: rgb(61, 61, 61);
 }
 
